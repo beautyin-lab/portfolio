@@ -7,7 +7,7 @@ export interface PortfolioItem {
   name: string;
   description: string;
   image: string;
-  archetype: string;
+  style: string;
   demoUrl: string;
 }
 
@@ -40,7 +40,7 @@ export function getPortfolioItems(): PortfolioItem[] {
     name: site.name,
     description: site.hero.subtitle ?? site.about.description.slice(0, 50),
     image: site.hero.images[0] ?? '',
-    archetype: site.archetype,
+    style: site.layoutConfig?.headerStyle || 'minimal',
     demoUrl: `/demo/${site.category}/${site.slug}`,
   }));
 }

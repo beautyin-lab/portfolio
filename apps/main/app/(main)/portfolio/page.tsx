@@ -84,9 +84,6 @@ export default function PortfolioPage() {
                     <Badge variant="info" size="sm">
                       {item.category}
                     </Badge>
-                    <Badge variant="default" size="sm">
-                      {item.archetype}
-                    </Badge>
                   </div>
                   <h3 className="font-bold text-gray-900">{item.name}</h3>
                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
