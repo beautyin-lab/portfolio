@@ -10,7 +10,11 @@
       "@portfolio/data": ["../../packages/data/src"],
       "@portfolio/data/*": ["../../packages/data/src/*"],
       "@portfolio/db": ["../../packages/db/src"],
-      "@portfolio/db/*": ["../../packages/db/src/*"]
+      "@portfolio/db/*": ["../../packages/db/src/*"],
+      "@portfolio/mock-backend": ["../../packages/mock-backend/src"],
+      "@portfolio/mock-backend/*": ["../../packages/mock-backend/src/*"],
+      "@portfolio/industry": ["../../packages/industry/src"],
+      "@portfolio/industry/*": ["../../packages/industry/src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

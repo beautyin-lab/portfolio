@@ -50,7 +50,7 @@ export default function DemosIndexPage() {
       <header className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900">데모 사이트 목록</h1>
-          <p className="mt-2 text-gray-600">15개 카테고리 × 2개 = 30개 데모 사이트</p>
+          <p className="mt-2 text-gray-600">15개 카테고리 x 2개 = 30개 데모 사이트</p>
         </div>
       </header>
 
@@ -91,7 +91,7 @@ export default function DemosIndexPage() {
           {filtered.map((site: any) => (
             <Link
               key={site.slug}
-              href={`/${site.category}/${site.slug}`}
+              href={`/demo/${site.category}/${site.slug}`}
               className="group block overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-gray-200 transition-all hover:shadow-lg hover:ring-gray-300"
             >
               {/* Thumbnail */}

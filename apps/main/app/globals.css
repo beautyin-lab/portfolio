@@ -3,6 +3,8 @@
 @source "../../../packages/ui/src/**/*.{ts,tsx}";
 @source "../../../packages/theme/src/**/*.{ts,tsx}";
 @source "../../../packages/data/src/**/*.{ts,tsx}";
+@source "../../../packages/industry/src/**/*.{ts,tsx}";
+@source "../../../packages/mock-backend/src/**/*.{ts,tsx}";
 
 @theme {
   --color-navy-900: #0f172a;

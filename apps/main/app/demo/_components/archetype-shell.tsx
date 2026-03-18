@@ -55,7 +55,7 @@ export function ArchetypeShell({ config, children }: ArchetypeShellProps) {
   const navItems = buildNavItems(config);
   const ctaLabel = config.hero.cta?.text || '문의하기';
   const ctaHref = config.hero.cta?.action?.startsWith('/')
-    ? `/${config.category}/${config.slug}${config.hero.cta.action}`
+    ? `/demo/${config.category}/${config.slug}${config.hero.cta.action}`
     : config.hero.cta?.action || '#contact';
 
   const commonProps = {

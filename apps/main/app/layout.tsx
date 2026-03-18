@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { LayoutShell } from "./layout-shell";
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +34,7 @@ export default function RootLayout({
         />
       </head>
       <body style={{ fontFamily: "'Pretendard Variable', Pretendard, sans-serif" }}>
-        <LayoutShell>{children}</LayoutShell>
+        {children}
       </body>
     </html>
   );

@@ -24,6 +24,8 @@
     "@portfolio/ui": "workspace:*",
     "@portfolio/theme": "workspace:*",
     "@portfolio/data": "workspace:*",
-    "@portfolio/db": "workspace:*"
+    "@portfolio/db": "workspace:*",
+    "@portfolio/mock-backend": "workspace:*",
+    "@portfolio/industry": "workspace:*"
   }
 }

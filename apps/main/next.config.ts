@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
     '@portfolio/theme',
     '@portfolio/data',
     '@portfolio/db',
+    '@portfolio/mock-backend',
+    '@portfolio/industry',
   ],
 };
 

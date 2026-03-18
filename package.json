@@ -4,10 +4,8 @@
   "scripts": {
     "dev": "turbo dev",
     "dev:main": "turbo dev --filter=@portfolio/main",
-    "dev:demos": "turbo dev --filter=@portfolio/demos",
     "build": "turbo build",
     "build:main": "turbo build --filter=@portfolio/main",
-    "build:demos": "turbo build --filter=@portfolio/demos",
     "lint": "turbo lint",
     "clean": "turbo clean"
   },

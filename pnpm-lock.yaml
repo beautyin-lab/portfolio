@@ -91,7 +91,7 @@ importers:
         specifier: ^5
         version: 5.9.3
 
-  apps/demos:
+  apps/main:
     dependencies:
       next:
         specifier: ^15
@@ -118,52 +118,6 @@ importers:
       '@portfolio/mock-backend':
         specifier: workspace:*
         version: link:../../packages/mock-backend
-      '@portfolio/theme':
-        specifier: workspace:*
-        version: link:../../packages/theme
-      '@portfolio/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@types/node':
-        specifier: ^22
-        version: 22.19.15
-      '@types/react':
-        specifier: ^19
-        version: 19.2.14
-      autoprefixer:
-        specifier: ^10
-        version: 10.4.27(postcss@8.5.8)
-      postcss:
-        specifier: ^8
-        version: 8.5.8
-      tailwindcss:
-        specifier: ^4
-        version: 4.2.1
-      typescript:
-        specifier: ^5
-        version: 5.9.3
-
-  apps/main:
-    dependencies:
-      next:
-        specifier: ^15
-        version: 15.5.13(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      react:
-        specifier: ^19
-        version: 19.2.4
-      react-dom:
-        specifier: ^19
-        version: 19.2.4(react@19.2.4)
-    devDependencies:
-      '@portfolio/config':
-        specifier: workspace:*
-        version: link:../../packages/config
-      '@portfolio/data':
-        specifier: workspace:*
-        version: link:../../packages/data
-      '@portfolio/db':
-        specifier: workspace:*
-        version: link:../../packages/db
       '@portfolio/theme':
         specifier: workspace:*
         version: link:../../packages/theme
