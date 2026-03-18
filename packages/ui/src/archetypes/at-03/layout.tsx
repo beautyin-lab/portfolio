@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { Menu, X, Phone, Clock, Mail, ChevronRight } from 'lucide-react';
+import { Menu, X, Phone, Clock, ChevronRight } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
 /**
