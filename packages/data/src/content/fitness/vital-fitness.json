@@ -325,5 +325,18 @@
         "duration": 60
       }
     ]
+  },
+  "projectMeta": {
+    "duration": "5주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "회원권 관리"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

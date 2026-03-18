@@ -303,5 +303,18 @@
         "duration": 30
       }
     ]
+  },
+  "projectMeta": {
+    "duration": "5주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "진료 예약 시스템"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

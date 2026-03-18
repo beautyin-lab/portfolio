@@ -316,5 +316,18 @@
         "duration": 60
       }
     ]
+  },
+  "projectMeta": {
+    "duration": "5주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "상담 예약"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

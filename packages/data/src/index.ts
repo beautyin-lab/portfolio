@@ -22,6 +22,7 @@ export { CATEGORIES, ARCHETYPES } from './schemas/site-config';
 // Registry
 export {
   getSiteConfig,
+  getSiteBySlug,
   getAllSites,
   getSitesByCategory,
   getAllCategories,

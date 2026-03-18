@@ -288,5 +288,18 @@
       "type": "datetime",
       "label": "웨딩 플라워 상담 예약"
     }
+  },
+  "projectMeta": {
+    "duration": "3주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "온라인 주문"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

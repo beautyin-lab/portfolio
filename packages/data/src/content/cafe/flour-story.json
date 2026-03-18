@@ -323,5 +323,19 @@
       "enabled": false,
       "notice": "케이크 주문은 카카오톡 채널로 문의해 주세요. 일반 빵 제품은 현장 구매만 가능합니다."
     }
+  },
+  "projectMeta": {
+    "duration": "4주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "메뉴 보드",
+      "온라인 주문"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

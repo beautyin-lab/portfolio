@@ -290,5 +290,18 @@
         }
       ]
     }
+  },
+  "projectMeta": {
+    "duration": "4주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "예약 시스템"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

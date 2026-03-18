@@ -50,7 +50,7 @@ export function PortfolioPreview() {
         {displayed.map((item) => (
           <a
             key={item.id}
-            href={item.demoUrl}
+            href={`/portfolio/${item.slug}`}
             className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg"
           >
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">

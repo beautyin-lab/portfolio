@@ -2,6 +2,7 @@ import { getAllSites } from '@portfolio/data';
 
 export interface PortfolioItem {
   id: string;
+  slug: string;
   category: string;
   name: string;
   description: string;
@@ -34,6 +35,7 @@ export function getPortfolioItems(): PortfolioItem[] {
   const sites = getAllSites();
   return sites.map((site) => ({
     id: `${site.category}-${site.slug}`,
+    slug: site.slug,
     category: CATEGORY_LABELS[site.category] ?? site.category,
     name: site.name,
     description: site.hero.subtitle ?? site.about.description.slice(0, 50),

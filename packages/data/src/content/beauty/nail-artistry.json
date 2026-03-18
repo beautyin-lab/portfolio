@@ -313,5 +313,18 @@
         }
       ]
     }
+  },
+  "projectMeta": {
+    "duration": "4주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "시술 예약"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }

@@ -140,22 +140,24 @@ function renderAbout(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="about" id="about" dark={dark} variant="primary" at10Pos={at10Pos}>
-      <div className="mx-auto max-w-4xl text-center">
-        <h2 className={cn(
-          'text-3xl font-bold sm:text-4xl whitespace-pre-line',
-          isDark ? 'text-white' : 'text-gray-900',
-        )}>
-          {config.about.title}
-        </h2>
-        <p className={cn(
-          'mt-6 text-lg leading-relaxed whitespace-pre-line',
-          isDark ? 'text-gray-300' : 'text-gray-600',
-        )}>
-          {config.about.description}
-        </p>
-      </div>
+      <ScrollReveal preset="fade-up">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className={cn(
+            'text-3xl font-bold sm:text-4xl whitespace-pre-line',
+            isDark ? 'text-white' : 'text-gray-900',
+          )}>
+            {config.about.title}
+          </h2>
+          <p className={cn(
+            'mt-6 text-lg leading-relaxed whitespace-pre-line',
+            isDark ? 'text-gray-300' : 'text-gray-600',
+          )}>
+            {config.about.description}
+          </p>
+        </div>
+      </ScrollReveal>
       {config.about.highlights && config.about.highlights.length > 0 && (
-        <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <StaggerContainer className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {config.about.highlights.map((h, i) => (
             <div
               key={i}
@@ -175,7 +177,7 @@ function renderAbout(config: SiteConfig, dark: boolean, at10Pos?: number) {
               </p>
             </div>
           ))}
-        </div>
+        </StaggerContainer>
       )}
     </SectionWrapper>
   );
@@ -187,15 +189,19 @@ function renderServices(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="services" id="services" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>{config.services.title}</SectionTitle>
-      <ServiceCards
-        items={config.services.items.map((item) => ({
-          title: item.name,
-          description: item.description,
-          price: item.price,
-        }))}
-        columns={config.services.items.length === 4 ? 4 : 3}
-      />
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>{config.services.title}</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="fade-up">
+        <ServiceCards
+          items={config.services.items.map((item) => ({
+            title: item.name,
+            description: item.description,
+            price: item.price,
+          }))}
+          columns={config.services.items.length === 4 ? 4 : 3}
+        />
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -206,16 +212,20 @@ function renderTeam(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="team" id="team" dark={dark} variant="primary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>{config.team.title}</SectionTitle>
-      <TeamSection
-        members={config.team.members.map((m) => ({
-          name: m.name,
-          role: m.role,
-          avatar: m.image,
-          description: m.description,
-        }))}
-        columns={config.team.members.length <= 3 ? 3 : 4}
-      />
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>{config.team.title}</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="fade-up">
+        <TeamSection
+          members={config.team.members.map((m) => ({
+            name: m.name,
+            role: m.role,
+            avatar: m.image,
+            description: m.description,
+          }))}
+          columns={config.team.members.length <= 3 ? 3 : 4}
+        />
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -230,16 +240,20 @@ function renderGallery(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="gallery" id="gallery" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>{config.gallery.title}</SectionTitle>
-      <GalleryGrid
-        images={config.gallery.images.map((img) => ({
-          src: img.src,
-          alt: img.alt,
-          category: img.category,
-        }))}
-        categories={categories}
-        variant="grid"
-      />
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>{config.gallery.title}</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="scale-in">
+        <GalleryGrid
+          images={config.gallery.images.map((img) => ({
+            src: img.src,
+            alt: img.alt,
+            category: img.category,
+          }))}
+          categories={categories}
+          variant="grid"
+        />
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -250,15 +264,19 @@ function renderTestimonials(config: SiteConfig, dark: boolean, at10Pos?: number)
 
   return (
     <SectionWrapper key="testimonials" id="testimonials" dark={dark} variant="primary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>{config.testimonials.title}</SectionTitle>
-      <TestimonialSlider
-        testimonials={config.testimonials.items.map((t) => ({
-          name: t.name,
-          content: t.content,
-          rating: t.rating,
-          role: t.service,
-        }))}
-      />
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>{config.testimonials.title}</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="fade-left">
+        <TestimonialSlider
+          testimonials={config.testimonials.items.map((t) => ({
+            name: t.name,
+            content: t.content,
+            rating: t.rating,
+            role: t.service,
+          }))}
+        />
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -269,15 +287,19 @@ function renderFAQ(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="faq" id="faq" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>{config.faq.title}</SectionTitle>
-      <div className="mx-auto max-w-3xl">
-        <FAQSection
-          items={config.faq.items.map((item) => ({
-            question: item.question,
-            answer: item.answer,
-          }))}
-        />
-      </div>
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>{config.faq.title}</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="fade-up">
+        <div className="mx-auto max-w-3xl">
+          <FAQSection
+            items={config.faq.items.map((item) => ({
+              question: item.question,
+              answer: item.answer,
+            }))}
+          />
+        </div>
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -288,15 +310,19 @@ function renderContact(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="contact" id="contact" dark={dark} variant="primary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>오시는 길</SectionTitle>
-      <ContactSection
-        contactInfo={{
-          phone: config.contact.phone,
-          address: config.contact.address,
-          hours: config.contact.hours,
-          email: config.contact.email,
-        }}
-      />
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>오시는 길</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="fade-up">
+        <ContactSection
+          contactInfo={{
+            phone: config.contact.phone,
+            address: config.contact.address,
+            hours: config.contact.hours,
+            email: config.contact.email,
+          }}
+        />
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -311,15 +337,17 @@ function renderReservation(config: SiteConfig, dark: boolean, at10Pos?: number) 
 
   return (
     <SectionWrapper key="reservation" id="reservation" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>예약 안내</SectionTitle>
-      <div className="mx-auto max-w-2xl text-center">
-        <p className={cn('text-lg', isDark ? 'text-gray-300' : 'text-gray-600')}>
-          온라인으로 간편하게 예약하세요
-        </p>
-        <button className="mt-6 rounded-lg bg-[var(--color-primary,#3b82f6)] px-8 py-3 font-semibold text-white transition-shadow hover:shadow-lg">
-          예약하기
-        </button>
-      </div>
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>예약 안내</SectionTitle>
+        <div className="mx-auto max-w-2xl text-center">
+          <p className={cn('text-lg', isDark ? 'text-gray-300' : 'text-gray-600')}>
+            온라인으로 간편하게 예약하세요
+          </p>
+          <button className="mt-6 rounded-lg bg-[var(--color-primary,#3b82f6)] px-8 py-3 font-semibold text-white transition-shadow hover:shadow-lg">
+            예약하기
+          </button>
+        </div>
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -331,36 +359,40 @@ function renderMenuBoard(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="menuBoard" id="menu-board" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>메뉴</SectionTitle>
-      <div className="mx-auto max-w-4xl">
-        <div className="grid gap-3 sm:grid-cols-2">
-          {config.services.items.map((item, ii) => (
-            <div
-              key={ii}
-              className={cn(
-                'flex items-center justify-between rounded-lg border p-4',
-                isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white',
-              )}
-            >
-              <div>
-                <span className={cn('font-medium', isDark ? 'text-white' : 'text-gray-900')}>
-                  {item.name}
-                </span>
-                {item.description && (
-                  <p className={cn('mt-1 text-sm', isDark ? 'text-gray-400' : 'text-gray-500')}>
-                    {item.description}
-                  </p>
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>메뉴</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="fade-up">
+        <div className="mx-auto max-w-4xl">
+          <div className="grid gap-3 sm:grid-cols-2">
+            {config.services.items.map((item, ii) => (
+              <div
+                key={ii}
+                className={cn(
+                  'flex items-center justify-between rounded-lg border p-4',
+                  isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white',
+                )}
+              >
+                <div>
+                  <span className={cn('font-medium', isDark ? 'text-white' : 'text-gray-900')}>
+                    {item.name}
+                  </span>
+                  {item.description && (
+                    <p className={cn('mt-1 text-sm', isDark ? 'text-gray-400' : 'text-gray-500')}>
+                      {item.description}
+                    </p>
+                  )}
+                </div>
+                {item.price && (
+                  <span className={cn('ml-4 shrink-0 font-semibold', isDark ? 'text-gray-300' : 'text-gray-700')}>
+                    {item.price}
+                  </span>
                 )}
               </div>
-              {item.price && (
-                <span className={cn('ml-4 shrink-0 font-semibold', isDark ? 'text-gray-300' : 'text-gray-700')}>
-                  {item.price}
-                </span>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -371,23 +403,25 @@ function renderPropertySearch(config: SiteConfig, dark: boolean, at10Pos?: numbe
 
   return (
     <SectionWrapper key="propertySearch" id="property-search" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>매물 검색</SectionTitle>
-      <div className="mx-auto max-w-3xl text-center">
-        <p className={cn('text-lg', isDark ? 'text-gray-300' : 'text-gray-600')}>
-          원하시는 조건의 매물을 검색해 보세요
-        </p>
-        <div className="mt-6 flex items-center justify-center gap-3">
-          <div className={cn(
-            'flex-1 rounded-lg border px-4 py-3 text-left text-sm',
-            isDark ? 'border-white/10 bg-white/5 text-gray-400' : 'border-gray-200 bg-gray-50 text-gray-400',
-          )}>
-            지역, 매물 유형 검색...
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>매물 검색</SectionTitle>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className={cn('text-lg', isDark ? 'text-gray-300' : 'text-gray-600')}>
+            원하시는 조건의 매물을 검색해 보세요
+          </p>
+          <div className="mt-6 flex items-center justify-center gap-3">
+            <div className={cn(
+              'flex-1 rounded-lg border px-4 py-3 text-left text-sm',
+              isDark ? 'border-white/10 bg-white/5 text-gray-400' : 'border-gray-200 bg-gray-50 text-gray-400',
+            )}>
+              지역, 매물 유형 검색...
+            </div>
+            <button className="rounded-lg bg-[var(--color-primary,#3b82f6)] px-6 py-3 font-semibold text-white">
+              검색
+            </button>
           </div>
-          <button className="rounded-lg bg-[var(--color-primary,#3b82f6)] px-6 py-3 font-semibold text-white">
-            검색
-          </button>
         </div>
-      </div>
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -399,23 +433,27 @@ function renderSeatStatus(config: SiteConfig, dark: boolean, at10Pos?: number) {
 
   return (
     <SectionWrapper key="seatStatus" id="seat-status" dark={dark} variant="secondary" at10Pos={at10Pos}>
-      <SectionTitle dark={isDark}>좌석 현황</SectionTitle>
-      <div className="mx-auto max-w-md text-center">
-        <div className={cn(
-          'rounded-2xl border p-8',
-          isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white shadow-sm',
-        )}>
-          <p className={cn('text-sm font-medium', isDark ? 'text-gray-400' : 'text-gray-500')}>
-            현재 이용 가능 좌석
-          </p>
-          <p className="mt-2 text-5xl font-bold text-[var(--color-primary,#3b82f6)]">
-            {totalSeats}
-          </p>
-          <p className={cn('mt-1 text-sm', isDark ? 'text-gray-500' : 'text-gray-400')}>
-            / {totalSeats} 전체 좌석
-          </p>
+      <ScrollReveal preset="fade-up">
+        <SectionTitle dark={isDark}>좌석 현황</SectionTitle>
+      </ScrollReveal>
+      <ScrollReveal preset="scale-in">
+        <div className="mx-auto max-w-md text-center">
+          <div className={cn(
+            'rounded-2xl border p-8',
+            isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white shadow-sm',
+          )}>
+            <p className={cn('text-sm font-medium', isDark ? 'text-gray-400' : 'text-gray-500')}>
+              현재 이용 가능 좌석
+            </p>
+            <p className="mt-2 text-5xl font-bold text-[var(--color-primary,#3b82f6)]">
+              {totalSeats}
+            </p>
+            <p className={cn('mt-1 text-sm', isDark ? 'text-gray-500' : 'text-gray-400')}>
+              / {totalSeats} 전체 좌석
+            </p>
+          </div>
         </div>
-      </div>
+      </ScrollReveal>
     </SectionWrapper>
   );
 }

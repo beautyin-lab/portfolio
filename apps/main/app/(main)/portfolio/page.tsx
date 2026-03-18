@@ -62,7 +62,7 @@ export default function PortfolioPage() {
             {filtered.map((item) => (
               <a
                 key={item.id}
-                href={item.demoUrl}
+                href={`/portfolio/${item.slug}`}
                 className="group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
@@ -75,7 +75,7 @@ export default function PortfolioPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                   <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between opacity-0 transition-opacity group-hover:opacity-100">
                     <span className="rounded-lg bg-white/90 px-3 py-1 text-sm font-medium text-gray-900 backdrop-blur-sm">
-                      데모 보기
+                      자세히 보기
                     </span>
                   </div>
                 </div>

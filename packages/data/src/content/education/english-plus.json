@@ -317,5 +317,18 @@
       "type": "datetime",
       "label": "무료 레벨 진단 & 상담 예약"
     }
+  },
+  "projectMeta": {
+    "duration": "4주",
+    "scope": [
+      "디자인",
+      "퍼블리싱",
+      "수강 신청 시스템"
+    ],
+    "techTags": [
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
   }
 }
