@@ -40,3 +40,4 @@ Thumbs.db
 
 # omc state (dev tooling)
 .omc/
+.open-next/
