@@ -3,11 +3,12 @@
 import * as React from 'react';
 import { Badge } from '@portfolio/ui/primitives/badge';
 import { ScrollReveal } from '@portfolio/ui/animations/components/scroll-reveal';
-import { categories, portfolioItems } from '../data/portfolio-data';
+import { categories, getPortfolioItems } from '../data/portfolio-data';
 
 export default function PortfolioPage() {
   const [active, setActive] = React.useState<string | null>(null);
 
+  const portfolioItems = getPortfolioItems();
   const filtered = active
     ? portfolioItems.filter((item) => item.category === active)
     : portfolioItems;

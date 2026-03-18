@@ -1,3 +1,5 @@
+import { getAllSites } from '@portfolio/data';
+
 export interface PortfolioItem {
   id: string;
   category: string;
@@ -8,310 +10,39 @@ export interface PortfolioItem {
   demoUrl: string;
 }
 
-export const categories = [
-  '의료',
-  '법률',
-  '펜션',
-  '웰니스',
-  '헬스장',
-  '펫/키즈',
-  '뷰티',
-  '카페',
-  '부동산',
-  '웨딩',
-  '스터디카페',
-  '인테리어',
-  '꽃집',
-  '학원',
-  '식당',
-] as const;
+// 카테고리 라벨 매핑
+const CATEGORY_LABELS: Record<string, string> = {
+  medical: '의료',
+  legal: '법률',
+  pension: '펜션',
+  wellness: '웰니스',
+  fitness: '헬스장',
+  'pet-kids': '펫/키즈',
+  beauty: '뷰티',
+  cafe: '카페',
+  realty: '부동산',
+  wedding: '웨딩',
+  'study-cafe': '스터디카페',
+  interior: '인테리어',
+  flower: '꽃집',
+  education: '학원',
+  restaurant: '식당',
+};
 
-export type Category = (typeof categories)[number];
+// 실제 콘텐츠에서 포트폴리오 아이템 생성
+export function getPortfolioItems(): PortfolioItem[] {
+  const sites = getAllSites();
+  return sites.map((site) => ({
+    id: `${site.category}-${site.slug}`,
+    category: CATEGORY_LABELS[site.category] ?? site.category,
+    name: site.name,
+    description: site.hero.subtitle ?? site.about.description.slice(0, 50),
+    image: site.hero.images[0] ?? '',
+    archetype: site.archetype,
+    demoUrl: `/demo/${site.category}/${site.slug}`,
+  }));
+}
 
-export const portfolioItems: PortfolioItem[] = [
-  // 의료
-  {
-    id: 'medical-1',
-    category: '의료',
-    name: '강남미소치과',
-    description: '신뢰감 있는 치과 전문 홈페이지',
-    image: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&q=80',
-    archetype: 'Trust Builder',
-    demoUrl: '/demo/medical/gangnam-smile',
-  },
-  {
-    id: 'medical-2',
-    category: '의료',
-    name: '한빛의원',
-    description: '온라인 예약 시스템 통합 병원 사이트',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80',
-    archetype: 'Appointment Pro',
-    demoUrl: '/demo/medical/hanbit-clinic',
-  },
-  // 법률
-  {
-    id: 'law-1',
-    category: '법률',
-    name: '법무법인 정',
-    description: '전문성을 강조한 법률사무소 홈페이지',
-    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&q=80',
-    archetype: 'Authority',
-    demoUrl: '/demo/legal/jung-law',
-  },
-  {
-    id: 'law-2',
-    category: '법률',
-    name: '서진법률사무소',
-    description: '접근성 높은 법률 상담 사이트',
-    image: 'https://images.unsplash.com/photo-1505664194779-8beaceb93744?w=600&q=80',
-    archetype: 'Consultant',
-    demoUrl: '/demo/legal/seojin-legal',
-  },
-  // 펜션
-  {
-    id: 'pension-1',
-    category: '펜션',
-    name: '숲속의 집',
-    description: '자연 감성 펜션 예약 사이트',
-    image: 'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&q=80',
-    archetype: 'Escape',
-    demoUrl: '/demo/pension/forest-house',
-  },
-  {
-    id: 'pension-2',
-    category: '펜션',
-    name: '블루웨이브 리조트',
-    description: '객실 갤러리와 실시간 예약',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80',
-    archetype: 'Gallery Showcase',
-    demoUrl: '/demo/pension/bluewave-resort',
-  },
-  // 웰니스
-  {
-    id: 'wellness-1',
-    category: '웰니스',
-    name: '바디라인 필라테스',
-    description: '차분한 분위기의 필라테스 스튜디오',
-    image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=600&q=80',
-    archetype: 'Calm',
-    demoUrl: '/demo/wellness/bodyline-pilates',
-  },
-  {
-    id: 'wellness-2',
-    category: '웰니스',
-    name: '플로우 요가',
-    description: '요가 전문 스튜디오 사이트',
-    image: 'https://images.unsplash.com/photo-1600618528240-fb9fc964b853?w=600&q=80',
-    archetype: 'Trust Builder',
-    demoUrl: '/demo/wellness/flow-yoga',
-  },
-  // 헬스장
-  {
-    id: 'gym-1',
-    category: '헬스장',
-    name: '아이언짐',
-    description: '역동적인 피트니스 센터 홈페이지',
-    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80',
-    archetype: 'Energy',
-    demoUrl: '/demo/fitness/iron-gym',
-  },
-  {
-    id: 'gym-2',
-    category: '헬스장',
-    name: '바이탈 피트니스',
-    description: '클래스 예약 기능 통합 피트니스 사이트',
-    image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80',
-    archetype: 'Appointment Pro',
-    demoUrl: '/demo/fitness/vital-fitness',
-  },
-  // 펫/키즈
-  {
-    id: 'petkids-1',
-    category: '펫/키즈',
-    name: '해피포즈 동물병원',
-    description: '반려동물 전문 병원 사이트',
-    image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80',
-    archetype: 'Friendly',
-    demoUrl: '/demo/pet-kids/happy-paws',
-  },
-  {
-    id: 'petkids-2',
-    category: '펫/키즈',
-    name: '리틀스타 어린이집',
-    description: '밝고 따뜻한 어린이집 홈페이지',
-    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&q=80',
-    archetype: 'Warm',
-    demoUrl: '/demo/pet-kids/little-star',
-  },
-  // 뷰티
-  {
-    id: 'beauty-1',
-    category: '뷰티',
-    name: '헤어모먼트',
-    description: '트렌디한 헤어살롱 예약 사이트',
-    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
-    archetype: 'Luxe',
-    demoUrl: '/demo/beauty/hair-moment',
-  },
-  {
-    id: 'beauty-2',
-    category: '뷰티',
-    name: '네일아티스트리',
-    description: '네일샵 온라인 예약 시스템',
-    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80',
-    archetype: 'Clean',
-    demoUrl: '/demo/beauty/nail-artistry',
-  },
-  // 카페
-  {
-    id: 'cafe-1',
-    category: '카페',
-    name: '밀가루 이야기',
-    description: '인스타 감성 베이커리 카페 홈페이지',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80',
-    archetype: 'Aesthetic',
-    demoUrl: '/demo/cafe/flour-story',
-  },
-  {
-    id: 'cafe-2',
-    category: '카페',
-    name: '신사빈즈',
-    description: '스페셜티 커피 전문점 사이트',
-    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80',
-    archetype: 'Artisan',
-    demoUrl: '/demo/cafe/sinsa-beans',
-  },
-  // 부동산
-  {
-    id: 'realestate-1',
-    category: '부동산',
-    name: '강남홈즈',
-    description: '매물 검색 기능 통합 부동산 사이트',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80',
-    archetype: 'Directory',
-    demoUrl: '/demo/realty/gangnam-homes',
-  },
-  {
-    id: 'realestate-2',
-    category: '부동산',
-    name: '신뢰부동산',
-    description: '프리미엄 부동산 중개 사이트',
-    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=600&q=80',
-    archetype: 'Premium',
-    demoUrl: '/demo/realty/trust-realty',
-  },
-  // 웨딩
-  {
-    id: 'wedding-1',
-    category: '웨딩',
-    name: '블로썸 웨딩',
-    description: '감성적인 웨딩 스튜디오 포트폴리오',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80',
-    archetype: 'Romance',
-    demoUrl: '/demo/wedding/blossom-wedding',
-  },
-  {
-    id: 'wedding-2',
-    category: '웨딩',
-    name: '그레이스 웨딩홀',
-    description: '웨딩홀 예약 및 투어 안내',
-    image: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&q=80',
-    archetype: 'Elegant',
-    demoUrl: '/demo/wedding/grace-hall',
-  },
-  // 스터디카페
-  {
-    id: 'studycafe-1',
-    category: '스터디카페',
-    name: '딥스터디',
-    description: '좌석 실시간 현황 스터디카페 사이트',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80',
-    archetype: 'Functional',
-    demoUrl: '/demo/study-cafe/deep-study',
-  },
-  {
-    id: 'studycafe-2',
-    category: '스터디카페',
-    name: '포커스존',
-    description: '24시간 이용 스터디룸 예약',
-    image: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80',
-    archetype: 'Modern',
-    demoUrl: '/demo/study-cafe/focus-zone',
-  },
-  // 인테리어
-  {
-    id: 'interior-1',
-    category: '인테리어',
-    name: '모담 인테리어',
-    description: '인테리어 시공 포트폴리오 사이트',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80',
-    archetype: 'Gallery Showcase',
-    demoUrl: '/demo/interior/modam-interior',
-  },
-  {
-    id: 'interior-2',
-    category: '인테리어',
-    name: '스페이스 디자인',
-    description: '견적 문의 통합 인테리어 사이트',
-    image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80',
-    archetype: 'Consultant',
-    demoUrl: '/demo/interior/space-design',
-  },
-  // 꽃집
-  {
-    id: 'flower-1',
-    category: '꽃집',
-    name: '블룸 플로리스트',
-    description: '감성 꽃집 온라인 주문 사이트',
-    image: 'https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=600&q=80',
-    archetype: 'Aesthetic',
-    demoUrl: '/demo/flower/bloom-florist',
-  },
-  {
-    id: 'flower-2',
-    category: '꽃집',
-    name: '쁘띠 플라워',
-    description: '꽃 정기배송 구독 서비스',
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=600&q=80',
-    archetype: 'Subscription',
-    demoUrl: '/demo/flower/petite-flower',
-  },
-  // 학원
-  {
-    id: 'academy-1',
-    category: '학원',
-    name: '탑 아카데미',
-    description: '수강 신청 통합 학원 홈페이지',
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80',
-    archetype: 'Educational',
-    demoUrl: '/demo/education/top-academy',
-  },
-  {
-    id: 'academy-2',
-    category: '학원',
-    name: '잉글리시 플러스',
-    description: '레벨테스트 예약 어학원 사이트',
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80',
-    archetype: 'Interactive',
-    demoUrl: '/demo/education/english-plus',
-  },
-  // 식당
-  {
-    id: 'restaurant-1',
-    category: '식당',
-    name: '한상',
-    description: '프리미엄 한식 전문점 홈페이지',
-    image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80',
-    archetype: 'Gourmet',
-    demoUrl: '/demo/restaurant/hansang',
-  },
-  {
-    id: 'restaurant-2',
-    category: '식당',
-    name: '파스타레인',
-    description: '메뉴판 + 예약 기능 레스토랑 사이트',
-    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80',
-    archetype: 'Foodie',
-    demoUrl: '/demo/restaurant/pasta-lane',
-  },
-];
+export const categories = Object.values(CATEGORY_LABELS);
+
+export type Category = string;

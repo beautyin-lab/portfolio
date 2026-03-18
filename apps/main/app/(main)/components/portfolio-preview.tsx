@@ -2,18 +2,17 @@
 
 import * as React from 'react';
 import { Badge } from '@portfolio/ui/primitives/badge';
-import { categories, portfolioItems } from '../data/portfolio-data';
+import { categories, getPortfolioItems } from '../data/portfolio-data';
 
 const previewCategories = categories.slice(0, 6);
 
 export function PortfolioPreview() {
   const [active, setActive] = React.useState<string | null>(null);
 
+  const portfolioItems = getPortfolioItems();
   const filtered = active
     ? portfolioItems.filter((item) => item.category === active)
-    : portfolioItems.filter((item) =>
-        previewCategories.includes(item.category as typeof previewCategories[number]),
-      );
+    : portfolioItems.filter((item) => previewCategories.includes(item.category));
 
   const displayed = filtered.slice(0, 6);
 

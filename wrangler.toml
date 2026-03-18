@@ -1,6 +1,14 @@
+#:schema node_modules/wrangler/config-schema.json
+
 name = "portfolio-main"
 compatibility_date = "2026-03-01"
 compatibility_flags = ["nodejs_compat"]
+main = ".open-next/worker.ts"
+
+# Assets (static files)
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
 
 [[d1_databases]]
 binding = "DB"

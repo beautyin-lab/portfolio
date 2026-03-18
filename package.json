@@ -10,12 +10,14 @@
     "clean": "turbo clean"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.17.1",
     "@tailwindcss/postcss": "^4.2.1",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19.2.3",
     "turbo": "^2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.75.0"
   },
   "packageManager": "pnpm@9.15.0",
   "dependencies": {
