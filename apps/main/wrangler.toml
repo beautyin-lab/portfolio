@@ -1,6 +1,6 @@
 #:schema node_modules/wrangler/config-schema.json
 
-name = "portfolio-main"
+name = "portfolio"
 compatibility_date = "2026-03-01"
 compatibility_flags = ["nodejs_compat"]
 main = ".open-next/worker.js"
@@ -12,7 +12,9 @@ binding = "ASSETS"
 [observability]
 enabled = true
 
-[[d1_databases]]
-binding = "DB"
-database_name = "portfolio-db"
-database_id = "placeholder-will-be-set-later"
+# D1은 실제 데이터베이스 생성 후 활성화
+# wrangler d1 create portfolio-db 실행 후 database_id 채울 것
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "portfolio-db"
+# database_id = "실제ID입력"
