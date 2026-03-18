@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import type { ReactNode } from 'react';
 import type { SiteConfig } from '@portfolio/data';
 import { AT01Layout } from '@portfolio/ui/archetypes/at-01';
 import { AT02Layout } from '@portfolio/ui/archetypes/at-02';
@@ -48,7 +48,7 @@ function buildNavItems(config: SiteConfig) {
 
 interface ArchetypeShellProps {
   config: SiteConfig;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function ArchetypeShell({ config, children }: ArchetypeShellProps) {

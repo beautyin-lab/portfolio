@@ -1,6 +1,6 @@
 'use client';
 
-import * as React from 'react';
+import type { ReactNode } from 'react';
 import type { SiteConfig } from '@portfolio/data';
 import { HeroSection } from '@portfolio/ui/composites/hero-section';
 import { ServiceCards } from '@portfolio/ui/composites/service-cards';
@@ -29,7 +29,7 @@ const heroVariantMap: Record<string, 'fade-slider' | 'fullscreen' | 'split' | 'm
 // ---------------------------------------------------------------------------
 // Section Title wrapper
 // ---------------------------------------------------------------------------
-function SectionTitle({ children }: { children: React.ReactNode }) {
+function SectionTitle({ children }: { children: ReactNode }) {
   return (
     <h2 className="mb-8 text-center text-3xl font-bold text-gray-900 sm:text-4xl">
       {children}
@@ -111,7 +111,7 @@ function renderServices(config: SiteConfig) {
           description: item.description,
           price: item.price,
         }))}
-        columns={config.services.items.length <= 3 ? 3 : config.services.items.length <= 4 ? 4 : 3}
+        columns={config.services.items.length === 4 ? 4 : 3}
       />
     </section>
   );

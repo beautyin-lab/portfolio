@@ -66,6 +66,14 @@ const plans = [
   },
 ];
 
+function CheckIcon() {
+  return (
+    <svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    </svg>
+  );
+}
+
 export function PricingPageClient() {
   return (
     <>
@@ -98,21 +106,15 @@ export function PricingPageClient() {
               </p>
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500">
                 <span className="flex items-center gap-1.5">
-                  <svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+                  <CheckIcon />
                   부가세 별도
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+                  <CheckIcon />
                   계약금 50% / 잔금 50%
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <svg className="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+                  <CheckIcon />
                   세금계산서 발행 가능
                 </span>
               </div>
