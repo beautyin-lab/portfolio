@@ -12,9 +12,7 @@ binding = "ASSETS"
 [observability]
 enabled = true
 
-# D1은 실제 데이터베이스 생성 후 활성화
-# wrangler d1 create portfolio-db 실행 후 database_id 채울 것
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "portfolio-db"
-# database_id = "실제ID입력"
+[[d1_databases]]
+binding = "DB"
+database_name = "portfolio-db"
+database_id = "5a28ab4e-0b38-4059-bdd4-66b8af4d6dfb"
