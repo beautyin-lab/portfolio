@@ -64,7 +64,7 @@
         "name": "쁘띠 부케 (미니 꽃다발)",
         "description": "5~8송이 작고 사랑스러운 꽃다발. 감사, 응원, 일상 선물로 딱 좋은 사이즈",
         "price": "22,000원~38,000원",
-        "image": "https://images.unsplash.com/photo-1487530811015-780780169cc3?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80"
       },
       {
         "name": "시그니처 꽃다발",
@@ -104,7 +104,7 @@
       {
         "name": "조은지",
         "role": "플로리스트 & 클래스 강사",
-        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&q=80",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
         "description": "화훼장식기능사 보유. 원데이 클래스 전담 강사. 초보자도 쉽게 따라할 수 있도록 친절하고 체계적으로 가르칩니다"
       },
       {
@@ -134,7 +134,7 @@
         "category": "시즌"
       },
       {
-        "src": "https://images.unsplash.com/photo-1487530811015-780780169cc3?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=800&q=80",
         "alt": "연남동 매장 내부",
         "category": "매장"
       },
@@ -149,7 +149,7 @@
         "category": "리스"
       },
       {
-        "src": "https://images.unsplash.com/photo-1490750967868-88df5691cc5b?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?w=800&q=80",
         "alt": "클래스 수료 작품",
         "category": "클래스"
       }

@@ -70,7 +70,7 @@
         "name": "시그니처 소금빵",
         "description": "홋카이도 버터와 국산 꽃소금으로 만든 시그니처 소금빵. 하루 50개 한정",
         "price": "3,500원",
-        "image": "https://images.unsplash.com/photo-1612691851673-1a1e30aeebb4?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80"
       },
       {
         "name": "플라워 케이크 (홀)",
@@ -134,7 +134,7 @@
         "category": "빵"
       },
       {
-        "src": "https://images.unsplash.com/photo-1612691851673-1a1e30aeebb4?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&q=80",
         "alt": "소금빵",
         "category": "빵"
       },
@@ -144,7 +144,7 @@
         "category": "케이크"
       },
       {
-        "src": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80",
         "alt": "생일 케이크",
         "category": "케이크"
       },

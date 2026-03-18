@@ -19,7 +19,7 @@
     "images": [
       "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1600&q=80",
       "https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=1600&q=80",
-      "https://images.unsplash.com/photo-1632345031435-8727f592d8db?w=1600&q=80"
+      "https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=1600&q=80"
     ],
     "cta": {
       "text": "예약하기",
@@ -71,7 +71,7 @@
         "name": "네일 익스텐션",
         "description": "아크릴 또는 젤 익스텐션으로 원하는 길이와 모양 연출, 아트 별도",
         "price": "120,000원~",
-        "image": "https://images.unsplash.com/photo-1632345031435-8727f592d8db?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=800&q=80"
       },
       {
         "name": "젤 제거",
@@ -89,7 +89,7 @@
         "name": "젤 리페어",
         "description": "부러지거나 들뜬 네일 부분 수정, 1~3개 범위에 따라 가격 상이",
         "price": "5,000원~",
-        "image": "https://images.unsplash.com/photo-1604895818682-3d98dfc7e43e?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80"
       }
     ]
   },
@@ -130,7 +130,7 @@
         "category": "아트"
       },
       {
-        "src": "https://images.unsplash.com/photo-1632345031435-8727f592d8db?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1604902396830-aca29e19b067?w=800&q=80",
         "alt": "플라워 아트 네일",
         "category": "아트"
       },
@@ -145,7 +145,7 @@
         "category": "젤네일"
       },
       {
-        "src": "https://images.unsplash.com/photo-1604895818682-3d98dfc7e43e?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80",
         "alt": "마블 아트 네일",
         "category": "아트"
       },
@@ -155,7 +155,7 @@
         "category": "아트"
       },
       {
-        "src": "https://images.unsplash.com/photo-1578681994506-b8f463906a3a?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&q=80",
         "alt": "계절 테마 네일",
         "category": "시즌"
       }

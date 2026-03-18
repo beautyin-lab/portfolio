@@ -78,7 +78,7 @@
         "name": "산후 필라테스",
         "description": "출산 후 6주 이상 대상. 늘어난 복직근·골반저근 회복과 산후 체형 교정 전문. 아기 동반 가능.",
         "price": "1회 9만원 / 10회 85만원",
-        "image": "https://images.unsplash.com/photo-1483721310020-03333cf66ab6?w=600&h=400&fit=crop"
+        "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=400&fit=crop"
       },
       {
         "name": "재활 필라테스",
@@ -147,7 +147,7 @@
         "category": "수업"
       },
       {
-        "src": "https://images.unsplash.com/photo-1483721310020-03333cf66ab6?w=800&h=600&fit=crop",
+        "src": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop",
         "alt": "산후 필라테스 수업",
         "category": "수업"
       },

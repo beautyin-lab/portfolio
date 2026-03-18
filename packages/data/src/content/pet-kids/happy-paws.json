@@ -60,7 +60,7 @@
         "name": "소형견 입장 (10kg 미만)",
         "description": "소형견 전용 놀이 구역 이용, 음수대 및 간식 무제한 제공, 2시간 기준",
         "price": "15,000원",
-        "image": "https://images.unsplash.com/photo-1583511655826-05700442b31b?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80"
       },
       {
         "name": "대형견 입장 (10kg 이상)",
@@ -78,7 +78,7 @@
         "name": "생일 파티 패키지",
         "description": "반려견 생일 케이크, 파티 소품, 포토존 이용, 2시간 프라이빗 공간 제공",
         "price": "80,000원",
-        "image": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80"
       },
       {
         "name": "정기권 (월 8회)",
@@ -130,7 +130,7 @@
         "category": "시설"
       },
       {
-        "src": "https://images.unsplash.com/photo-1583511655826-05700442b31b?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80",
         "alt": "행복하게 노는 강아지들",
         "category": "반려견"
       },
@@ -145,7 +145,7 @@
         "category": "이벤트"
       },
       {
-        "src": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80",
         "alt": "반려견 케이크 이벤트",
         "category": "이벤트"
       },

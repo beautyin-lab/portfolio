@@ -78,7 +78,7 @@
         "name": "돼지갈비 구이 (2인)",
         "description": "48시간 숙성 양념에 재운 국내산 돼지갈비. 제철 쌈채소·된장국·공깃밥 2개 포함",
         "price": "42,000원 (2인)",
-        "image": "https://images.unsplash.com/photo-1544025162-d76594e6f0a4?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
       },
       {
         "name": "비빔밥 (돌솥)",
@@ -106,7 +106,7 @@
       {
         "name": "이미자",
         "role": "찬모 (반찬 전담)",
-        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&q=80",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
         "description": "30년 경력 한식 찬모. 제철 나물 손질과 김치, 장아찌 등 전통 발효 식품 전담. 손맛의 비결은 정성이라고 합니다"
       },
       {
@@ -136,7 +136,7 @@
         "category": "탕"
       },
       {
-        "src": "https://images.unsplash.com/photo-1544025162-d76594e6f0a4?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
         "alt": "돼지갈비 구이",
         "category": "구이"
       },
@@ -151,7 +151,7 @@
         "category": "코스"
       },
       {
-        "src": "https://images.unsplash.com/photo-1481931098730-318b6f776db3?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
         "alt": "전통 한옥 분위기 식당 내부",
         "category": "분위기"
       },

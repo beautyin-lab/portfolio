@@ -19,7 +19,7 @@
     "images": [
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&q=80",
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80",
-      "https://images.unsplash.com/photo-1481931098730-318b6f776db3?w=1600&q=80"
+      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80"
     ],
     "cta": {
       "text": "예약하기",
@@ -65,7 +65,7 @@
         "name": "봉골레 스파게티",
         "description": "통영 바지락과 화이트 와인으로 만든 정통 봉골레. 이탈리아 올리브오일 향 가득. 마늘·페페론치노 풍미",
         "price": "24,000원",
-        "image": "https://images.unsplash.com/photo-1481931098730-318b6f776db3?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
       },
       {
         "name": "마르게리타 피자",
@@ -89,7 +89,7 @@
         "name": "디너 코스 (4코스)",
         "description": "안티파스토 → 프리모 피아토(파스타) → 세콘도 피아토(메인) → 돌체(디저트). 와인 페어링 가능",
         "price": "75,000원/인 (와인 별도)",
-        "image": "https://images.unsplash.com/photo-1544025162-d76594e6f0a4?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80"
       }
     ]
   },
@@ -130,7 +130,7 @@
         "category": "피자"
       },
       {
-        "src": "https://images.unsplash.com/photo-1481931098730-318b6f776db3?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80",
         "alt": "봉골레 스파게티",
         "category": "파스타"
       },
@@ -145,7 +145,7 @@
         "category": "분위기"
       },
       {
-        "src": "https://images.unsplash.com/photo-1544025162-d76594e6f0a4?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80",
         "alt": "4코스 디너 세팅",
         "category": "코스"
       },

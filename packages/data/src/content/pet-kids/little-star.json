@@ -17,7 +17,7 @@
     "subtitle": "리틀스타 키즈카페는 아이들의 상상력과 창의력을 키우는 안전한 놀이 공간입니다. 부모님도 함께 편안하게 쉬어가세요.",
     "images": [
       "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=1600&q=80",
-      "https://images.unsplash.com/photo-1567301008258-b6d8cfef71d4?w=1600&q=80",
+      "https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?w=1600&q=80",
       "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1600&q=80"
     ],
     "cta": {
@@ -64,7 +64,7 @@
         "name": "어린이 주말 이용권",
         "description": "주말·공휴일 기준 어린이 1인 무제한 이용",
         "price": "15,000원",
-        "image": "https://images.unsplash.com/photo-1567301008258-b6d8cfef71d4?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?w=800&q=80"
       },
       {
         "name": "보호자 입장료",
@@ -82,7 +82,7 @@
         "name": "생일 파티 패키지 (대)",
         "description": "어린이 20명까지, 파티룸 3시간, 케이크 포함, 파티 소품 및 답례품 제공",
         "price": "450,000원",
-        "image": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80"
       },
       {
         "name": "월 정기권",
@@ -124,7 +124,7 @@
         "category": "시설"
       },
       {
-        "src": "https://images.unsplash.com/photo-1567301008258-b6d8cfef71d4?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1566454544259-f4b94c3d758c?w=800&q=80",
         "alt": "볼풀 놀이 구역",
         "category": "시설"
       },
@@ -139,7 +139,7 @@
         "category": "파티룸"
       },
       {
-        "src": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80",
         "alt": "생일 파티 케이크",
         "category": "파티룸"
       },

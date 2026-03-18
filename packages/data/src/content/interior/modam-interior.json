@@ -18,8 +18,8 @@
     "subtitle": "내추럴 소재와 따뜻한 색감으로 마음이 편안해지는 집을 만듭니다. 소가족부터 대가족까지, 모두를 위한 실용적인 인테리어.",
     "images": [
       "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1600&q=80",
-      "https://images.unsplash.com/photo-1574643156929-51fa098b0394?w=1600&q=80",
-      "https://images.unsplash.com/photo-1560185127-6a8f8b9f5b3a?w=1600&q=80"
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1600&q=80",
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1600&q=80"
     ],
     "cta": {
       "text": "포트폴리오 보기",
@@ -77,7 +77,7 @@
         "name": "거실·침실 도배·바닥",
         "description": "벽지 교체 + 강화마루 또는 원목마루 시공. 가구 이동 및 입주 청소 포함",
         "price": "150만원~320만원",
-        "image": "https://images.unsplash.com/photo-1574643156929-51fa098b0394?w=800&q=80"
+        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80"
       },
       {
         "name": "홈 스타일링 컨설팅",
@@ -105,7 +105,7 @@
       {
         "name": "임예진",
         "role": "인테리어 코디네이터",
-        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&q=80",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
         "description": "자재·가구·소품 코디 전담. 고객의 취향과 예산에 맞는 최적의 자재를 선별하고 전체 컬러 팔레트를 조율합니다"
       }
     ]
@@ -119,12 +119,12 @@
         "category": "아파트"
       },
       {
-        "src": "https://images.unsplash.com/photo-1574643156929-51fa098b0394?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
         "alt": "성북구 침실 리모델링",
         "category": "침실"
       },
       {
-        "src": "https://images.unsplash.com/photo-1560185127-6a8f8b9f5b3a?w=800&q=80",
+        "src": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
         "alt": "은평구 주방 풀리모델링",
         "category": "주방"
       },
