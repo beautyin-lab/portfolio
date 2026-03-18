@@ -37,7 +37,7 @@ export function AT01Layout({
   const [bannerVisible, setBannerVisible] = React.useState(true);
 
   return (
-    <div className={cn('min-h-screen bg-[#faf7f2] text-gray-900', className)}>
+    <div className={cn('min-h-screen bg-[hsl(var(--color-background))] text-[hsl(var(--color-text))]', className)}>
       {/* Mock Data Banner */}
       {bannerVisible && (
         <div className="relative z-[60] bg-gray-900 px-4 py-1.5 text-center text-xs text-white">
@@ -162,7 +162,7 @@ export function AT01Layout({
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href={ctaHref}
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-900 bg-[#faf7f2] text-gray-900 shadow-md transition-transform hover:scale-110"
+          className="flex h-12 w-12 items-center justify-center rounded-full border border-gray-900 bg-[hsl(var(--color-background))] text-[hsl(var(--color-text))] shadow-md transition-transform hover:scale-110"
           aria-label={ctaLabel}
           title={ctaLabel}
         >

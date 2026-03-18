@@ -81,7 +81,7 @@ export function AT06Layout({
             ))}
             <a
               href={ctaHref}
-              className="ml-2 rounded-2xl bg-white px-5 py-2 text-sm font-bold text-purple-600 shadow-md transition-transform hover:scale-105"
+              className="ml-2 rounded-2xl bg-white px-5 py-2 text-sm font-bold text-[hsl(var(--color-primary))] shadow-md transition-transform hover:scale-105"
             >
               {ctaLabel}
             </a>
@@ -112,7 +112,7 @@ export function AT06Layout({
               <a
                 href={ctaHref}
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 rounded-2xl bg-white py-3 text-center text-sm font-bold text-purple-600"
+                className="mt-2 rounded-2xl bg-white py-3 text-center text-sm font-bold text-[hsl(var(--color-primary))]"
               >
                 {ctaLabel}
               </a>
@@ -140,7 +140,7 @@ export function AT06Layout({
         <div className="mx-auto max-w-6xl px-6 py-12">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             <div>
-              <span className="text-lg font-extrabold text-purple-600">
+              <span className="text-lg font-extrabold text-[hsl(var(--color-primary))]">
                 {siteName}
               </span>
               {contact?.address && (
@@ -183,7 +183,7 @@ export function AT06Layout({
             <a
               key={item.href}
               href={item.href}
-              className="flex flex-col items-center gap-0.5 px-2 py-1 text-gray-500 hover:text-purple-600"
+              className="flex flex-col items-center gap-0.5 px-2 py-1 text-gray-500 hover:text-[hsl(var(--color-primary))]"
             >
               <span className="text-lg leading-none">{tabIcons[i] || '\u25CF'}</span>
               <span className="text-[10px] font-bold">{item.label}</span>

@@ -129,6 +129,13 @@ export function getSitesByCategory(category: string): SiteConfig[] {
 }
 
 /**
+ * Get a single site config by slug (across all categories).
+ */
+export function getSiteBySlug(slug: string): SiteConfig | null {
+  return allSites.find((s) => s.slug === slug) ?? null;
+}
+
+/**
  * Get all unique category slugs.
  */
 export function getAllCategories(): Category[] {

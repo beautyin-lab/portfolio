@@ -45,7 +45,7 @@ export function AT10Layout({
   return (
     <div className={cn('min-h-screen bg-black', className)}>
       {/* Mock Data Banner */}
-      <div className="bg-red-600 text-white text-center text-xs py-1.5 px-4 relative z-[60]">
+      <div className="bg-[hsl(var(--color-primary))] text-white text-center text-xs py-1.5 px-4 relative z-[60]">
         이 사이트는 포트폴리오 데모입니다. 실제 업체와 관련이 없습니다.
       </div>
 
@@ -98,10 +98,10 @@ export function AT10Layout({
                 onClick={() => setMenuOpen(false)}
                 className="group flex items-baseline gap-4 md:gap-6"
               >
-                <span className="text-sm font-light text-red-500 tabular-nums md:text-base">
+                <span className="text-sm font-light text-[hsl(var(--color-primary))] tabular-nums md:text-base">
                   {String(i + 1).padStart(2, '0')}.
                 </span>
-                <span className="text-4xl font-black uppercase tracking-tight text-white transition-colors group-hover:text-red-500 md:text-6xl lg:text-7xl">
+                <span className="text-4xl font-black uppercase tracking-tight text-white transition-colors group-hover:text-[hsl(var(--color-primary))] md:text-6xl lg:text-7xl">
                   {item.label}
                 </span>
               </a>

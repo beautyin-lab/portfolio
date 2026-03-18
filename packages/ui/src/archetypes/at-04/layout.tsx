@@ -48,7 +48,7 @@ export function AT04Layout({
     <div className={cn('min-h-screen bg-white text-gray-900', className)}>
       {/* Mock Data Banner */}
       {bannerVisible && (
-        <div className="relative z-[60] bg-orange-500 px-4 py-1.5 text-center text-xs font-bold text-white">
+        <div className="relative z-[60] bg-[hsl(var(--color-primary))] px-4 py-1.5 text-center text-xs font-bold text-white">
           이 사이트는 포트폴리오 데모입니다. 실제 업체와 관련이 없습니다.
           <button
             onClick={() => setBannerVisible(false)}
@@ -75,7 +75,7 @@ export function AT04Layout({
         >
           {/* Logo -- Bold + orange accent */}
           <a href="#" className="flex items-center gap-1.5">
-            <Zap className="h-5 w-5 text-orange-500" />
+            <Zap className="h-5 w-5 text-[hsl(var(--color-primary))]" />
             <span className="text-xl font-black uppercase tracking-tight text-white">
               {siteName}
             </span>
@@ -87,7 +87,7 @@ export function AT04Layout({
               <a
                 key={item.href}
                 href={item.href}
-                className="text-xs font-bold uppercase tracking-wider text-gray-400 transition-colors hover:text-orange-400"
+                className="text-xs font-bold uppercase tracking-wider text-gray-400 transition-colors hover:text-[hsl(var(--color-primary))]"
               >
                 {item.label}
               </a>
@@ -98,7 +98,7 @@ export function AT04Layout({
           <div className="hidden items-center gap-4 lg:flex">
             <a
               href={ctaHref}
-              className="inline-flex items-center gap-2 bg-orange-500 px-6 py-2.5 text-xs font-black uppercase tracking-wider text-white transition-all hover:bg-orange-400 hover:gap-3"
+              className="inline-flex items-center gap-2 bg-[hsl(var(--color-primary))] px-6 py-2.5 text-xs font-black uppercase tracking-wider text-white transition-all hover:opacity-90 hover:gap-3"
             >
               {ctaLabel}
               <ArrowRight className="h-3.5 w-3.5" />
@@ -128,7 +128,7 @@ export function AT04Layout({
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="py-2 text-sm font-bold uppercase tracking-wider text-gray-300 transition-colors hover:text-orange-400"
+                  className="py-2 text-sm font-bold uppercase tracking-wider text-gray-300 transition-colors hover:text-[hsl(var(--color-primary))]"
                 >
                   {item.label}
                 </a>
@@ -136,7 +136,7 @@ export function AT04Layout({
               <a
                 href={ctaHref}
                 onClick={() => setMobileOpen(false)}
-                className="mt-3 inline-flex items-center justify-center gap-2 bg-orange-500 px-6 py-3 text-sm font-black uppercase tracking-wider text-white"
+                className="mt-3 inline-flex items-center justify-center gap-2 bg-[hsl(var(--color-primary))] px-6 py-3 text-sm font-black uppercase tracking-wider text-white"
               >
                 {ctaLabel}
                 <ArrowRight className="h-4 w-4" />
@@ -150,7 +150,7 @@ export function AT04Layout({
       <main className="overflow-hidden">
         {/* Diagonal intro accent bar */}
         <div
-          className="h-2 bg-orange-500"
+          className="h-2 bg-[hsl(var(--color-primary))]"
           style={{ clipPath: 'polygon(0 0, 100% 0, 98% 100%, 0 100%)' }}
         />
 
@@ -172,7 +172,7 @@ export function AT04Layout({
             {/* Left column */}
             <div>
               <div className="flex items-center gap-1.5">
-                <Zap className="h-5 w-5 text-orange-500" />
+                <Zap className="h-5 w-5 text-[hsl(var(--color-primary))]" />
                 <span className="text-xl font-black uppercase tracking-tight">
                   {siteName}
                 </span>
@@ -187,13 +187,13 @@ export function AT04Layout({
 
             {/* Right column */}
             <div>
-              <h4 className="mb-4 text-xs font-black uppercase tracking-wider text-orange-400">
+              <h4 className="mb-4 text-xs font-black uppercase tracking-wider text-[hsl(var(--color-primary))]">
                 문의
               </h4>
               {(phone || contact?.phone) && (
                 <a
                   href={`tel:${phone || contact?.phone}`}
-                  className="text-lg font-bold text-white transition-colors hover:text-orange-400"
+                  className="text-lg font-bold text-white transition-colors hover:text-[hsl(var(--color-primary))]"
                 >
                   {phone || contact?.phone}
                 </a>
@@ -208,7 +208,7 @@ export function AT04Layout({
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-xs font-bold uppercase tracking-wider text-gray-500 transition-colors hover:text-orange-400"
+                    className="text-xs font-bold uppercase tracking-wider text-gray-500 transition-colors hover:text-[hsl(var(--color-primary))]"
                   >
                     {item.label}
                   </a>
@@ -227,7 +227,7 @@ export function AT04Layout({
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href={ctaHref}
-          className="flex h-14 w-14 items-center justify-center bg-orange-500 text-white shadow-lg shadow-orange-500/30 transition-transform hover:scale-110"
+          className="flex h-14 w-14 items-center justify-center bg-[hsl(var(--color-primary))] text-white shadow-lg shadow-[hsl(var(--color-primary))]/30 transition-transform hover:scale-110"
           style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }}
           aria-label={ctaLabel}
           title={ctaLabel}

@@ -14,6 +14,7 @@ export type {
   SEOConfig,
   ReservationConfig,
   SiteFeatures,
+  ProjectMeta,
 } from './schemas/site-config';
 
 export { CATEGORIES, ARCHETYPES } from './schemas/site-config';

@@ -10,6 +10,8 @@ import { GalleryGrid } from '@portfolio/ui/composites/gallery-grid';
 import { TestimonialSlider } from '@portfolio/ui/composites/testimonial-slider';
 import { FAQSection } from '@portfolio/ui/composites/faq-section';
 import { ContactSection } from '@portfolio/ui/composites/contact-section';
+import { ScrollReveal } from '@portfolio/ui/animations/components/scroll-reveal';
+import { StaggerContainer } from '@portfolio/ui/animations/components/stagger-container';
 
 // ---------------------------------------------------------------------------
 // Archetypes with uniformly dark background -- all sections use dark styling

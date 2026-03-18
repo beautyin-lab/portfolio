@@ -57,7 +57,7 @@ export function AT02Layout({
     <div className={cn('min-h-screen bg-gray-950 text-white', className)}>
       {/* Mock Data Banner */}
       {bannerVisible && (
-        <div className="relative z-[60] bg-amber-500/90 px-4 py-1.5 text-center text-xs font-medium text-black">
+        <div className="relative z-[60] bg-[hsl(var(--color-primary))]/90 px-4 py-1.5 text-center text-xs font-medium text-black">
           이 사이트는 포트폴리오 데모입니다. 실제 업체와 관련이 없습니다.
           <button
             onClick={() => setBannerVisible(false)}
@@ -139,7 +139,7 @@ export function AT02Layout({
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-lg font-light uppercase tracking-[0.2em] text-white/80 transition-colors hover:text-amber-300"
+                className="text-lg font-light uppercase tracking-[0.2em] text-white/80 transition-colors hover:text-[hsl(var(--color-primary))]"
               >
                 {item.label}
               </a>
@@ -147,7 +147,7 @@ export function AT02Layout({
             <a
               href={ctaHref}
               onClick={() => setMenuOpen(false)}
-              className="mt-6 border border-amber-400/40 px-8 py-3 text-xs font-light uppercase tracking-[0.2em] text-amber-300 transition-all hover:bg-amber-400 hover:text-black"
+              className="mt-6 border border-[hsl(var(--color-primary))]/40 px-8 py-3 text-xs font-light uppercase tracking-[0.2em] text-[hsl(var(--color-primary))] transition-all hover:bg-[hsl(var(--color-primary))] hover:text-black"
             >
               {ctaLabel}
             </a>
@@ -172,7 +172,7 @@ export function AT02Layout({
               className={cn(
                 'block rounded-full transition-all duration-300',
                 activeDot === idx
-                  ? 'h-3 w-3 bg-amber-400'
+                  ? 'h-3 w-3 bg-[hsl(var(--color-primary))]'
                   : 'h-2 w-2 bg-white/30 group-hover:bg-white/60',
               )}
             />
@@ -215,7 +215,7 @@ export function AT02Layout({
       <div className="fixed bottom-6 right-6 z-50 lg:bottom-6 lg:right-16">
         <a
           href={ctaHref}
-          className="flex h-14 w-14 items-center justify-center rounded-full bg-amber-400 text-gray-950 shadow-lg shadow-amber-400/20 transition-transform hover:scale-110"
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(var(--color-primary))] text-gray-950 shadow-lg shadow-[hsl(var(--color-primary))]/20 transition-transform hover:scale-110"
           aria-label={ctaLabel}
           title={ctaLabel}
         >

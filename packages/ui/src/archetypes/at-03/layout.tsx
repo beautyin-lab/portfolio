@@ -89,7 +89,7 @@ export function AT03Layout({
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded bg-blue-800 text-xs font-bold text-white">
+            <div className="flex h-8 w-8 items-center justify-center rounded bg-[hsl(var(--color-primary))] text-xs font-bold text-white">
               {siteName.charAt(0)}
             </div>
             <span className="text-lg font-bold text-gray-900">{siteName}</span>
@@ -101,7 +101,7 @@ export function AT03Layout({
               <a
                 key={item.href}
                 href={item.href}
-                className="relative rounded-md px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-blue-50 hover:text-blue-800 after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-blue-800 after:transition-all hover:after:w-3/4"
+                className="relative rounded-md px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-[hsl(var(--color-primary))]/10 hover:text-[hsl(var(--color-primary))] after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0 after:-translate-x-1/2 after:bg-[hsl(var(--color-primary))] after:transition-all hover:after:w-3/4"
               >
                 {item.label}
               </a>
@@ -112,7 +112,7 @@ export function AT03Layout({
           <div className="hidden items-center gap-3 lg:flex">
             <a
               href={ctaHref}
-              className="rounded-lg bg-blue-800 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-900"
+              className="rounded-lg bg-[hsl(var(--color-primary))] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:opacity-90"
             >
               {ctaLabel}
             </a>
@@ -159,7 +159,7 @@ export function AT03Layout({
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
-                  className="rounded-md px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-blue-50 hover:text-blue-800"
+                  className="rounded-md px-3 py-2.5 text-sm font-medium text-gray-700 transition-colors hover:bg-[hsl(var(--color-primary))]/10 hover:text-[hsl(var(--color-primary))]"
                 >
                   {item.label}
                 </a>
@@ -167,7 +167,7 @@ export function AT03Layout({
               <a
                 href={ctaHref}
                 onClick={() => setMobileOpen(false)}
-                className="mt-3 rounded-lg bg-blue-800 px-5 py-2.5 text-center text-sm font-semibold text-white"
+                className="mt-3 rounded-lg bg-[hsl(var(--color-primary))] px-5 py-2.5 text-center text-sm font-semibold text-white"
               >
                 {ctaLabel}
               </a>
@@ -179,7 +179,7 @@ export function AT03Layout({
       {/* Breadcrumb */}
       <div className="border-b border-gray-200 bg-white">
         <div className="mx-auto flex max-w-7xl items-center gap-2 px-6 py-3 text-xs text-gray-400">
-          <a href="#" className="transition-colors hover:text-blue-800">
+          <a href="#" className="transition-colors hover:text-[hsl(var(--color-primary))]">
             홈
           </a>
           <ChevronRight className="h-3 w-3" />
@@ -197,7 +197,7 @@ export function AT03Layout({
             {/* Column 1: About */}
             <div>
               <div className="flex items-center gap-2">
-                <div className="flex h-7 w-7 items-center justify-center rounded bg-blue-700 text-xs font-bold text-white">
+                <div className="flex h-7 w-7 items-center justify-center rounded bg-[hsl(var(--color-primary))] text-xs font-bold text-white">
                   {siteName.charAt(0)}
                 </div>
                 <span className="text-base font-bold text-white">{siteName}</span>
@@ -260,7 +260,7 @@ export function AT03Layout({
               )}
               <a
                 href={ctaHref}
-                className="mt-4 inline-block rounded-lg bg-blue-700 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-800"
+                className="mt-4 inline-block rounded-lg bg-[hsl(var(--color-primary))] px-5 py-2 text-sm font-medium text-white transition-colors hover:opacity-90"
               >
                 {ctaLabel}
               </a>
@@ -277,7 +277,7 @@ export function AT03Layout({
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href={phone || contact?.phone ? `tel:${phone || contact?.phone}` : ctaHref}
-          className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-800 text-white shadow-lg transition-transform hover:scale-110"
+          className="flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(var(--color-primary))] text-white shadow-lg transition-transform hover:scale-110"
           aria-label="전화 문의"
           title="전화 문의"
         >

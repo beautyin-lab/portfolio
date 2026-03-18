@@ -39,7 +39,7 @@ export function AT09Layout({
   return (
     <div className={cn('min-h-screen bg-gray-100 font-sans', className)}>
       {/* Mock Data Banner */}
-      <div className="bg-indigo-700 text-white text-center text-xs py-1.5 px-4 relative z-[60]">
+      <div className="bg-[hsl(var(--color-primary))] text-white text-center text-xs py-1.5 px-4 relative z-[60]">
         이 사이트는 포트폴리오 데모입니다. 실제 업체와 관련이 없습니다.
       </div>
 
@@ -72,7 +72,7 @@ export function AT09Layout({
                 className={cn(
                   'rounded-md px-3 py-1.5 text-xs font-medium transition-colors',
                   i === 0
-                    ? 'bg-indigo-50 text-indigo-700'
+                    ? 'bg-[hsl(var(--color-primary))]/10 text-[hsl(var(--color-primary))]'
                     : 'text-gray-500 hover:bg-gray-50 hover:text-gray-700',
                 )}
               >
@@ -83,7 +83,7 @@ export function AT09Layout({
 
           <a
             href={ctaHref}
-            className="hidden lg:inline-flex rounded-md bg-indigo-600 px-3.5 py-1.5 text-xs font-medium text-white transition-colors hover:bg-indigo-700 flex-shrink-0"
+            className="hidden lg:inline-flex rounded-md bg-[hsl(var(--color-primary))] px-3.5 py-1.5 text-xs font-medium text-white transition-colors hover:opacity-90 flex-shrink-0"
           >
             {ctaLabel}
           </a>
@@ -123,7 +123,7 @@ export function AT09Layout({
               <a
                 href={ctaHref}
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 rounded-md bg-indigo-600 py-2 text-center text-sm font-medium text-white"
+                className="mt-2 rounded-md bg-[hsl(var(--color-primary))] py-2 text-center text-sm font-medium text-white"
               >
                 {ctaLabel}
               </a>
@@ -184,7 +184,7 @@ export function AT09Layout({
                   className={cn(
                     'whitespace-nowrap rounded-md px-3 py-1.5 text-xs font-medium transition-colors',
                     activeTab === i
-                      ? 'bg-indigo-600 text-white'
+                      ? 'bg-[hsl(var(--color-primary))] text-white'
                       : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200',
                   )}
                 >
@@ -197,7 +197,7 @@ export function AT09Layout({
                 onClick={() => setViewMode('grid')}
                 className={cn(
                   'rounded p-1.5 transition-colors',
-                  viewMode === 'grid' ? 'bg-indigo-100 text-indigo-700' : 'text-gray-400 hover:text-gray-600',
+                  viewMode === 'grid' ? 'bg-[hsl(var(--color-primary))]/10 text-[hsl(var(--color-primary))]' : 'text-gray-400 hover:text-gray-600',
                 )}
                 aria-label="그리드 보기"
               >
@@ -212,7 +212,7 @@ export function AT09Layout({
                 onClick={() => setViewMode('list')}
                 className={cn(
                   'rounded p-1.5 transition-colors',
-                  viewMode === 'list' ? 'bg-indigo-100 text-indigo-700' : 'text-gray-400 hover:text-gray-600',
+                  viewMode === 'list' ? 'bg-[hsl(var(--color-primary))]/10 text-[hsl(var(--color-primary))]' : 'text-gray-400 hover:text-gray-600',
                 )}
                 aria-label="리스트 보기"
               >
@@ -238,7 +238,7 @@ export function AT09Layout({
           <span>&copy; {new Date().getFullYear()} {siteName}</span>
           <div className="flex items-center gap-4">
             {(phone || contact?.phone) && (
-              <a href={`tel:${phone || contact?.phone}`} className="hover:text-indigo-600">
+              <a href={`tel:${phone || contact?.phone}`} className="hover:text-[hsl(var(--color-primary))]">
                 {phone || contact?.phone}
               </a>
             )}
@@ -251,7 +251,7 @@ export function AT09Layout({
       <div className="fixed bottom-6 right-6 z-50">
         <a
           href={ctaHref}
-          className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-lg transition-transform hover:scale-110"
+          className="flex h-12 w-12 items-center justify-center rounded-xl bg-[hsl(var(--color-primary))] text-white shadow-lg transition-transform hover:scale-110"
           aria-label={ctaLabel}
           title={ctaLabel}
         >

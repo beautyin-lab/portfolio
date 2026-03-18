@@ -253,6 +253,12 @@ export type SectionType =
   | 'propertySearch'
   | 'seatStatus';
 
+export interface ProjectMeta {
+  duration: string;
+  scope: string[];
+  techTags: string[];
+}
+
 export interface SiteConfig {
   slug: string;
   category: Category;
@@ -271,4 +277,5 @@ export interface SiteConfig {
   seo: SEOConfig;
   reservation?: ReservationConfig;
   features?: SiteFeatures;
+  projectMeta?: ProjectMeta;
 }
