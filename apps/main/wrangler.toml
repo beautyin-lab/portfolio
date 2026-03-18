@@ -3,12 +3,6 @@
 name = "portfolio-main"
 compatibility_date = "2026-03-01"
 compatibility_flags = ["nodejs_compat"]
-main = ".open-next/worker.ts"
-
-# Assets (static files)
-[assets]
-directory = ".open-next/assets"
-binding = "ASSETS"
 
 [observability]
 enabled = true
