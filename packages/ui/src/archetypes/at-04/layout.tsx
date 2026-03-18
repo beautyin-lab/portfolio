@@ -154,7 +154,9 @@ export function AT04Layout({
           style={{ clipPath: 'polygon(0 0, 100% 0, 98% 100%, 0 100%)' }}
         />
 
-        {children}
+        <div className="mx-auto max-w-7xl">
+          {children}
+        </div>
       </main>
 
       {/* Footer -- Dark with diagonal top edge */}

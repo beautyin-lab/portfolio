@@ -144,7 +144,7 @@ export function AT01Layout({
       )}
 
       {/* Main Content -- Editorial asymmetric spacing, wide margins */}
-      <main className="mx-auto max-w-5xl px-8 py-32 md:px-16 md:py-48">
+      <main className="mx-auto max-w-5xl px-4 py-8 sm:px-8 md:px-16 md:py-12">
         {children}
       </main>
 

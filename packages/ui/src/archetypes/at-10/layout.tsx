@@ -128,22 +128,10 @@ export function AT10Layout({
         </div>
       )}
 
-      {/* Main Content -- Direct children get alternating black/white sections */}
-      <main className="pt-20">
-        {React.Children.map(children, (child, index) => (
-          <div
-            className={cn(
-              'py-24 md:py-40 px-6 md:px-12',
-              index % 2 === 0
-                ? 'bg-black text-white'
-                : 'bg-white text-black',
-            )}
-          >
-            <div className="mx-auto max-w-7xl">
-              {child}
-            </div>
-          </div>
-        ))}
+      {/* Main Content */}
+      {/* pt accounts for banner (26px) + header (80px) = 106px */}
+      <main className="pt-[106px]">
+        {children}
       </main>
 
       {/* Footer -- black, large logo, minimal */}

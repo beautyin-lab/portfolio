@@ -89,7 +89,8 @@ export function AT07Layout({
 
       <div className="flex">
         {/* Desktop Fixed Left Sidebar */}
-        <aside className="hidden lg:flex lg:w-64 lg:flex-shrink-0 lg:flex-col fixed left-0 top-0 h-screen border-r border-gray-100 bg-white z-40">
+        {/* top-[26px] accounts for the banner bar above */}
+        <aside className="hidden lg:flex lg:w-64 lg:flex-shrink-0 lg:flex-col fixed left-0 top-[26px] h-[calc(100vh-26px)] border-r border-gray-100 bg-white z-40">
           <div className="flex flex-1 flex-col justify-between p-10">
             {/* Top -- Logo */}
             <div>

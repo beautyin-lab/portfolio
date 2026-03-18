@@ -180,8 +180,8 @@ export function AT02Layout({
         ))}
       </div>
 
-      {/* Main Content -- Full bleed, no spacing between sections */}
-      <main className="space-y-0">{children}</main>
+      {/* Main Content -- Full bleed, hero overlaps with transparent fixed header */}
+      <main>{children}</main>
 
       {/* Footer -- Dark minimal, social only feel */}
       <footer className="border-t border-white/5 bg-black">

@@ -188,9 +188,7 @@ export function AT03Layout({
       </div>
 
       {/* Main Content -- Structured grid, alternating bg sections */}
-      <main>
-        <div className="mx-auto max-w-7xl px-6 py-10">{children}</div>
-      </main>
+      <main>{children}</main>
 
       {/* Footer -- 4 column, dark professional */}
       <footer className="bg-gray-900 text-gray-300">

@@ -147,7 +147,7 @@ export function AT05Layout({
       {/* Main Content -- children을 둥근 흰색 카드 컨테이너로 래핑 */}
       <main className="mx-4 py-6 md:mx-8">
         <div className="mx-auto max-w-5xl">
-          <div className="rounded-3xl bg-white p-6 shadow-sm md:p-10">
+          <div className="overflow-hidden rounded-3xl bg-white shadow-sm">
             {children}
           </div>
         </div>
