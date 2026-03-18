@@ -1,0 +1,320 @@
+{
+  "slug": "gangnam-homes",
+  "category": "realty",
+  "name": "강남홈즈 부동산",
+  "archetype": "AT-09",
+  "theme": "professional-trust",
+  "hero": {
+    "title": "강남의 프리미엄 부동산,\n믿을 수 있는 파트너",
+    "subtitle": "강남홈즈 부동산은 20년 강남 전문 공인중개사가 직접 운영하는 프리미엄 부동산입니다. 매매, 전세, 월세부터 상업용 부동산까지 최적의 물건을 찾아드립니다.",
+    "images": [
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&q=80"
+    ],
+    "cta": {
+      "text": "무료 상담 예약",
+      "action": "reservation"
+    }
+  },
+  "about": {
+    "title": "강남 부동산 20년 전문가,\n강남홈즈가 함께합니다",
+    "description": "강남홈즈 부동산은 2004년 개업 이후 20년간 강남구, 서초구, 송파구를 중심으로 1만 건 이상의 거래를 성사시킨 강남 최고 전문 공인중개사 사무소입니다. 대표 공인중개사를 포함한 5명의 전문 팀이 상세 시세 분석, 법적 검토, 계약 이후 사후 관리까지 완벽한 부동산 서비스를 제공합니다.",
+    "highlights": [
+      {
+        "icon": "Award",
+        "title": "20년 강남 전문 이력",
+        "description": "강남구 전문 20년, 누적 거래 1만 건 이상 성사 실적 보유"
+      },
+      {
+        "icon": "Shield",
+        "title": "법적 안전 검토",
+        "description": "모든 물건 등기부등본, 권리관계, 법적 문제 사전 검토 서비스"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "시세 정확도 최상",
+        "description": "실시간 강남권 거래 데이터 분석으로 정확한 시세 정보 제공"
+      },
+      {
+        "icon": "Users",
+        "title": "전담 매니저 배정",
+        "description": "고객별 전담 매니저가 상담부터 계약, 입주까지 1:1로 동행합니다"
+      }
+    ]
+  },
+  "services": {
+    "title": "서비스 안내",
+    "items": [
+      {
+        "name": "아파트 매매 중개",
+        "description": "강남구·서초구·송파구 아파트 매매 전문. 실거래가 분석, 시세 상담, 계약 동행",
+        "price": "중개보수 법정 요율",
+        "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
+      },
+      {
+        "name": "전세 / 월세 중개",
+        "description": "아파트, 오피스텔, 빌라 전월세 중개. 전세 사기 예방 법적 검토 포함",
+        "price": "중개보수 법정 요율",
+        "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80"
+      },
+      {
+        "name": "상가 / 오피스 임대",
+        "description": "강남 상권 상가, 사무실 임대차 전문. 입지 분석, 권리금 협상 지원",
+        "price": "별도 협의",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+      },
+      {
+        "name": "투자 컨설팅",
+        "description": "강남 부동산 투자 전략 수립, 수익률 분석, 향후 시세 전망 분석 서비스",
+        "price": "무료 (첫 상담)",
+        "image": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80"
+      }
+    ]
+  },
+  "team": {
+    "title": "강남홈즈 전문가 팀",
+    "members": [
+      {
+        "name": "이성민",
+        "role": "대표 공인중개사",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+        "description": "공인중개사 자격증 보유, 강남구 부동산 경력 20년, 누적 중개 5,000건 이상"
+      },
+      {
+        "name": "김지영",
+        "role": "수석 공인중개사",
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+        "description": "공인중개사 자격증 보유, 서초구 전문, 전세 사기 예방 전문 교육 이수"
+      },
+      {
+        "name": "박형준",
+        "role": "상업용 부동산 전문가",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+        "description": "공인중개사 자격증 보유, 강남 상권 상가·오피스 전문, 투자 컨설팅 담당"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "중개 매물 갤러리",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+        "alt": "강남 아파트 단지",
+        "category": "아파트"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+        "alt": "고급 주거 단지",
+        "category": "아파트"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+        "alt": "오피스텔 실내",
+        "category": "오피스텔"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+        "alt": "강남 상가 건물",
+        "category": "상가"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80",
+        "alt": "오피스 내부",
+        "category": "오피스"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80",
+        "alt": "상담 공간",
+        "category": "사무실"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "고객 후기",
+    "items": [
+      {
+        "name": "이사 완료 김OO",
+        "content": "처음 강남 이사라 걱정이 많았는데 이성민 대표님이 처음부터 끝까지 꼼꼼하게 안내해주셨어요. 전세 계약서 특약 사항도 직접 검토해주시고, 문제 없는 물건을 추천해주셔서 안심하고 계약했습니다.",
+        "rating": 5
+      },
+      {
+        "name": "투자자 박OO",
+        "content": "강남 아파트 투자 목적으로 상담 받았는데 시세 분석과 향후 전망을 데이터 기반으로 설명해주셔서 신뢰가 갔습니다. 추천해주신 물건이 이미 20% 이상 올라서 정말 감사드립니다.",
+        "rating": 5
+      },
+      {
+        "name": "전세 이사 이OO",
+        "content": "전세 사기 뉴스가 많아서 걱정했는데 김지영 소장님이 등기부등본부터 근저당 설정까지 모두 꼼꼼하게 체크해주셨어요. 덕분에 안전하게 이사할 수 있었습니다.",
+        "rating": 5
+      },
+      {
+        "name": "상가 임차인 최OO",
+        "content": "강남에 카페 오픈 준비 중 상가 임대 상담을 받았어요. 박형준 팀장님이 입지 분석부터 권리금 협상까지 도와주셔서 원하는 조건에 계약할 수 있었습니다. 전문성이 정말 대단해요.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "중개보수는 얼마인가요?",
+        "answer": "국토교통부 고시 법정 요율을 따릅니다. 매매의 경우 거래금액 6억 미만 0.5%, 6억~9억 0.4%, 9억 이상 0.5%이내(협의)입니다. 전월세는 보증금 기준으로 산정되며, 자세한 내용은 상담 시 안내해 드립니다."
+      },
+      {
+        "question": "전세 사기 예방은 어떻게 하나요?",
+        "answer": "계약 전 등기부등본, 건축물대장, 국세체납 여부, 지방세체납 여부를 모두 확인합니다. 확정일자와 전입신고 방법도 안내해 드리며, 전세보증보험 가입 여부도 함께 상담합니다. 의심스러운 물건은 추천하지 않습니다."
+      },
+      {
+        "question": "온라인으로 매물 검색이 가능한가요?",
+        "answer": "홈페이지 내 매물 검색에서 지역, 유형, 가격대별로 검색 가능합니다. 미공개 매물도 다수 보유하고 있으므로 조건을 알려주시면 맞춤 물건을 찾아드립니다. 카카오톡 상담으로 빠른 상담도 가능합니다."
+      },
+      {
+        "question": "첫 상담은 무료인가요?",
+        "answer": "네, 첫 상담은 완전 무료입니다. 방문 상담, 전화 상담, 카카오톡 상담 모두 무료로 진행되며, 계약이 성사된 경우에만 법정 중개보수가 발생합니다. 부담 없이 문의해 주세요."
+      },
+      {
+        "question": "강남 외 지역 물건도 중개하나요?",
+        "answer": "강남구, 서초구, 송파구, 성동구 일대를 주요 거래 지역으로 합니다. 강남권 매도인이 다른 지역으로 이사하는 경우 협력 중개사를 통해 서울 전 지역 서비스가 가능합니다. 상담 시 구체적으로 말씀해 주세요."
+      },
+      {
+        "question": "계약 이후에도 서비스가 있나요?",
+        "answer": "계약 이후 입주 시까지 이사 날짜 조율, 잔금 지급 동행, 하자 확인 동행 서비스를 무료로 제공합니다. 임대차 계약 만기 6개월 전 재계약 및 이전 상담도 무료로 진행합니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-5678-9012",
+    "address": "서울시 강남구 테헤란로 112, 강남빌딩 302호",
+    "hours": "월~토 09:00~19:00 / 일요일 10:00~17:00",
+    "kakao": "gangnam_homes",
+    "coordinates": {
+      "lat": 37.5012,
+      "lng": 127.0391
+    }
+  },
+  "seo": {
+    "title": "강남홈즈 부동산 | 강남 전문 공인중개사 | 아파트 매매·전세 중개",
+    "description": "강남 20년 전문 공인중개사 강남홈즈. 강남구·서초구·송파구 아파트 매매·전세·월세 중개. 전세 사기 예방 법적 검토 포함. 첫 상담 무료.",
+    "keywords": ["강남부동산", "강남공인중개사", "강남아파트매매", "강남전세", "서초구부동산", "강남홈즈"]
+  },
+  "features": {
+    "reservation": {
+      "type": "datetime",
+      "slotDuration": 60,
+      "advanceBookingDays": 14,
+      "notice": "상담은 전화 또는 카카오톡으로도 가능합니다."
+    },
+    "propertySearch": {
+      "enabled": true,
+      "properties": [
+        {
+          "id": "prop-001",
+          "type": "아파트",
+          "transactionType": "매매",
+          "name": "래미안 강남포레스트",
+          "address": "서울시 강남구 일원동",
+          "area": "84㎡ (34평형)",
+          "floor": "15층/25층",
+          "price": "24억 5,000만원",
+          "maintenanceFee": "35만원",
+          "description": "강남권 역세권 대단지 아파트, 강남구청역 도보 5분, 남향",
+          "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+          "tags": ["역세권", "남향", "대단지"],
+          "availableDate": "즉시 입주 가능"
+        },
+        {
+          "id": "prop-002",
+          "type": "아파트",
+          "transactionType": "전세",
+          "name": "디에이치 아너힐즈",
+          "address": "서울시 강남구 개포동",
+          "area": "59㎡ (25평형)",
+          "floor": "8층/35층",
+          "price": "12억원",
+          "maintenanceFee": "28만원",
+          "description": "개포동 신축 랜드마크 아파트, 지하철 3호선 개포동역 도보 7분",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
+          "tags": ["신축", "랜드마크", "역세권"],
+          "availableDate": "2026년 5월 입주"
+        },
+        {
+          "id": "prop-003",
+          "type": "아파트",
+          "transactionType": "매매",
+          "name": "서초 더샵 포레스트",
+          "address": "서울시 서초구 방배동",
+          "area": "115㎡ (46평형)",
+          "floor": "12층/20층",
+          "price": "28억원",
+          "maintenanceFee": "42만원",
+          "description": "방배동 조용한 주거지역, 4호선 총신대입구역 도보 8분, 초등학교 인접",
+          "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80",
+          "tags": ["학군", "조용한환경", "넓은평형"],
+          "availableDate": "협의 가능"
+        },
+        {
+          "id": "prop-004",
+          "type": "오피스텔",
+          "transactionType": "월세",
+          "name": "강남 프라임타워 오피스텔",
+          "address": "서울시 강남구 삼성동",
+          "area": "33㎡ (10평형)",
+          "floor": "22층/35층",
+          "price": "보증금 5,000만원 / 월 180만원",
+          "maintenanceFee": "15만원",
+          "description": "삼성동 코엑스 인근, 2호선 삼성역 도보 3분, 전면 통창 한강 조망",
+          "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
+          "tags": ["역세권", "한강조망", "코엑스인근"],
+          "availableDate": "즉시 입주 가능"
+        },
+        {
+          "id": "prop-005",
+          "type": "상가",
+          "transactionType": "임대",
+          "name": "강남대로 1층 상가",
+          "address": "서울시 강남구 역삼동 강남대로 변",
+          "area": "65㎡ (20평)",
+          "floor": "1층",
+          "price": "보증금 1억 / 월 600만원",
+          "maintenanceFee": "별도",
+          "description": "강남대로 유동인구 최고 입지, 2호선 역삼역 도보 2분, 음식점 가능",
+          "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80",
+          "tags": ["1층", "대로변", "유동인구"],
+          "availableDate": "즉시 가능"
+        },
+        {
+          "id": "prop-006",
+          "type": "아파트",
+          "transactionType": "전세",
+          "name": "잠실 엘스 아파트",
+          "address": "서울시 송파구 잠실동",
+          "area": "76㎡ (30평형)",
+          "floor": "6층/35층",
+          "price": "9억 5,000만원",
+          "maintenanceFee": "32만원",
+          "description": "잠실역 초역세권 대단지, 롯데월드 인근, 풍부한 상업 인프라",
+          "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+          "tags": ["초역세권", "대단지", "송파구"],
+          "availableDate": "2026년 6월"
+        },
+        {
+          "id": "prop-007",
+          "type": "빌라",
+          "transactionType": "월세",
+          "name": "역삼동 신축 빌라",
+          "address": "서울시 강남구 역삼동",
+          "area": "52㎡ (16평형)",
+          "floor": "3층/4층",
+          "price": "보증금 3,000만원 / 월 130만원",
+          "maintenanceFee": "포함",
+          "description": "2024년 신축, 역삼역 도보 10분, 풀옵션 (에어컨, 냉장고, 세탁기)",
+          "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
+          "tags": ["신축", "풀옵션", "역삼동"],
+          "availableDate": "즉시 입주 가능"
+        }
+      ]
+    }
+  }
+}

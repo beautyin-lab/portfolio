@@ -1,0 +1,208 @@
+{
+  "slug": "hanbit-clinic",
+  "category": "medical",
+  "name": "한빛 가정의학과",
+  "archetype": "AT-08",
+  "theme": "medical-warm",
+  "hero": {
+    "title": "가족 모두의 건강 주치의",
+    "subtitle": "당신의 건강 이야기를 오래 기억하는 동네 의원",
+    "images": [
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1576669801820-a9ab287ac2d1?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=1600&h=900&fit=crop"
+    ],
+    "cta": { "text": "진료 예약", "action": "/reservation" }
+  },
+  "about": {
+    "title": "한빛 가정의학과 소개",
+    "description": "한빛 가정의학과는 2010년 마포구에 문을 열어 지역 주민들의 건강 파트너로 함께해 왔습니다. 가정의학과 전문의로서 단순 처방을 넘어 환자의 생활 습관, 가족력, 정서적 상태까지 고려한 통합적 진료를 지향합니다. 감기부터 만성질환 관리까지, 믿을 수 있는 동네 주치의가 되겠습니다.",
+    "highlights": [
+      { "icon": "Heart", "title": "통합 주치의 진료", "description": "단순 증상 치료가 아닌 전인적 건강 관리" },
+      { "icon": "Clock", "title": "당일 예약 가능", "description": "바로 예약하고 당일 진료를 받으세요" },
+      { "icon": "Shield", "title": "만성질환 전문 관리", "description": "고혈압·당뇨·이상지질혈증 체계적 관리" },
+      { "icon": "Users", "title": "가족 건강 통합 관리", "description": "가족 모든 구성원의 건강 기록 연계 관리" }
+    ]
+  },
+  "services": {
+    "title": "진료 항목",
+    "items": [
+      {
+        "name": "일반 내과 진료",
+        "description": "감기·독감·장염·기관지염 등 급성 질환 진료. 증상에 맞는 정확한 처방과 빠른 회복을 돕습니다.",
+        "price": "진찰료 별도",
+        "image": "https://images.unsplash.com/photo-1576669801820-a9ab287ac2d1?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "고혈압·당뇨 관리",
+        "description": "정기적인 혈압·혈당 모니터링, 약물 조절, 생활 습관 교정 프로그램. 합병증 예방을 위한 체계적 관리.",
+        "price": "월 3만원~",
+        "image": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "건강검진",
+        "description": "국가건강검진 지정 기관. 기본·종합 건강검진부터 암 검진까지. 검진 결과 상담 및 사후 관리.",
+        "price": "무료~25만원",
+        "image": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "예방접종",
+        "description": "독감·폐렴·대상포진·코로나19 등 성인 예방접종 전반. 국가예방접종 지원 대상 확인 후 접종.",
+        "price": "접종 종류에 따라 상이",
+        "image": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "금연 클리닉",
+        "description": "금연 상담, 니코틴 의존도 평가, 약물치료 병행. 12주 국가 지원 금연 프로그램 운영.",
+        "price": "국가 지원 (본인 부담 없음)",
+        "image": "https://images.unsplash.com/photo-1566616213894-2d4e1baee5d8?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "체중 관리·비만 클리닉",
+        "description": "체성분 분석 후 맞춤형 식이·운동 처방. 필요 시 약물 병행. 담당 의사의 지속적인 모니터링.",
+        "price": "월 5만원~",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "수면 클리닉",
+        "description": "불면증·수면 무호흡 초기 상담. 수면 위생 교육 및 인지행동치료 연계. 중증 시 수면 전문 병원 협력.",
+        "price": "진찰료 별도",
+        "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "team": {
+    "title": "의료진 소개",
+    "members": [
+      {
+        "name": "한상우",
+        "role": "원장 (가정의학과 전문의)",
+        "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
+        "description": "한양대학교 의과대학 졸업. 서울아산병원 가정의학과 전공의. 대한가정의학회 정회원. 만성질환 관리 및 예방의학 전문."
+      },
+      {
+        "name": "이지은",
+        "role": "부원장 (가정의학과 전문의)",
+        "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
+        "description": "이화여자대학교 의과대학 졸업. 이대목동병원 가정의학과 전공의. 여성 건강·갱년기 관리·금연 클리닉 전문."
+      },
+      {
+        "name": "박민서",
+        "role": "간호팀장",
+        "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=400&fit=crop",
+        "description": "세브란스병원 내과 병동 7년 근무. 환자 안전과 친절한 간호 서비스를 최우선으로 합니다."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "원내 시설",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop", "alt": "외관 및 입구", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1576669801820-a9ab287ac2d1?w=800&h=600&fit=crop", "alt": "대기실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=600&fit=crop", "alt": "진료실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=800&h=600&fit=crop", "alt": "검진실", "category": "장비" },
+      { "src": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=800&h=600&fit=crop", "alt": "처치실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&h=600&fit=crop", "alt": "접종실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop", "alt": "체성분 분석실", "category": "장비" },
+      { "src": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=800&h=600&fit=crop", "alt": "상담실", "category": "시설" }
+    ]
+  },
+  "testimonials": {
+    "title": "환자 후기",
+    "items": [
+      {
+        "name": "강*민",
+        "content": "고혈압 관리를 위해 1년째 다니고 있습니다. 한 원장님이 약만 처방하는 게 아니라 식단·운동까지 같이 봐주셔서 혈압이 정상 범위로 들어왔어요. 정말 든든합니다.",
+        "rating": 5,
+        "service": "고혈압 관리"
+      },
+      {
+        "name": "오*연",
+        "content": "금연 클리닉 12주 완주했습니다! 이지은 선생님이 매주 응원해 주시고 부작용 관리도 꼼꼼히 해주셔서 성공했어요. 20년 된 흡연을 끊다니 아직도 믿기질 않아요.",
+        "rating": 5,
+        "service": "금연 클리닉"
+      },
+      {
+        "name": "서*진",
+        "content": "종합 건강검진 받고 결과 상담을 무려 30분 넘게 해주셨어요. 수치 하나하나 설명해 주시고 생활 개선 방법도 알려주셔서 너무 좋았습니다.",
+        "rating": 5,
+        "service": "건강검진"
+      },
+      {
+        "name": "김*훈",
+        "content": "감기 걸렸는데 당일 예약 되길래 방문했더니 바로 진료해 주셨어요. 대기 없이 신속하게 처방받고 이틀 만에 나았습니다. 동네에 이런 의원이 있다니 다행이에요.",
+        "rating": 5,
+        "service": "일반 내과 진료"
+      },
+      {
+        "name": "임*혜",
+        "content": "불면증으로 상담받았는데 수면 위생 교육부터 차근차근 알려주시더라고요. 약에 의존하지 않고 해결책을 찾아주려는 의사 선생님을 오랜만에 만났습니다.",
+        "rating": 5,
+        "service": "수면 클리닉"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "국가건강검진도 이곳에서 받을 수 있나요?",
+        "answer": "네, 한빛 가정의학과는 국민건강보험공단 지정 건강검진 기관입니다. 일반 건강검진, 암 검진(위암·대장암·유방암·자궁경부암)을 무료로 받으실 수 있습니다. 검진 전 공복이 필요하므로 오전 예약을 권장합니다."
+      },
+      {
+        "question": "만성질환 약은 얼마나 자주 처방받아야 하나요?",
+        "answer": "혈압·혈당 등 만성질환 약은 상태에 따라 1~3개월분을 처방합니다. 안정적인 경우 90일 처방이 가능하여 내원 횟수를 줄일 수 있습니다. 초기에는 월 1회 내원으로 상태를 점검합니다."
+      },
+      {
+        "question": "당일 진료가 가능한가요?",
+        "answer": "전화(02-334-5612) 또는 카카오톡으로 당일 예약이 가능합니다. 예약 없이 방문하셔도 당일 진료를 받으실 수 있으나, 대기 시간이 발생할 수 있습니다."
+      },
+      {
+        "question": "금연 클리닉은 비용이 얼마인가요?",
+        "answer": "국민건강보험공단 지원 금연 프로그램(12주)은 본인 부담 없이 무료로 받으실 수 있습니다. 니코틴 패치·껌 등 보조제도 무상 지원됩니다. 연간 3회까지 지원받으실 수 있습니다."
+      },
+      {
+        "question": "독감 예방접종은 언제 받는 게 좋나요?",
+        "answer": "매년 10~11월이 가장 적합한 시기입니다. 접종 후 2주 후부터 면역이 형성되어 유행 시기인 12월~2월을 대비할 수 있습니다. 65세 이상은 무료 접종이 가능합니다."
+      },
+      {
+        "question": "처방전 없이 약만 받을 수 있나요?",
+        "answer": "전문의약품은 반드시 진료 후 처방전이 필요합니다. 다만, 기존에 처방받은 만성질환 약의 경우 상태 변화가 없다면 간단한 상담 후 재처방이 가능합니다."
+      },
+      {
+        "question": "소아·청소년 진료도 가능한가요?",
+        "answer": "가정의학과 특성상 전 연령을 진료합니다. 영아 예방접종, 성장 상담, 청소년 내과 진료 모두 가능합니다. 단, 신생아(28일 미만)는 소아청소년과 전문 병원을 권장합니다."
+      },
+      {
+        "question": "주차 공간이 있나요?",
+        "answer": "건물 내 주차는 불가하지만, 인근 마포구청 공영주차장(도보 3분)과 합정역 공영주차장을 이용하실 수 있습니다. 대중교통은 합정역 5번 출구에서 도보 5분입니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-334-5612",
+    "address": "서울시 마포구 양화로 87 한빛빌딩 2층",
+    "hours": "평일 09:00~18:30, 수 09:00~13:00, 토 09:00~13:00, 일·공휴일 휴진",
+    "kakao": "hanbit-clinic",
+    "coordinates": { "lat": 37.5502, "lng": 126.9166 }
+  },
+  "seo": {
+    "title": "한빛 가정의학과 - 합정·마포 가족 주치의 | 건강검진·만성질환 관리",
+    "description": "합정역 5분, 가정의학과 전문의 2인 진료. 건강검진·고혈압·당뇨·금연클리닉·예방접종. 당일 예약 가능.",
+    "keywords": ["마포가정의학과", "합정내과", "건강검진", "고혈압관리", "당뇨관리", "금연클리닉", "합정역병원"]
+  },
+  "reservation": {
+    "type": "datetime-staff",
+    "staff": [
+      { "id": "dr-han", "name": "한상우 원장", "specialty": "만성질환·건강검진" },
+      { "id": "dr-lee", "name": "이지은 부원장", "specialty": "여성건강·금연클리닉" }
+    ],
+    "services": [
+      { "id": "general", "name": "일반 진료", "duration": 15 },
+      { "id": "checkup", "name": "건강검진 상담", "duration": 30 },
+      { "id": "chronic", "name": "만성질환 정기 진료", "duration": 20 },
+      { "id": "vaccine", "name": "예방접종", "duration": 15 },
+      { "id": "quit-smoking", "name": "금연 클리닉", "duration": 30 }
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "slug": "bluewave-resort",
+  "category": "pension",
+  "name": "블루웨이브 리조트",
+  "archetype": "AT-05",
+  "theme": "pension-ocean",
+  "hero": {
+    "title": "파도 소리와 함께하는 특별한 하루",
+    "subtitle": "동해 바다를 품은 오션뷰 리조트에서 바다의 낭만을 만끽하세요",
+    "images": [
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1600&h=900&fit=crop"
+    ],
+    "cta": { "text": "객실 예약", "action": "/reservation" }
+  },
+  "about": {
+    "title": "블루웨이브 리조트 소개",
+    "description": "강원도 속초 해수욕장에서 도보 2분 거리에 자리한 블루웨이브 리조트입니다. 2019년 신축 오픈으로 전 객실 오션뷰를 자랑하며, 루프탑 인피니티풀과 해변 바비큐 다이닝이 특별한 경험을 선사합니다. 속초 중심부와 가까워 관광과 휴양을 동시에 즐기기에 최적의 위치입니다.",
+    "highlights": [
+      { "icon": "Waves", "title": "전 객실 오션뷰", "description": "동해 바다가 한눈에 펼쳐지는 탁 트인 뷰" },
+      { "icon": "Droplets", "title": "루프탑 인피니티풀", "description": "바다와 하나되는 느낌의 옥상 수영장" },
+      { "icon": "Star", "title": "2019년 신축", "description": "최신 시설과 모던 인테리어" },
+      { "icon": "MapPin", "title": "속초 해수욕장 도보 2분", "description": "아바이마을·속초 중앙시장 근접" }
+    ]
+  },
+  "services": {
+    "title": "객실 안내",
+    "items": [
+      {
+        "name": "오션뷰 디럭스 (2인)",
+        "description": "킹베드 1개, 오션뷰 발코니, 욕조+샤워 분리 욕실. 바다를 바라보며 아침을 맞이하는 특별한 경험.",
+        "price": "주중 18만원 / 주말 28만원",
+        "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "오션뷰 스위트 (2인)",
+        "description": "독립 침실+거실 구조, 파노라마 오션뷰, 욕조 단독 사용 가능한 럭셔리 스위트. 특별한 날에 추천.",
+        "price": "주중 28만원 / 주말 45만원",
+        "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "패밀리 스위트 (4인)",
+        "description": "킹베드+트윈베드 구성, 거실 소파, 주방 시설, 오션뷰 대형 발코니. 가족 여행에 최적.",
+        "price": "주중 35만원 / 주말 55만원",
+        "image": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "펜트하우스 (최대 6인)",
+        "description": "최상층 전용, 360도 파노라마 오션뷰, 전용 루프탑 테라스, 주방·세탁기 완비. VIP 전용 객실.",
+        "price": "주중 70만원 / 주말 110만원",
+        "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "조식 패키지",
+        "description": "1층 오션뷰 레스토랑에서 제공하는 한식·양식 조식 뷔페. 신선한 동해 해산물 포함.",
+        "price": "1인 2만원",
+        "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "team": {
+    "title": "스태프 소개",
+    "members": [
+      {
+        "name": "최해진",
+        "role": "총지배인",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+        "description": "호텔경영학 석사. 특급 호텔 10년 근무 후 블루웨이브 리조트 창업. 고객 감동 서비스를 최우선 가치로 삼습니다."
+      },
+      {
+        "name": "김서율",
+        "role": "프론트 데스크 팀장",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+        "description": "영어·일어 가능. 외국인 투숙객 대응 가능. 속초 관광 명소 안내 및 맛집 추천 전문."
+      },
+      {
+        "name": "이준호",
+        "role": "레스토랑 셰프",
+        "image": "https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=400&h=400&fit=crop",
+        "description": "조리학 전공. 동해 해산물 전문 요리사. 신선한 속초산 재료로 만드는 조식과 해산물 BBQ 다이닝 담당."
+      },
+      {
+        "name": "박나연",
+        "role": "하우스키핑 팀장",
+        "image": "https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=400&fit=crop",
+        "description": "청결도와 어메니티 관리 총괄. 매일 완벽한 청결 상태를 유지하여 호텔 같은 숙박 경험을 제공합니다."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "블루웨이브 갤러리",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop", "alt": "리조트 전경 및 해변", "category": "전경" },
+      { "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&h=600&fit=crop", "alt": "루프탑 인피니티풀", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop", "alt": "오션뷰 디럭스 객실", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop", "alt": "스위트룸 내부", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop", "alt": "오션뷰 발코니", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop", "alt": "조식 레스토랑", "category": "식음" },
+      { "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop", "alt": "패밀리 스위트", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1541795795328-f073b763494e?w=800&h=600&fit=crop", "alt": "해변 바비큐 다이닝", "category": "식음" },
+      { "src": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&h=600&fit=crop", "alt": "동해 일출 전망", "category": "전경" },
+      { "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop", "alt": "속초 해수욕장", "category": "주변" }
+    ]
+  },
+  "testimonials": {
+    "title": "투숙객 후기",
+    "items": [
+      {
+        "name": "송*연",
+        "content": "오션뷰 스위트에서 1박했는데 아침에 발코니에서 동해 일출을 봤습니다. 정말 잊지 못할 경험이에요. 침대도 너무 푹신하고 욕조에서 바다 보면서 목욕하는 것도 최고였어요.",
+        "rating": 5,
+        "room": "오션뷰 스위트"
+      },
+      {
+        "name": "김*호",
+        "content": "루프탑 인피니티풀에서 바라보는 동해 전망이 압도적이에요. 해질 무렵에 수영하면서 노을 보는 건 정말 환상적입니다. 직원분들도 다 친절하고 청결도 만점.",
+        "rating": 5,
+        "room": "오션뷰 디럭스"
+      },
+      {
+        "name": "이*준",
+        "content": "초등학생 아이 둘과 패밀리 스위트 이용했어요. 아이들이 수영장에서 하루 종일 놀고 저는 발코니에서 쉬었습니다. 조식도 해산물이 신선하고 맛있어서 만족스러웠어요.",
+        "rating": 5,
+        "room": "패밀리 스위트"
+      },
+      {
+        "name": "홍*민",
+        "content": "회사 임원진 워크숍으로 펜트하우스 2박 이용했습니다. 전용 루프탑에서 팀 회의하고 저녁에는 해산물 BBQ 즐겼는데 최고의 워크숍이었습니다. 다음에 또 오겠습니다.",
+        "rating": 5,
+        "room": "펜트하우스"
+      },
+      {
+        "name": "전*아",
+        "content": "속초 여행 3년째 오는데 이번에 처음 여기 왔어요. 위치가 너무 좋고 가격 대비 시설이 훌륭합니다. 아바이마을, 중앙시장 다 걸어서 갈 수 있어서 편했어요.",
+        "rating": 4,
+        "room": "오션뷰 디럭스"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "루프탑 인피니티풀 운영 시간은 언제인가요?",
+        "answer": "루프탑 인피니티풀은 연중 운영하며, 성수기(6~8월) 오전 7시~오후 10시, 비수기(9월~5월) 오전 8시~오후 9시 운영합니다. 투숙객 전용이며, 수영복 착용 필수입니다."
+      },
+      {
+        "question": "조식 시간은 언제인가요?",
+        "answer": "조식은 오전 7시 30분부터 9시 30분까지 1층 레스토랑에서 제공합니다. 조식 패키지는 예약 시 추가하거나 체크인 시 신청 가능합니다."
+      },
+      {
+        "question": "해변 바비큐 다이닝은 별도 예약이 필요한가요?",
+        "answer": "성수기에는 2일 전 사전 예약을 권장합니다. 투숙객 우선 예약이며, 해산물 BBQ 세트(2인 6만원)를 제공합니다. 직접 재료를 가져오셔도 됩니다."
+      },
+      {
+        "question": "속초 시내에서 얼마나 걸리나요?",
+        "answer": "속초 해수욕장 도보 2분, 아바이마을 도보 10분, 속초 중앙시장 도보 15분 거리입니다. 설악산은 차로 20분 소요됩니다."
+      },
+      {
+        "question": "주차 공간은 충분한가요?",
+        "answer": "건물 지하 1층에 30대 주차 가능한 전용 주차장을 운영합니다. 성수기에는 선착순으로 이용되므로, 도착 후 즉시 주차하시는 것을 권장합니다."
+      },
+      {
+        "question": "성수기 특별 요금이나 패키지가 있나요?",
+        "answer": "7~8월 성수기에는 객실 단독 요금 적용됩니다. 봄·가을 비수기에는 조식+객실 포함 패키지를 할인 제공합니다. 네이버 예약 또는 공식 홈페이지에서 최저가로 예약하세요."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "033-637-8820",
+    "address": "강원도 속초시 해오름로 78 블루웨이브 리조트",
+    "hours": "체크인 15:00 / 체크아웃 11:00 (연중무휴)",
+    "kakao": "bluewave-resort",
+    "coordinates": { "lat": 38.2070, "lng": 128.5918 }
+  },
+  "seo": {
+    "title": "블루웨이브 리조트 - 속초 오션뷰 펜션 | 루프탑 인피니티풀",
+    "description": "속초 해수욕장 도보 2분, 2019년 신축 오션뷰 리조트. 루프탑 인피니티풀·해변 BBQ·조식 뷔페. 전 객실 동해 전망.",
+    "keywords": ["속초펜션", "속초오션뷰", "속초리조트", "속초해수욕장숙박", "동해오션뷰", "속초인피니티풀", "속초독채"]
+  },
+  "reservation": {
+    "type": "datetime-room",
+    "rooms": [
+      { "id": "ocean-deluxe", "name": "오션뷰 디럭스", "capacity": 2, "price": { "weekday": 180000, "weekend": 280000 } },
+      { "id": "ocean-suite", "name": "오션뷰 스위트", "capacity": 2, "price": { "weekday": 280000, "weekend": 450000 } },
+      { "id": "family-suite", "name": "패밀리 스위트", "capacity": 4, "price": { "weekday": 350000, "weekend": 550000 } },
+      { "id": "penthouse", "name": "펜트하우스", "capacity": 6, "price": { "weekday": 700000, "weekend": 1100000 } }
+    ]
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "slug": "little-star",
+  "category": "pet-kids",
+  "name": "리틀스타 키즈카페",
+  "archetype": "AT-08",
+  "theme": "bright-playful",
+  "hero": {
+    "title": "아이들의 꿈이 펼쳐지는\n놀이 세상",
+    "subtitle": "리틀스타 키즈카페는 아이들의 상상력과 창의력을 키우는 안전한 놀이 공간입니다. 부모님도 함께 편안하게 쉬어가세요.",
+    "images": [
+      "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=1600&q=80",
+      "https://images.unsplash.com/photo-1567301008258-b6d8cfef71d4?w=1600&q=80",
+      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1600&q=80"
+    ],
+    "cta": {
+      "text": "입장 예약하기",
+      "action": "reservation"
+    }
+  },
+  "about": {
+    "title": "아이들이 가장 좋아하는 공간,\n리틀스타 키즈카페",
+    "description": "리틀스타 키즈카페는 300평 규모의 대형 실내 놀이 공간으로, 36개월부터 초등학교 2학년까지 이용 가능합니다. 모든 놀이 기구와 장난감은 안전 인증을 받았으며, 전담 안전 요원이 상주하여 아이들을 지켜봅니다. 엄마 아빠도 편하게 쉬실 수 있는 보호자 카페 공간을 별도로 운영합니다.",
+    "highlights": [
+      {
+        "icon": "Shield",
+        "title": "KC 인증 안전 놀이기구",
+        "description": "모든 놀이기구와 장난감은 국가 안전 기준 KC 인증 제품만 사용"
+      },
+      {
+        "icon": "Users",
+        "title": "전담 안전 요원 상주",
+        "description": "아동 안전 교육을 받은 전담 요원이 항상 놀이 공간을 지킵니다"
+      },
+      {
+        "icon": "Star",
+        "title": "연령별 구역 운영",
+        "description": "36~48개월 영아 구역, 유아 구역, 초등 구역을 분리 운영"
+      },
+      {
+        "icon": "Coffee",
+        "title": "보호자 카페 운영",
+        "description": "아이들을 보면서 편안하게 쉴 수 있는 오픈형 보호자 카페"
+      }
+    ]
+  },
+  "services": {
+    "title": "이용 요금 안내",
+    "items": [
+      {
+        "name": "어린이 평일 이용권",
+        "description": "평일 기준 어린이 1인 무제한 이용, 놀이기구 전 구역 이용 가능",
+        "price": "12,000원",
+        "image": "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=800&q=80"
+      },
+      {
+        "name": "어린이 주말 이용권",
+        "description": "주말·공휴일 기준 어린이 1인 무제한 이용",
+        "price": "15,000원",
+        "image": "https://images.unsplash.com/photo-1567301008258-b6d8cfef71d4?w=800&q=80"
+      },
+      {
+        "name": "보호자 입장료",
+        "description": "보호자 1인 입장료 (음료 1잔 포함)",
+        "price": "5,000원",
+        "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
+      },
+      {
+        "name": "생일 파티 패키지 (소)",
+        "description": "어린이 10명까지, 파티룸 2시간, 케이크 포함, 파티 소품 제공",
+        "price": "250,000원",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+      },
+      {
+        "name": "생일 파티 패키지 (대)",
+        "description": "어린이 20명까지, 파티룸 3시간, 케이크 포함, 파티 소품 및 답례품 제공",
+        "price": "450,000원",
+        "image": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80"
+      },
+      {
+        "name": "월 정기권",
+        "description": "한 달 무제한 이용 가능 정기권, 평일·주말 모두 이용 가능",
+        "price": "80,000원/월",
+        "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80"
+      }
+    ]
+  },
+  "team": {
+    "title": "리틀스타 전문 스태프",
+    "members": [
+      {
+        "name": "정은지",
+        "role": "대표 / 아동 놀이 치료사",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+        "description": "아동 놀이 치료사 자격증 보유, 유아 교육 전공, 10년 이상 키즈카페 운영 경험"
+      },
+      {
+        "name": "한상민",
+        "role": "안전 관리 매니저",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+        "description": "응급 처치 자격증 보유, 아동 안전 전문 교육 이수, 시설 안전 점검 담당"
+      },
+      {
+        "name": "오서연",
+        "role": "놀이 지도 선생님",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+        "description": "유아교육학과 졸업, 아이들의 창의적 놀이를 지도하는 전문 플레이 리더"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "리틀스타 갤러리",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?w=800&q=80",
+        "alt": "키즈카페 전체 놀이 공간",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1567301008258-b6d8cfef71d4?w=800&q=80",
+        "alt": "볼풀 놀이 구역",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+        "alt": "미끄럼틀 놀이터",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+        "alt": "생일 파티 파티룸",
+        "category": "파티룸"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80",
+        "alt": "생일 파티 케이크",
+        "category": "파티룸"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+        "alt": "보호자 카페 공간",
+        "category": "카페"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&q=80",
+        "alt": "어린이 체험 활동",
+        "category": "활동"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1452960962994-acf4fd70b632?w=800&q=80",
+        "alt": "창의 놀이 시간",
+        "category": "활동"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "방문 후기",
+    "items": [
+      {
+        "name": "4살 엄마 김OO",
+        "content": "아이가 너무 좋아해서 주말마다 오게 되었어요. 안전 요원이 항상 있어서 엄마도 잠깐 쉴 수 있고, 청결하게 관리되어 있어서 믿을 수 있는 곳입니다. 월 정기권 끊으니 더 알뜰하네요!",
+        "rating": 5
+      },
+      {
+        "name": "6살 아빠 이OO",
+        "content": "생일 파티 패키지 이용했는데 정말 만족했습니다. 스태프분들이 파티 진행을 도와주셔서 부모 입장에서 편했고, 아이들도 너무 즐거워했어요. 케이크도 맛있었고 소품도 예뻤습니다.",
+        "rating": 5
+      },
+      {
+        "name": "7살 엄마 박OO",
+        "content": "연령별로 구역이 나뉘어 있어서 작은 아이들도 안전하게 놀 수 있어요. 놀이기구들이 다양하고 새 것처럼 관리되고 있어서 좋았습니다. 주차도 넓어서 편리해요.",
+        "rating": 4
+      },
+      {
+        "name": "쌍둥이 엄마 최OO",
+        "content": "쌍둥이 데리고 오는데 아이들이 서로 다른 구역에서 즐길 수 있어 좋아요. 직원분들이 친절하고 아이들에게도 잘 대해주십니다. 주말 예약이 필수라 미리 예약하고 오세요!",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "이용 가능한 연령이 어떻게 되나요?",
+        "answer": "36개월(만 3세)부터 초등학교 2학년(만 8세)까지 이용 가능합니다. 36개월 미만 영아는 안전상의 이유로 입장이 제한됩니다. 초등학교 3학년 이상은 입장이 불가하며, 성인은 보호자 자격으로만 입장 가능합니다."
+      },
+      {
+        "question": "보호자는 꼭 함께 입장해야 하나요?",
+        "answer": "네, 반드시 보호자 동반 입장이 필요합니다. 보호자 1인당 어린이 최대 3명까지 동반 가능합니다. 보호자 입장료 5,000원이 별도로 부과되며, 음료 1잔이 포함됩니다."
+      },
+      {
+        "question": "생일 파티 예약은 얼마나 미리 해야 하나요?",
+        "answer": "생일 파티 패키지는 최소 2주 전에 예약하셔야 합니다. 주말·공휴일은 1달 전 예약을 권장합니다. 파티룸 운영 시간은 13:00, 15:00, 17:00 세 타임이 있으며, 각 타임은 2~3시간입니다."
+      },
+      {
+        "question": "양말 착용이 필수인가요?",
+        "answer": "네, 위생과 안전을 위해 어린이와 보호자 모두 양말 착용이 필수입니다. 미착용 시 현장에서 구매하실 수 있습니다 (1,000원). 성인 슬리퍼는 무료 대여합니다."
+      },
+      {
+        "question": "외부 음식 반입이 가능한가요?",
+        "answer": "생수와 분유, 이유식 등 영아 식품은 반입 가능합니다. 일반 식품과 음료의 외부 반입은 제한됩니다. 생일 케이크는 사전 협의 후 반입 가능하며, 파티 패키지 이용 시 케이크는 포함됩니다."
+      },
+      {
+        "question": "코인 놀이기구는 별도 요금이 있나요?",
+        "answer": "일부 프리미엄 코인 놀이기구(전동차, VR 체험 등)는 별도 코인이 필요합니다. 코인은 100원/개로 현장 구매 가능합니다. 입장권 구매 시 코인 5개가 무료로 제공됩니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-2567-8901",
+    "address": "서울시 송파구 잠실동 올림픽로 300, 롯데월드몰 4층",
+    "hours": "월~금 10:00~20:00 / 주말·공휴일 09:30~21:00 (연중무휴)",
+    "kakao": "littlestar_kidscafe",
+    "coordinates": {
+      "lat": 37.5126,
+      "lng": 127.1006
+    }
+  },
+  "seo": {
+    "title": "리틀스타 키즈카페 | 잠실 키즈카페 | 실내 어린이 놀이공간",
+    "description": "잠실 롯데월드몰 4층 리틀스타 키즈카페. 300평 대형 실내 놀이 공간, 연령별 구역 분리, 생일 파티 예약 가능. 36개월~초등 2학년 이용 가능.",
+    "keywords": ["키즈카페", "잠실키즈카페", "송파구키즈카페", "실내놀이터", "어린이놀이공간", "리틀스타", "생일파티"]
+  },
+  "features": {
+    "reservation": {
+      "type": "datetime",
+      "maxPartySize": 10,
+      "slotDuration": 180,
+      "advanceBookingDays": 30,
+      "notice": "주말 예약은 2주 전 마감됩니다. 생일 파티는 별도 문의 바랍니다."
+    },
+    "menuBoard": {
+      "enabled": true,
+      "categories": [
+        {
+          "name": "입장 요금",
+          "items": [
+            { "name": "어린이 평일", "price": "12,000원", "unit": "무제한" },
+            { "name": "어린이 주말·공휴일", "price": "15,000원", "unit": "무제한" },
+            { "name": "보호자", "price": "5,000원", "unit": "음료 포함" }
+          ]
+        },
+        {
+          "name": "패키지",
+          "items": [
+            { "name": "생일 파티 패키지 (소)", "price": "250,000원", "unit": "10인" },
+            { "name": "생일 파티 패키지 (대)", "price": "450,000원", "unit": "20인" },
+            { "name": "월 정기권", "price": "80,000원", "unit": "무제한" }
+          ]
+        }
+      ]
+    }
+  }
+}

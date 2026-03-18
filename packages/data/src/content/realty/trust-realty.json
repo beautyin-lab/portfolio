@@ -1,0 +1,290 @@
+{
+  "slug": "trust-realty",
+  "category": "realty",
+  "name": "트러스트 공인중개사",
+  "archetype": "AT-03",
+  "theme": "clean-corporate",
+  "hero": {
+    "title": "신뢰와 전문성으로\n당신의 집을 찾아드립니다",
+    "subtitle": "트러스트 공인중개사는 마포구·용산구 전문 공인중개사입니다. 투명한 거래와 꼼꼼한 법적 검토로 안전한 부동산 거래를 약속드립니다.",
+    "images": [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80",
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1600&q=80",
+      "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=1600&q=80"
+    ],
+    "cta": {
+      "text": "상담 예약하기",
+      "action": "reservation"
+    }
+  },
+  "about": {
+    "title": "15년 마포·용산 전문,\n트러스트 공인중개사",
+    "description": "트러스트 공인중개사는 2011년 개업 이후 마포구와 용산구를 중심으로 주거용·상업용 부동산 거래를 전문으로 해왔습니다. 홍대, 합정, 한남, 이태원 등 서울 서부 핵심 지역의 시세와 입지를 가장 잘 아는 전문가 팀이 운영합니다. 모든 거래에서 투명성을 최우선으로 하며, 계약 후 분쟁 0건의 깨끗한 거래 이력을 보유합니다.",
+    "highlights": [
+      {
+        "icon": "Shield",
+        "title": "계약 후 분쟁 0건",
+        "description": "15년간 모든 거래에서 계약 후 분쟁이 단 한 건도 없는 깨끗한 이력"
+      },
+      {
+        "icon": "MapPin",
+        "title": "마포·용산 최고 전문성",
+        "description": "홍대, 합정, 상수, 한남, 이태원 지역 시세와 입지를 가장 잘 아는 전문가"
+      },
+      {
+        "icon": "FileText",
+        "title": "계약서 완벽 검토",
+        "description": "전문 법무사와 협력하여 계약서 모든 조항 검토 및 특약 작성 지원"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "투자 가치 분석",
+        "description": "상권 분석, 개발 계획, 교통 인프라 등 투자 관점의 종합 분석 제공"
+      }
+    ]
+  },
+  "services": {
+    "title": "서비스 안내",
+    "items": [
+      {
+        "name": "주거용 부동산 중개",
+        "description": "마포·용산 아파트, 빌라, 오피스텔 매매·전월세 중개. 맞춤형 물건 추천",
+        "price": "중개보수 법정 요율",
+        "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
+      },
+      {
+        "name": "상가·사무실 임대",
+        "description": "홍대, 합정, 한남 상권 상가 임대 전문. 상권 분석 및 권리금 협상 지원",
+        "price": "중개보수 법정 요율",
+        "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80"
+      },
+      {
+        "name": "전세 안전 패키지",
+        "description": "전세 사기 예방을 위한 법적 검토 패키지. 등기부등본, 납세증명, 보험 가입까지",
+        "price": "무료 (계약 체결 시)",
+        "image": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80"
+      },
+      {
+        "name": "이사 토탈 서비스",
+        "description": "이사 업체 연계, 인테리어 업체 소개, 생활 편의 정보 안내 등 이사 완결 서비스",
+        "price": "무료 서비스",
+        "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80"
+      }
+    ]
+  },
+  "team": {
+    "title": "트러스트 전문가 팀",
+    "members": [
+      {
+        "name": "정우진",
+        "role": "대표 공인중개사",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+        "description": "공인중개사 자격증 보유, 마포구 15년 전문, 주거용 부동산 상담 1,000건 이상"
+      },
+      {
+        "name": "서은아",
+        "role": "공인중개사",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+        "description": "공인중개사 자격증 보유, 용산구·한남동 전문, 외국인 임대차 영어 상담 가능"
+      },
+      {
+        "name": "조민석",
+        "role": "상업용 부동산 전문",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+        "description": "공인중개사 자격증 보유, 홍대·합정 상권 전문, 프랜차이즈 출점 컨설팅 경험"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "중개 매물 갤러리",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+        "alt": "마포구 아파트 단지",
+        "category": "아파트"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80",
+        "alt": "용산구 주거 단지",
+        "category": "아파트"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=800&q=80",
+        "alt": "홍대 인근 상가",
+        "category": "상가"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=800&q=80",
+        "alt": "한남동 빌라",
+        "category": "빌라"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+        "alt": "오피스텔 외관",
+        "category": "오피스텔"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80",
+        "alt": "부동산 상담 공간",
+        "category": "사무실"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "고객 후기",
+    "items": [
+      {
+        "name": "신혼부부 김OO",
+        "content": "첫 집 장만이라 걱정이 많았는데 정우진 대표님이 너무 친절하고 자세하게 설명해주셨어요. 전세 계약서부터 전입신고까지 모두 알려주시고, 이사 업체도 연결해주셔서 정말 편했습니다.",
+        "rating": 5
+      },
+      {
+        "name": "카페 창업 이OO",
+        "content": "홍대에 카페 오픈할 상가 찾다가 조민석 팀장님께 도움받았어요. 상권 분석부터 권리금 협상까지 전문적으로 도와주셔서 원하는 자리에 좋은 조건으로 계약할 수 있었습니다.",
+        "rating": 5
+      },
+      {
+        "name": "외국계 직장인 박OO",
+        "content": "영어로 상담 가능한 부동산이 많지 않은데 서은아 소장님이 영어로 상담해주셔서 정말 도움이 됐어요. 한남동 오피스텔 계약 과정이 투명하고 안심됐습니다.",
+        "rating": 5
+      },
+      {
+        "name": "이사 완료 최OO",
+        "content": "전세 사기가 걱정이었는데 전세 안전 패키지 덕분에 모든 서류를 꼼꼼하게 확인할 수 있었어요. 덕분에 문제 없이 안전하게 이사했고, 이사 업체도 저렴하게 연결해주셔서 감사합니다.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "주로 어느 지역을 전문으로 하나요?",
+        "answer": "마포구(홍대, 합정, 상수, 망원, 연남)와 용산구(한남, 이태원, 용산, 효창)를 주요 전문 지역으로 합니다. 해당 지역의 시세, 개발 계획, 상권 현황 등을 가장 잘 파악하고 있습니다."
+      },
+      {
+        "question": "전세 사기 예방 서비스는 무엇인가요?",
+        "answer": "계약 전 등기부등본(갑·을구 전체), 국세 지방세 납세증명서, 건축물대장, 토지이용확인서 등 모든 공적 서류를 확인합니다. 임대인 신원 확인, 선순위 권리 분석, 전세보증보험 가입 여부를 안내하고, 안전한 물건만 추천합니다."
+      },
+      {
+        "question": "원하는 조건의 물건을 미리 등록할 수 있나요?",
+        "answer": "네, 원하는 지역, 면적, 가격대, 입주 시기 등을 등록해두시면 조건에 맞는 물건이 나왔을 때 가장 먼저 연락드립니다. 특히 미공개 매물을 다수 보유하고 있어 조기에 좋은 물건을 확보할 수 있습니다."
+      },
+      {
+        "question": "계약서 특약 사항은 어떻게 작성하나요?",
+        "answer": "계약 상황에 따라 필요한 특약 사항을 전문 법무사와 협력하여 작성합니다. 하자 수선 의무, 인테리어 허용 범위, 재계약 시 우선권, 보증금 반환 조건 등 임차인 보호를 위한 특약을 꼼꼼히 넣어드립니다."
+      },
+      {
+        "question": "영어로도 상담이 가능한가요?",
+        "answer": "네, 서은아 소장님이 영어 상담을 담당하고 있습니다. 외국인 투자자, 외국계 기업 직원, 한국어가 서툰 분들도 편하게 상담받을 수 있습니다. 계약서 영문 요약본도 제공합니다."
+      },
+      {
+        "question": "매도·임대를 원하는 집주인도 이용할 수 있나요?",
+        "answer": "물론입니다. 집주인의 경우 무료로 물건을 등록하실 수 있으며, 시세 분석, 최적 매도/임대 시기 상담, 인테리어 조언 등도 제공합니다. 성공적인 거래를 위해 적극 지원합니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-2345-6789",
+    "address": "서울시 마포구 합정동 월드컵로 55, 1층",
+    "hours": "월~토 09:00~20:00 / 일요일 10:00~18:00",
+    "kakao": "trust_realty",
+    "coordinates": {
+      "lat": 37.5499,
+      "lng": 126.9141
+    }
+  },
+  "seo": {
+    "title": "트러스트 공인중개사 | 마포·용산 전문 부동산 | 전세 사기 예방",
+    "description": "마포구·용산구 전문 공인중개사 트러스트. 홍대, 합정, 한남, 이태원 전문. 전세 사기 예방 안전 패키지 제공. 계약 후 분쟁 0건 신뢰의 부동산.",
+    "keywords": ["마포구부동산", "용산구부동산", "합정동공인중개사", "홍대부동산", "한남동부동산", "전세사기예방", "트러스트공인중개사"]
+  },
+  "features": {
+    "reservation": {
+      "type": "datetime",
+      "slotDuration": 60,
+      "advanceBookingDays": 14,
+      "notice": "방문 상담, 전화 상담 모두 가능합니다."
+    },
+    "propertySearch": {
+      "enabled": true,
+      "properties": [
+        {
+          "id": "prop-001",
+          "type": "아파트",
+          "transactionType": "전세",
+          "name": "마포 래미안 푸르지오",
+          "address": "서울시 마포구 아현동",
+          "area": "84㎡ (34평형)",
+          "floor": "10층/28층",
+          "price": "7억 5,000만원",
+          "maintenanceFee": "28만원",
+          "description": "2호선 아현역 도보 5분, 마포구 대단지 아파트, 남향 일조권 우수",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+          "tags": ["역세권", "남향", "대단지"],
+          "availableDate": "2026년 4월"
+        },
+        {
+          "id": "prop-002",
+          "type": "빌라",
+          "transactionType": "월세",
+          "name": "합정동 신축 빌라",
+          "address": "서울시 마포구 합정동",
+          "area": "49㎡ (15평형)",
+          "floor": "2층/4층",
+          "price": "보증금 5,000만원 / 월 100만원",
+          "maintenanceFee": "포함",
+          "description": "2025년 신축, 합정역 도보 3분, 풀옵션, 주차 가능",
+          "image": "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&q=80",
+          "tags": ["신축", "역세권", "합정동"],
+          "availableDate": "즉시 입주"
+        },
+        {
+          "id": "prop-003",
+          "type": "오피스텔",
+          "transactionType": "매매",
+          "name": "한강로 오피스텔",
+          "address": "서울시 용산구 한강로",
+          "area": "40㎡ (12평형)",
+          "floor": "18층/30층",
+          "price": "4억 2,000만원",
+          "maintenanceFee": "12만원",
+          "description": "용산역 도보 5분, 한강 조망, 투자 수익률 연 4.5% 예상",
+          "image": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=600&q=80",
+          "tags": ["용산역", "한강조망", "투자용"],
+          "availableDate": "협의 가능"
+        },
+        {
+          "id": "prop-004",
+          "type": "상가",
+          "transactionType": "임대",
+          "name": "홍대 1층 카페 자리",
+          "address": "서울시 마포구 서교동 홍대 메인거리",
+          "area": "55㎡ (17평)",
+          "floor": "1층",
+          "price": "보증금 5,000만원 / 월 450만원",
+          "maintenanceFee": "별도",
+          "description": "홍대 메인거리 1층, 유동인구 최상, 음식점·카페 가능, 기존 인테리어 있음",
+          "image": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80",
+          "tags": ["홍대메인", "1층", "기존인테리어"],
+          "availableDate": "2026년 5월"
+        },
+        {
+          "id": "prop-005",
+          "type": "아파트",
+          "transactionType": "매매",
+          "name": "용산 한남 힐스테이트",
+          "address": "서울시 용산구 한남동",
+          "area": "99㎡ (40평형)",
+          "floor": "5층/15층",
+          "price": "22억원",
+          "maintenanceFee": "38만원",
+          "description": "한남동 고급 주거지, 이태원역 도보 8분, 남산 조망, 외국인 선호 지역",
+          "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+          "tags": ["고급주거", "한남동", "외국인선호"],
+          "availableDate": "협의 가능"
+        }
+      ]
+    }
+  }
+}

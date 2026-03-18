@@ -1,0 +1,217 @@
+{
+  "slug": "seojin-legal",
+  "category": "legal",
+  "name": "서진 법무법인",
+  "archetype": "AT-10",
+  "theme": "legal-modern",
+  "hero": {
+    "title": "기업과 개인을 위한 신뢰의 법무",
+    "subtitle": "전문 분야별 파트너 변호사 10인이 최고의 법률 솔루션을 제공합니다",
+    "images": [
+      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1565728744382-61accd4aa148?w=1600&h=900&fit=crop"
+    ],
+    "cta": { "text": "법률 상담 예약", "action": "/reservation" }
+  },
+  "about": {
+    "title": "서진 법무법인",
+    "description": "서진 법무법인은 2005년 창립 이래 기업 법무·M&A·노동·지식재산권 분야에서 대기업과 중견기업의 법률 파트너로 성장해 왔습니다. 20년의 노하우와 10인의 전문 변호사 체계로 복잡한 기업 법률 문제를 통합적으로 해결합니다. 개인의 민사·형사·가사 사건도 기업과 동일한 수준의 전문 서비스로 처리합니다.",
+    "highlights": [
+      { "icon": "Briefcase", "title": "기업 법무 전문", "description": "M&A·계약·노동·IP 통합 자문 서비스" },
+      { "icon": "Globe", "title": "영문 계약 대응", "description": "영문 계약서 검토·작성·협상 지원" },
+      { "icon": "Award", "title": "20년 업력", "description": "2005년 창립, 누적 수임 건수 3,000건+" },
+      { "icon": "Users", "title": "파트너 변호사 10인", "description": "분야별 전문가 팀 원스톱 서비스" }
+    ]
+  },
+  "services": {
+    "title": "업무 영역",
+    "items": [
+      {
+        "name": "기업 법무·M&A",
+        "description": "기업 인수합병 실사, 주식양수도 계약, 합작투자, 법인 설립·청산. 전 과정 법률 자문 및 계약 협상 지원.",
+        "price": "프로젝트별 협의",
+        "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "노동·인사 법무",
+        "description": "취업 규칙 작성, 단체 협약 협상, 부당해고·징계 대응, 산재 관련 소송. 노동위원회 심판 대리.",
+        "price": "착수금 200만원~",
+        "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "지식재산권·IT",
+        "description": "특허·상표·저작권 침해 소송, 영업비밀 보호, 소프트웨어 분쟁, 데이터 보호 법무 자문.",
+        "price": "착수금 250만원~",
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "금융·증권 법무",
+        "description": "금융 규제 자문, 증권 발행, 펀드 구조 설계, 금융 분쟁 조정 및 소송. 금감원 제재 대응.",
+        "price": "프로젝트별 협의",
+        "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "민사·상사 소송",
+        "description": "계약 분쟁, 손해배상, 어음·수표, 보험 분쟁, 가처분·가압류 신청. 1심부터 대법원까지 대리.",
+        "price": "착수금 180만원~",
+        "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "이민·외국인 법무",
+        "description": "외국인 투자 법인 설립, 비자 발급·갱신, 귀화 신청, 외국인 고용 법무 자문.",
+        "price": "착수금 150만원~",
+        "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "team": {
+    "title": "변호사 소개",
+    "members": [
+      {
+        "name": "서민철",
+        "role": "대표 변호사",
+        "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+        "description": "서울대학교 법과대학 졸업. 사법연수원 33기. 법무부 기업법무과 근무 경력. 기업 M&A·지배구조 전문."
+      },
+      {
+        "name": "진수연",
+        "role": "파트너 변호사 (노동)",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+        "description": "고려대학교 법학과 졸업. 사법연수원 36기. 노동법 전문. 대형 노사 분쟁 20건 이상 조정 성공."
+      },
+      {
+        "name": "양준서",
+        "role": "파트너 변호사 (IP·IT)",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+        "description": "KAIST 전자공학과 학사, 서울대 법학전문대학원 졸업. 기술 스타트업 IP 분쟁 및 계약 자문 전문."
+      },
+      {
+        "name": "홍수아",
+        "role": "파트너 변호사 (금융)",
+        "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+        "description": "연세대 법학전문대학원 졸업. 금융감독원 법무팀 파견 경력. 금융 규제·증권 법무 전문."
+      },
+      {
+        "name": "남기현",
+        "role": "어소시에이트 변호사",
+        "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+        "description": "성균관대학교 법학전문대학원 졸업. 민사·상사 소송 전문. 영문 계약서 검토 역량 보유."
+      },
+      {
+        "name": "이하린",
+        "role": "어소시에이트 변호사",
+        "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
+        "description": "한양대 법학전문대학원 졸업. 이민·외국인 법무 전문. 영어·중국어 가능."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "법무법인 소개",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop", "alt": "법무법인 로비", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=800&h=600&fit=crop", "alt": "대회의실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop", "alt": "법률 도서관", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1565728744382-61accd4aa148?w=800&h=600&fit=crop", "alt": "소회의실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop", "alt": "상담실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop", "alt": "전경", "category": "시설" }
+    ]
+  },
+  "testimonials": {
+    "title": "의뢰인 후기",
+    "items": [
+      {
+        "name": "권*호 (CEO)",
+        "content": "스타트업 Series A 투자 계약에서 서진 법무법인의 도움을 받았습니다. 투자자 측의 독소 조항들을 꼼꼼히 잡아주셔서 경영권을 지킬 수 있었어요. 법무법인 규모는 크지 않지만 서비스 품질은 대형 로펌 수준입니다.",
+        "rating": 5,
+        "service": "기업 법무"
+      },
+      {
+        "name": "최*형 (HR 팀장)",
+        "content": "300인 규모 공장의 단체 교섭을 진수연 변호사님이 전담해 주셨어요. 강경한 노조와의 협상에서 회사 입장을 잘 지켜주시면서도 합리적인 합의를 이끌어 주셨습니다.",
+        "rating": 5,
+        "service": "노동·인사 법무"
+      },
+      {
+        "name": "정*건",
+        "content": "앱 아이디어를 도용당해 특허 소송을 진행했는데, 양준서 변호사님이 기술적인 내용까지 완벽히 이해하고 대응해 주셔서 승소했습니다. IT 분야 소송은 여기가 최고라고 생각합니다.",
+        "rating": 5,
+        "service": "지식재산권·IT"
+      },
+      {
+        "name": "손*미",
+        "content": "미국에서 귀국 후 한국 비자 문제와 외국 법인 설립으로 복잡했는데, 이하린 변호사님이 영어로 소통하며 모든 절차를 처리해 주셔서 정말 편했습니다.",
+        "rating": 5,
+        "service": "이민·외국인 법무"
+      },
+      {
+        "name": "박*준 (CFO)",
+        "content": "금감원 조사를 받게 되어 급히 선임했는데, 홍수아 변호사님이 빠르게 대응 전략을 마련해 주셔서 제재 없이 마무리할 수 있었습니다. 금융 법무에 최적화된 곳입니다.",
+        "rating": 5,
+        "service": "금융·증권 법무"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "기업 법무 월정 자문은 어떻게 운영되나요?",
+        "answer": "월 계약 형태로 정해진 시간(예: 월 10시간) 내에서 계약서 검토, 법률 의견서, 전화·이메일 상담을 제공합니다. 초과 시 시간당 추가 비용이 발생하며, 소송 수임은 별도 계약합니다."
+      },
+      {
+        "question": "영문 계약서도 검토·작성해 드리나요?",
+        "answer": "네, 양준서 변호사 및 남기현 변호사가 영문 계약서 검토·작성·협상 지원을 담당합니다. 기본 검토는 건당 50만원부터 시작하며, 분량과 복잡도에 따라 달라집니다."
+      },
+      {
+        "question": "M&A 법률 자문은 얼마나 걸리나요?",
+        "answer": "거래 구조와 규모에 따라 다르지만, 소규모 주식 양수도는 2~4주, 중규모 M&A는 2~4개월이 일반적입니다. 실사(Due Diligence)를 포함할 경우 기간이 더 소요됩니다."
+      },
+      {
+        "question": "첫 상담은 어떻게 진행되나요?",
+        "answer": "전화·이메일 접수 후 사건 유형에 맞는 담당 변호사를 배정합니다. 기업 법무는 1시간 무료 상담, 개인 민·형사 사건은 30분 무료 상담을 제공합니다."
+      },
+      {
+        "question": "소송 성공 보수는 어떻게 되나요?",
+        "answer": "소송 결과에 따라 별도 성공 보수가 발생합니다. 일반적으로 인용 금액의 5~15% 수준이며, 사건 수임 시 명시적으로 계약서에 기재합니다."
+      },
+      {
+        "question": "지방 법원 사건도 처리 가능한가요?",
+        "answer": "서울·수도권 법원은 직접 대리하며, 지방 법원 사건은 사건 성격에 따라 직접 대리 또는 지역 연계 법무법인과 공동 수임 방식으로 처리합니다."
+      },
+      {
+        "question": "비용 분할 납부가 가능한가요?",
+        "answer": "착수금과 성공 보수를 분리하는 기본 구조 외에, 개인 사건의 경우 착수금 분할 납부(최대 3회)를 협의할 수 있습니다. 기업 법무는 별도 협의가 필요합니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-2038-9900",
+    "address": "서울시 종로구 종로 51 SC제일은행빌딩 15층",
+    "hours": "평일 09:00~18:00 (긴급 사건 별도 협의)",
+    "kakao": "seojin-legal",
+    "coordinates": { "lat": 37.5707, "lng": 126.9795 }
+  },
+  "seo": {
+    "title": "서진 법무법인 - 기업법무·M&A·노동·IP 전문 | 종로",
+    "description": "창립 20년, 파트너 변호사 10인. 기업 법무·M&A·노동·지식재산권·금융 법무. 첫 상담 무료.",
+    "keywords": ["법무법인", "기업법무", "MA변호사", "노동변호사", "특허소송", "종로변호사", "영문계약서"]
+  },
+  "reservation": {
+    "type": "datetime-staff",
+    "staff": [
+      { "id": "atty-seo", "name": "서민철 대표 변호사", "specialty": "기업·M&A" },
+      { "id": "atty-jin", "name": "진수연 파트너 변호사", "specialty": "노동" },
+      { "id": "atty-yang", "name": "양준서 파트너 변호사", "specialty": "IP·IT" },
+      { "id": "atty-hong", "name": "홍수아 파트너 변호사", "specialty": "금융·증권" },
+      { "id": "atty-nam", "name": "남기현 변호사", "specialty": "민사·상사" },
+      { "id": "atty-lee", "name": "이하린 변호사", "specialty": "이민·외국인" }
+    ],
+    "services": [
+      { "id": "corp-consult", "name": "기업 법무 무료 상담 (1시간)", "duration": 60 },
+      { "id": "personal-consult", "name": "개인 사건 상담 (30분)", "duration": 30 },
+      { "id": "contract-review", "name": "계약서 검토", "duration": 60 },
+      { "id": "monthly-advisory", "name": "월정 자문 상담", "duration": 60 }
+    ]
+  }
+}

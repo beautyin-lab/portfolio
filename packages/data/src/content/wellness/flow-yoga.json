@@ -1,0 +1,201 @@
+{
+  "slug": "flow-yoga",
+  "category": "wellness",
+  "name": "플로우 요가 스튜디오",
+  "archetype": "AT-05",
+  "theme": "wellness-minimal",
+  "hero": {
+    "title": "흐르듯 움직이는 나만의 시간",
+    "subtitle": "일상의 긴장을 내려놓고, 호흡과 움직임으로 진정한 나를 만나세요",
+    "images": [
+      "https://images.unsplash.com/photo-1545389336-cf090694435e?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&h=900&fit=crop"
+    ],
+    "cta": { "text": "체험 수업 예약", "action": "/reservation" }
+  },
+  "about": {
+    "title": "플로우 요가 스튜디오",
+    "description": "플로우 요가 스튜디오는 2018년 성수동에 문을 열었습니다. 단순한 운동이 아닌 몸과 마음을 연결하는 수련의 공간으로, 초보자부터 지도자 과정까지 체계적인 커리큘럼을 운영합니다. 소수 정원 수업으로 강사의 세밀한 피드백이 가능하며, 넓고 쾌적한 원목 바닥 스튜디오에서 집중도 높은 수련을 경험할 수 있습니다.",
+    "highlights": [
+      { "icon": "Sun", "title": "소수 정원 (최대 10인)", "description": "강사 1인이 수강생 개개인 맞춤 지도" },
+      { "icon": "Leaf", "title": "RYT-500 공인 강사", "description": "국제 요가 얼라이언스 공인 강사 4인 운영" },
+      { "icon": "Heart", "title": "임산부·시니어 특별 반", "description": "연령·신체 상태에 맞는 세분화된 클래스" },
+      { "icon": "Star", "title": "요가 지도자 양성 과정", "description": "RYT-200 국제 공인 지도자 양성 과정 운영" }
+    ]
+  },
+  "services": {
+    "title": "클래스 안내",
+    "items": [
+      {
+        "name": "하타 요가 (기초)",
+        "description": "기본 아사나와 호흡법을 배우는 입문 클래스. 요가가 처음이거나 오랜 공백 후 재시작하는 분들에게 적합합니다. 체계적 기초 정렬 중심.",
+        "price": "월 10회 12만원",
+        "image": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "빈야사 플로우",
+        "description": "호흡과 동작을 연결하는 흐름 요가. 역동적인 시퀀스로 유연성과 근력을 동시에 향상. 기초 경험자 이상 권장.",
+        "price": "월 10회 14만원",
+        "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "음 요가 (Yin Yoga)",
+        "description": "3~5분간 자세를 유지하며 근막을 이완하는 정적 요가. 관절 건강과 깊은 이완에 탁월. 저녁 반으로 인기.",
+        "price": "월 8회 11만원",
+        "image": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "임산부 요가",
+        "description": "임신 12주 이상 대상. 복부 압박 없는 안전한 자세와 호흡 훈련. 순산에 도움이 되는 골반 이완 중심. 의사 소견서 불필요.",
+        "price": "월 8회 13만원",
+        "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "아쉬탕가 마이소르",
+        "description": "아쉬탕가 요가 전통 방식으로 각자의 페이스에 맞춰 수련. 강사가 개인별 어시스트 제공. 중급~고급 수련자 대상.",
+        "price": "월 무제한 20만원",
+        "image": "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "RYT-200 지도자 과정",
+        "description": "요가 얼라이언스 인증 200시간 지도자 양성 프로그램. 3개월 집중 과정. 수료 후 국제 공인 자격증 취득 가능.",
+        "price": "330만원 (전 과정)",
+        "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "team": {
+    "title": "강사 소개",
+    "members": [
+      {
+        "name": "최은지",
+        "role": "디렉터 강사 (RYT-500)",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+        "description": "요가 수련 12년. 인도 리시케시 RYT-500 취득. 아쉬탕가·빈야사 전문. 요가 얼라이언스 등록 강사. 지도자 과정 담당."
+      },
+      {
+        "name": "이다영",
+        "role": "강사 (RYT-500)",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+        "description": "음 요가·명상·아로마 테라피 전문. 임산부 요가 전문 수료. 몸과 마음의 연결을 중시하는 치유적 수업 스타일."
+      },
+      {
+        "name": "박서준",
+        "role": "강사 (RYT-200)",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+        "description": "남성 강사. 하타·빈야사 전문. 척추 교정 요가 연구. 직장인 체형 개선 프로그램 개발."
+      },
+      {
+        "name": "김하늘",
+        "role": "강사 (RYT-200)",
+        "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
+        "description": "발레 전공 출신 요가 강사. 유연성·균형 감각·체형 교정 전문. 리스토레이티브 요가 수료."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "스튜디오 갤러리",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&h=600&fit=crop", "alt": "메인 스튜디오", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop", "alt": "빈야사 수업 전경", "category": "수업" },
+      { "src": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop", "alt": "음 요가 수업", "category": "수업" },
+      { "src": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop", "alt": "임산부 요가 수업", "category": "수업" },
+      { "src": "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&h=600&fit=crop", "alt": "아쉬탕가 수련", "category": "수업" },
+      { "src": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop", "alt": "지도자 과정 수업", "category": "수업" },
+      { "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop", "alt": "탈의실 및 샤워시설", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&h=600&fit=crop", "alt": "명상 공간", "category": "시설" }
+    ]
+  },
+  "testimonials": {
+    "title": "수강생 후기",
+    "items": [
+      {
+        "name": "유*진",
+        "content": "요가 완전 초보로 하타 기초 반 시작했는데 최은지 선생님이 한 명 한 명 자세를 봐주셔서 빠르게 늘었어요. 6개월 만에 빈야사 반으로 올라갔습니다!",
+        "rating": 5,
+        "class": "하타 요가"
+      },
+      {
+        "name": "강*아",
+        "content": "임신 5개월부터 9개월까지 임산부 요가 다녔는데, 이다영 선생님이 안전하게 배려해 주셔서 정말 편안했어요. 순산에 많은 도움이 됐다고 확신합니다.",
+        "rating": 5,
+        "class": "임산부 요가"
+      },
+      {
+        "name": "장*혁",
+        "content": "IT 종사자라 목·어깨가 늘 뭉쳐있었는데 음 요가 3개월 만에 확실히 달라졌어요. 자기 전 이완 효과가 대단합니다. 박서준 선생님 수업 추천합니다.",
+        "rating": 5,
+        "class": "음 요가"
+      },
+      {
+        "name": "오*영",
+        "content": "RYT-200 지도자 과정 수료했습니다. 최은지 디렉터님이 정말 열정적으로 가르쳐 주셔서 좋았어요. 해부학·철학·시퀀싱까지 탄탄한 커리큘럼이었습니다.",
+        "rating": 5,
+        "class": "RYT-200 지도자 과정"
+      },
+      {
+        "name": "신*서",
+        "content": "빈야사 1년째 수련 중인데 체형이 눈에 띄게 바뀌었어요. 허리가 곧아지고 코어 힘이 생겨서 일상생활이 훨씬 편해졌습니다. 소수 정원이라 집중 관리받는 느낌이 좋아요.",
+        "rating": 5,
+        "class": "빈야사 플로우"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "요가 경험이 전혀 없어도 수강 가능한가요?",
+        "answer": "물론입니다. 하타 요가 기초 반은 경험 없는 분들을 위해 설계되었습니다. 매달 첫 주에 신규 회원을 받으며, 첫 수업 전 15분 오리엔테이션을 제공합니다."
+      },
+      {
+        "question": "요가 매트나 복장은 따로 준비해야 하나요?",
+        "answer": "스튜디오에서 매트·블록·스트랩·담요 등 모든 소품을 무료로 제공합니다. 편하게 움직일 수 있는 복장이면 됩니다. 양말은 착용하지 않는 것이 원칙입니다."
+      },
+      {
+        "question": "수업 중간에 등록이 가능한가요?",
+        "answer": "월 중간에 등록하시면 잔여 횟수에 비례해 일할 계산된 금액을 받습니다. 다음 달 정기 등록으로 이어지는 것이 권장됩니다."
+      },
+      {
+        "question": "결석한 수업은 보강 가능한가요?",
+        "answer": "월 2회까지 당월 내 다른 클래스로 보강이 가능합니다. 보강은 앱 또는 카카오톡으로 사전 신청하셔야 합니다."
+      },
+      {
+        "question": "임산부 요가는 몇 주부터 수강 가능한가요?",
+        "answer": "임신 12주 이후부터 출산 전까지 수강 가능합니다. 의사 소견서는 필요 없지만, 고위험 임신이나 조산 경험이 있는 경우 담당 의사와 먼저 상의하시기 바랍니다."
+      },
+      {
+        "question": "RYT-200 과정은 직장인도 할 수 있나요?",
+        "answer": "주말 집중 과정(3개월, 매주 토·일 10시간)으로 운영하여 직장인도 수강 가능합니다. 평일 과정은 월요일·수요일·금요일 저녁 3시간씩 운영됩니다."
+      },
+      {
+        "question": "지하철로 찾아오기 편한가요?",
+        "answer": "서울 지하철 2호선·수인분당선 성수역 3번 출구에서 도보 5분 거리입니다. 카카오맵·네이버 지도에서 '플로우 요가 스튜디오'로 검색하시면 됩니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-467-9150",
+    "address": "서울시 성동구 성수이로 127 성수타워 3층",
+    "hours": "평일 07:00~22:00, 주말 09:00~18:00",
+    "kakao": "flow-yoga-studio",
+    "coordinates": { "lat": 37.5447, "lng": 127.0563 }
+  },
+  "seo": {
+    "title": "플로우 요가 스튜디오 - 성수 소수정원 요가 | 빈야사·음 요가·임산부 요가",
+    "description": "성수역 5분, RYT-500 공인 강사의 소수 정원 요가. 하타·빈야사·음 요가·임산부 요가·지도자 양성 과정. 첫 체험 5만원.",
+    "keywords": ["성수요가", "성수동요가스튜디오", "빈야사요가", "음요가", "임산부요가", "요가지도자과정", "RYT200"]
+  },
+  "reservation": {
+    "type": "datetime-class",
+    "classes": [
+      { "id": "hatha-basic", "name": "하타 요가 (기초)", "duration": 60, "capacity": 10 },
+      { "id": "vinyasa-flow", "name": "빈야사 플로우", "duration": 75, "capacity": 10 },
+      { "id": "yin-yoga", "name": "음 요가", "duration": 75, "capacity": 10 },
+      { "id": "prenatal", "name": "임산부 요가", "duration": 60, "capacity": 8 },
+      { "id": "ashtanga", "name": "아쉬탕가 마이소르", "duration": 90, "capacity": 8 },
+      { "id": "trial", "name": "체험 수업 (1회)", "duration": 60, "capacity": 10 }
+    ]
+  }
+}

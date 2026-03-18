@@ -1,0 +1,191 @@
+{
+  "slug": "forest-house",
+  "category": "pension",
+  "name": "포레스트하우스 펜션",
+  "archetype": "AT-02",
+  "theme": "pension-nature",
+  "hero": {
+    "title": "숲속의 고요한 쉼터",
+    "subtitle": "자연이 만들어준 완벽한 휴식, 포레스트하우스에서 일상을 잊으세요",
+    "images": [
+      "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
+    ],
+    "cta": { "text": "객실 예약하기", "action": "/reservation" }
+  },
+  "about": {
+    "title": "포레스트하우스 펜션",
+    "description": "경기도 가평 북한강변의 울창한 잣나무 숲 속에 자리한 포레스트하우스 펜션입니다. 2016년 오픈 이래 서울에서 1시간 30분 거리의 접근성과 압도적인 자연 환경으로 많은 분들의 사랑을 받아왔습니다. 전 객실 독립 구조로 프라이빗한 휴식을 보장하며, 계절마다 다른 모습의 숲 풍경을 즐기실 수 있습니다.",
+    "highlights": [
+      { "icon": "Home", "title": "전 객실 독립 구조", "description": "다른 손님과 겹치지 않는 완벽한 프라이빗 공간" },
+      { "icon": "Droplets", "title": "개별 야외 스파 욕조", "description": "모든 객실에 성인 2인용 야외 온수 스파 욕조 구비" },
+      { "icon": "Flame", "title": "벽난로·바비큐 구비", "description": "야외 바비큐 그릴과 계절별 실내 벽난로 운영" },
+      { "icon": "TreePine", "title": "500년 잣나무 숲", "description": "천연 피톤치드 가득한 숲 산책로 2km 운영" }
+    ]
+  },
+  "services": {
+    "title": "객실 안내",
+    "items": [
+      {
+        "name": "포레스트 스위트 (2인용)",
+        "description": "성인 2인 전용 독채. 킹사이즈 침대, 야외 스파 욕조, 독립 테라스. 숲 전망 통창으로 사계절 자연을 만끽할 수 있습니다.",
+        "price": "주중 18만원 / 주말 27만원",
+        "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "패밀리 하우스 (4인용)",
+        "description": "4인 가족 전용 독채. 침실 2개, 거실, 주방, 바비큐 테라스. 아이들을 위한 미니 놀이공간 포함.",
+        "price": "주중 28만원 / 주말 42만원",
+        "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "글램핑 돔 (2인용)",
+        "description": "투명 돔 구조의 별빛 감상 객실. 침대 위에 누운 채로 밤하늘 관측 가능. 가을·겨울 인기 상품.",
+        "price": "주중 15만원 / 주말 22만원",
+        "image": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "프리미엄 로그 캐빈 (6인용)",
+        "description": "원목 통나무 대형 독채. 침실 3개, 넓은 리빙룸, 주방, 대형 바비큐 테라스. 가족 모임·생일파티 적합.",
+        "price": "주중 48만원 / 주말 72만원",
+        "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "team": {
+    "title": "운영 스태프",
+    "members": [
+      {
+        "name": "이강산",
+        "role": "대표 운영자",
+        "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=400&fit=crop",
+        "description": "가평 토박이 2세대. 15년간 숲 생태 가이드로 활동. 자연 속 힐링 공간을 만들고자 포레스트하우스를 직접 설계하고 조성했습니다."
+      },
+      {
+        "name": "김나영",
+        "role": "리셉션·고객 서비스",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+        "description": "호텔경영학 전공. 친절하고 세심한 서비스로 체크인부터 체크아웃까지 완벽한 스테이를 만들어 드립니다."
+      },
+      {
+        "name": "박현우",
+        "role": "시설 관리·바비큐 도우미",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+        "description": "바비큐·캠핑 전문가. 고기 굽는 법, 화로 세팅 등 바비큐 도움이 필요할 때 언제든지 도와드립니다."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "포레스트하우스 갤러리",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&h=600&fit=crop", "alt": "전경 및 숲", "category": "전경" },
+      { "src": "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop", "alt": "야외 스파", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop", "alt": "포레스트 스위트 내부", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop", "alt": "패밀리 하우스", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop", "alt": "글램핑 돔 야경", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop", "alt": "숲 산책로", "category": "자연" },
+      { "src": "https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?w=800&h=600&fit=crop", "alt": "바비큐 테라스", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&h=600&fit=crop", "alt": "북한강 전망", "category": "자연" },
+      { "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop", "alt": "가을 단풍 전경", "category": "자연" },
+      { "src": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop", "alt": "실내 벽난로", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop", "alt": "프리미엄 로그 캐빈", "category": "객실" },
+      { "src": "https://images.unsplash.com/photo-1525113990976-399835c43838?w=800&h=600&fit=crop", "alt": "수영장", "category": "시설" }
+    ]
+  },
+  "testimonials": {
+    "title": "손님 후기",
+    "items": [
+      {
+        "name": "조*현",
+        "content": "결혼 1주년 기념으로 포레스트 스위트에서 묵었습니다. 야외 스파 욕조에서 별 보면서 보낸 밤이 평생 기억에 남을 것 같아요. 조용하고 깨끗하고, 다음에도 꼭 다시 올게요.",
+        "rating": 5,
+        "room": "포레스트 스위트"
+      },
+      {
+        "name": "최*민",
+        "content": "아이 둘과 함께 패밀리 하우스에서 2박 했어요. 아이들이 숲에서 마음껏 뛰어놀 수 있어서 너무 좋았고, 주방이 잘 갖춰져 있어서 직접 요리해 먹는 재미도 있었습니다.",
+        "rating": 5,
+        "room": "패밀리 하우스"
+      },
+      {
+        "name": "이*수",
+        "content": "글램핑 돔에서 자다가 새벽에 일어나 하늘을 봤는데 은하수가 보였어요. 서울 근교에서 이런 경험을 할 수 있다니... 정말 힐링이 됐습니다.",
+        "rating": 5,
+        "room": "글램핑 돔"
+      },
+      {
+        "name": "박*영",
+        "content": "가족 생일파티로 로그 캐빈 빌렸어요. 스태프 박현우 씨가 바비큐 세팅을 도와주셔서 너무 편하게 즐겼습니다. 시설도 깔끔하고 정말 만족스러웠어요.",
+        "rating": 5,
+        "room": "프리미엄 로그 캐빈"
+      },
+      {
+        "name": "한*준",
+        "content": "회사 동료 4명이 워크숍 겸 MT로 다녀왔습니다. 조용한 숲 속에서 생각 정리도 되고 팀원들과 더 가까워진 시간이었어요. 바비큐도 맛있게 해먹었습니다.",
+        "rating": 5,
+        "room": "패밀리 하우스"
+      },
+      {
+        "name": "윤*아",
+        "content": "비가 오는 날 방문했는데 오히려 더 낭만적이었어요. 벽난로 앞에서 빗소리 들으며 책 읽는 게 너무 좋았습니다. 청결도도 완벽했어요.",
+        "rating": 5,
+        "room": "포레스트 스위트"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "체크인·체크아웃 시간은 언제인가요?",
+        "answer": "체크인은 오후 3시, 체크아웃은 오전 11시입니다. 얼리 체크인(오후 1시) 또는 레이트 체크아웃(오후 1시)은 당일 객실 사정에 따라 2만원 추가 요금으로 제공됩니다."
+      },
+      {
+        "question": "바비큐 재료도 판매하나요?",
+        "answer": "삼겹살·목살 세트(2인 400g, 3만원), 소고기 등심 세트(2인 300g, 5만원)를 판매합니다. 야채·소스·쌈장은 무료 제공됩니다. 직접 장을 봐서 오셔도 됩니다."
+      },
+      {
+        "question": "반려동물과 함께 방문 가능한가요?",
+        "answer": "중형견 이하(10kg 이하) 반려동물 동반이 가능합니다. 단, 패밀리 하우스와 로그 캐빈만 허용되며, 반려동물 추가 요금 2만원이 발생합니다. 야외 전 구역은 리드줄 착용 필수입니다."
+      },
+      {
+        "question": "수영장은 언제 운영하나요?",
+        "answer": "야외 수영장은 매년 7월 1일부터 8월 31일까지 오전 10시~오후 7시 운영합니다. 수영장 이용은 숙박 고객 무료이며, 별도 수영복 착용 필수입니다."
+      },
+      {
+        "question": "서울에서 어떻게 오나요?",
+        "answer": "자차: 서울 → 경춘고속도로 → 가평 IC → 약 20분 (서울에서 총 1시간 30분). 대중교통: 청량리역에서 경춘선 기차 탑승 → 가평역 하차 → 픽업 서비스 이용 (예약 시 요청)."
+      },
+      {
+        "question": "현금 결제만 가능한가요?",
+        "answer": "카드·계좌이체·현금 모두 가능합니다. 예약 시 총 금액의 30%를 예약금으로 입금하고, 잔금은 체크인 시 결제합니다."
+      },
+      {
+        "question": "취소 환불 정책은 어떻게 되나요?",
+        "answer": "체크인 7일 전까지: 전액 환불. 체크인 3~6일 전: 50% 환불. 체크인 1~2일 전: 환불 불가. 천재지변·갑작스러운 질병은 증빙 서류 제출 시 협의 가능합니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "031-584-3927",
+    "address": "경기도 가평군 북면 이화리 산 47-3",
+    "hours": "체크인 15:00 / 체크아웃 11:00 (연중무휴)",
+    "kakao": "foresthouse-pension",
+    "coordinates": { "lat": 37.8234, "lng": 127.5012 }
+  },
+  "seo": {
+    "title": "포레스트하우스 펜션 - 가평 숲속 독채 펜션 | 야외 스파·글램핑",
+    "description": "경기도 가평 북한강변 잣나무 숲속 독채 펜션. 야외 스파 욕조·벽난로·바비큐·글램핑 돔. 서울에서 1시간 30분.",
+    "keywords": ["가평펜션", "가평독채펜션", "가평글램핑", "가평스파펜션", "북한강펜션", "가평숲속펜션", "경기도펜션"]
+  },
+  "reservation": {
+    "type": "datetime-room",
+    "rooms": [
+      { "id": "forest-suite", "name": "포레스트 스위트", "capacity": 2, "price": { "weekday": 180000, "weekend": 270000 } },
+      { "id": "family-house", "name": "패밀리 하우스", "capacity": 4, "price": { "weekday": 280000, "weekend": 420000 } },
+      { "id": "glamping-dome", "name": "글램핑 돔", "capacity": 2, "price": { "weekday": 150000, "weekend": 220000 } },
+      { "id": "log-cabin", "name": "프리미엄 로그 캐빈", "capacity": 6, "price": { "weekday": 480000, "weekend": 720000 } }
+    ]
+  }
+}

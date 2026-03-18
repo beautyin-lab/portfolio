@@ -1,0 +1,256 @@
+{
+  "slug": "happy-paws",
+  "category": "pet-kids",
+  "name": "해피포즈 애견카페",
+  "archetype": "AT-06",
+  "theme": "warm-natural",
+  "hero": {
+    "title": "반려견과 함께하는\n특별한 공간",
+    "subtitle": "해피포즈 애견카페에서 소중한 반려견과 함께 행복한 시간을 만들어 보세요. 안전하고 깨끗한 환경에서 마음껏 뛰어놀 수 있습니다.",
+    "images": [
+      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1600&q=80",
+      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1600&q=80",
+      "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?w=1600&q=80"
+    ],
+    "cta": {
+      "text": "입장 예약하기",
+      "action": "reservation"
+    }
+  },
+  "about": {
+    "title": "반려견이 행복한 공간,\n해피포즈 애견카페",
+    "description": "해피포즈 애견카페는 반려견과 보호자 모두가 편안하게 쉴 수 있는 프리미엄 애견카페입니다. 200평 규모의 넓은 실내 공간과 전문적으로 관리되는 위생 시스템으로 안심하고 방문하실 수 있습니다. 7년간 운영하며 쌓아온 노하우로 모든 반려견의 안전과 건강을 최우선으로 생각합니다.",
+    "highlights": [
+      {
+        "icon": "Shield",
+        "title": "철저한 위생 관리",
+        "description": "매일 3회 이상 소독 및 청소, HEPA 공기청정기 24시간 가동"
+      },
+      {
+        "icon": "Heart",
+        "title": "전문 수의사 협력",
+        "description": "제휴 동물병원 수의사가 정기적으로 시설 위생을 점검합니다"
+      },
+      {
+        "icon": "Users",
+        "title": "크기별 구역 분리",
+        "description": "소형견/대형견 구역을 분리 운영하여 모든 반려견이 안전합니다"
+      },
+      {
+        "icon": "Coffee",
+        "title": "보호자 카페 운영",
+        "description": "반려견이 노는 동안 보호자도 편안하게 휴식할 수 있는 카페 공간"
+      }
+    ]
+  },
+  "services": {
+    "title": "이용 요금 안내",
+    "items": [
+      {
+        "name": "소형견 입장 (10kg 미만)",
+        "description": "소형견 전용 놀이 구역 이용, 음수대 및 간식 무제한 제공, 2시간 기준",
+        "price": "15,000원",
+        "image": "https://images.unsplash.com/photo-1583511655826-05700442b31b?w=800&q=80"
+      },
+      {
+        "name": "대형견 입장 (10kg 이상)",
+        "description": "대형견 전용 대형 놀이 구역 이용, 음수대 및 간식 무제한 제공, 2시간 기준",
+        "price": "18,000원",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+      },
+      {
+        "name": "보호자 음료",
+        "description": "아메리카노, 라떼, 주스 등 다양한 음료 메뉴 이용 가능",
+        "price": "4,500원~",
+        "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80"
+      },
+      {
+        "name": "생일 파티 패키지",
+        "description": "반려견 생일 케이크, 파티 소품, 포토존 이용, 2시간 프라이빗 공간 제공",
+        "price": "80,000원",
+        "image": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80"
+      },
+      {
+        "name": "정기권 (월 8회)",
+        "description": "한 달 8회 입장 가능한 정기권, 소형견 기준, 음료 10% 할인 혜택",
+        "price": "99,000원/월",
+        "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80"
+      }
+    ]
+  },
+  "team": {
+    "title": "해피포즈 전문 스태프",
+    "members": [
+      {
+        "name": "김민준",
+        "role": "대표 / 반려견 행동 전문가",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+        "description": "반려견 행동 교정 전문가 자격증 보유, 10년 경력의 반려동물 전문가"
+      },
+      {
+        "name": "이수진",
+        "role": "케어 매니저",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+        "description": "반려동물 관리사 1급 자격증 보유, 위생 및 안전 관리 담당"
+      },
+      {
+        "name": "박지영",
+        "role": "카페 바리스타",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+        "description": "바리스타 자격증 보유, 반려견 전용 간식 레시피 개발 담당"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "해피포즈 갤러리",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80",
+        "alt": "애견카페 내부 전경",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80",
+        "alt": "반려견 놀이 공간",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?w=800&q=80",
+        "alt": "소형견 전용 구역",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1583511655826-05700442b31b?w=800&q=80",
+        "alt": "행복하게 노는 강아지들",
+        "category": "반려견"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+        "alt": "대형견 놀이 시간",
+        "category": "반려견"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80",
+        "alt": "반려견 생일 파티",
+        "category": "이벤트"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1602524816-697e92aa3fa9?w=800&q=80",
+        "alt": "반려견 케이크 이벤트",
+        "category": "이벤트"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+        "alt": "보호자 카페 공간",
+        "category": "카페"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "방문 후기",
+    "items": [
+      {
+        "name": "강아지맘 김OO",
+        "content": "우리 골든리트리버가 처음 방문했는데 너무 좋아했어요! 공간이 넓고 청결해서 보호자도 마음 편하게 있을 수 있었습니다. 스태프분들이 친절하게 챙겨주셔서 정기권 바로 끊었어요.",
+        "rating": 5
+      },
+      {
+        "name": "말티즈보호자 이OO",
+        "content": "소형견 구역이 따로 있어서 작은 강아지도 안전하게 놀 수 있어요. 공간이 넓고 장난감도 많아서 저희 말티즈가 2시간 내내 신나게 뛰어다녔답니다.",
+        "rating": 5
+      },
+      {
+        "name": "푸들 아빠 박OO",
+        "content": "매일 청소하고 소독하는 게 느껴질 만큼 항상 깨끗해요. 여름에 에어컨도 시원하게 틀어주시고 음수대도 자주 교체해주셔서 믿고 보낼 수 있어요.",
+        "rating": 5
+      },
+      {
+        "name": "시바견 보호자 최OO",
+        "content": "생일 파티 패키지 이용했는데 정말 만족스러웠어요! 케이크도 강아지가 먹을 수 있는 재료로 만들어주시고 사진도 예쁘게 찍어주셔서 추억이 생겼습니다.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "예방접종 증명서를 꼭 가져와야 하나요?",
+        "answer": "네, 필수입니다. 종합백신(DHPPL), 켄넬코프, 광견병 접종 증명서를 지참하셔야 입장 가능합니다. 접종 후 2주가 지난 반려견만 입장 가능하며, 처음 방문 시 접종 기록을 등록해두면 이후에는 확인 생략됩니다."
+      },
+      {
+        "question": "입장 가능한 연령 제한이 있나요?",
+        "answer": "생후 4개월 이상, 종합백신 2차 이상 접종된 반려견만 입장 가능합니다. 노견(15세 이상)이나 건강 상태가 좋지 않은 반려견은 수의사 진단서 지참 후 입장 여부를 결정합니다."
+      },
+      {
+        "question": "발정기 반려견도 입장할 수 있나요?",
+        "answer": "발정기 중인 암컷 반려견은 다른 반려견들과의 마찰을 예방하기 위해 입장이 제한됩니다. 발정기가 끝난 후 2주 이후에 방문해 주시기 바랍니다."
+      },
+      {
+        "question": "보호자 없이 반려견만 맡길 수 있나요?",
+        "answer": "해피포즈는 보호자와 함께하는 카페 공간입니다. 보호자 동반 없이 반려견만 맡아드리는 서비스는 운영하지 않습니다. 데이케어 서비스가 필요하신 경우 저희와 제휴된 반려견 호텔을 안내해 드릴 수 있습니다."
+      },
+      {
+        "question": "이용 시간을 연장할 수 있나요?",
+        "answer": "기본 이용 시간은 2시간이며, 1시간 단위로 연장 가능합니다. 소형견 연장 5,000원/시간, 대형견 연장 7,000원/시간입니다. 단, 마감 30분 전에는 연장이 불가합니다."
+      },
+      {
+        "question": "주차는 가능한가요?",
+        "answer": "건물 내 지하 주차장을 이용하실 수 있습니다. 2시간 무료 주차 제공이며, 이후 시간당 2,000원이 부과됩니다. 주말에는 주차 공간이 부족할 수 있으니 대중교통 이용을 권장합니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-3456-7890",
+    "address": "서울시 마포구 홍대입구역 2번 출구 도보 3분, 월드컵북로 52-1",
+    "hours": "월~금 10:00~21:00 / 주말·공휴일 09:00~22:00 (연중무휴)",
+    "kakao": "happypaws_cafe",
+    "coordinates": {
+      "lat": 37.5563,
+      "lng": 126.9228
+    }
+  },
+  "seo": {
+    "title": "해피포즈 애견카페 | 홍대 반려견카페 | 소형견·대형견 구역 분리",
+    "description": "홍대 인근 프리미엄 애견카페 해피포즈. 소형견·대형견 구역 분리 운영, 철저한 위생 관리, 보호자 카페 운영. 반려견과 함께하는 특별한 시간을 만들어드립니다.",
+    "keywords": ["애견카페", "홍대애견카페", "반려견카페", "마포구애견카페", "소형견카페", "대형견카페", "해피포즈"]
+  },
+  "features": {
+    "reservation": {
+      "type": "datetime",
+      "maxPartySize": 4,
+      "slotDuration": 120,
+      "advanceBookingDays": 14,
+      "notice": "예약 후 30분 이내 미방문 시 자동 취소됩니다."
+    },
+    "menuBoard": {
+      "enabled": true,
+      "categories": [
+        {
+          "name": "입장 요금",
+          "items": [
+            { "name": "소형견 입장 (10kg 미만)", "price": "15,000원", "unit": "2시간" },
+            { "name": "대형견 입장 (10kg 이상)", "price": "18,000원", "unit": "2시간" },
+            { "name": "소형견 연장", "price": "5,000원", "unit": "1시간" },
+            { "name": "대형견 연장", "price": "7,000원", "unit": "1시간" }
+          ]
+        },
+        {
+          "name": "정기권",
+          "items": [
+            { "name": "소형견 월 정기권 (8회)", "price": "99,000원", "unit": "월" },
+            { "name": "대형견 월 정기권 (8회)", "price": "120,000원", "unit": "월" }
+          ]
+        },
+        {
+          "name": "음료",
+          "items": [
+            { "name": "아메리카노", "price": "4,500원" },
+            { "name": "카페라떼", "price": "5,500원" },
+            { "name": "강아지 전용 강아지우유", "price": "4,000원" }
+          ]
+        }
+      ]
+    }
+  }
+}

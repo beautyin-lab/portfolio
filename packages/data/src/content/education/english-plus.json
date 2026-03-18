@@ -1,0 +1,244 @@
+{
+  "slug": "english-plus",
+  "category": "education",
+  "name": "잉글리시플러스 어학원",
+  "archetype": "AT-03",
+  "theme": "global-blue",
+  "hero": {
+    "title": "영어, 이제는 자신 있게",
+    "subtitle": "원어민 강사와 한국인 전문 강사의 협력 수업. 회화부터 토익·토플·비즈니스 영어까지 당신의 영어를 완성합니다.",
+    "images": [
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600&q=80",
+      "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1600&q=80",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1600&q=80"
+    ],
+    "cta": {
+      "text": "무료 레벨 진단 신청",
+      "action": "reservation"
+    }
+  },
+  "about": {
+    "title": "잉글리시플러스 소개",
+    "description": "잉글리시플러스는 2014년 설립된 서울 종로구 대표 영어 어학원입니다. 미국, 영국, 호주 출신 원어민 강사 8명과 영어교육학 전공 한국인 강사 6명이 팀을 이루어 수강생 수준에 맞는 맞춤형 영어 교육을 제공합니다. 연평균 토익 점수 향상 185점, IELTS 평균 1.5 밴드 상승의 성과를 거두고 있습니다.",
+    "highlights": [
+      {
+        "icon": "Globe",
+        "title": "원어민 강사 8명",
+        "description": "미국·영국·호주 출신 정규 원어민 강사와 함께하는 실전 영어 환경"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "검증된 성적 향상",
+        "description": "토익 평균 185점 향상, IELTS 1.5 밴드 상승의 실질적인 성과"
+      },
+      {
+        "icon": "Briefcase",
+        "title": "비즈니스 영어 특화",
+        "description": "이메일, 프레젠테이션, 화상회의 등 실무 비즈니스 영어 전문 과정"
+      },
+      {
+        "icon": "Clock",
+        "title": "다양한 시간대",
+        "description": "이른 아침 6시 30분부터 저녁 10시까지. 직장인도 수강 가능한 유연한 시간표"
+      }
+    ]
+  },
+  "services": {
+    "title": "수업 과정",
+    "items": [
+      {
+        "name": "영어 회화 기초~중급",
+        "description": "일상 회화와 기본 문법 완성. 원어민 강사와 2인 1조 소그룹 회화 수업. 주 3회",
+        "price": "320,000원/월",
+        "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80"
+      },
+      {
+        "name": "영어 회화 고급·프리토킹",
+        "description": "자연스러운 원어민 수준의 영어 완성. 시사 토론, 영화, 뉴스 활용 수업. 주 3회",
+        "price": "380,000원/월",
+        "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800&q=80"
+      },
+      {
+        "name": "토익 (TOEIC) 집중반",
+        "description": "단기간 고득점 목표. LC/RC 파트별 전략 수업. 900점 이상 달성 전문. 주 4회",
+        "price": "420,000원/월",
+        "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80"
+      },
+      {
+        "name": "IELTS / TOEFL 준비반",
+        "description": "해외 유학·취업·이민을 위한 공인 영어 시험 전문 준비반. 쓰기·말하기 집중",
+        "price": "480,000원/월",
+        "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80"
+      },
+      {
+        "name": "비즈니스 영어",
+        "description": "외국계 기업, 해외 업무 담당자를 위한 실무 영어. 이메일, PT, 협상 전문",
+        "price": "450,000원/월",
+        "image": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80"
+      },
+      {
+        "name": "1:1 프라이빗 레슨",
+        "description": "완전 맞춤 개인 수업. 원어민 또는 한국인 강사 선택 가능. 시간 자유 선택",
+        "price": "80,000원/시간 (원어민) / 60,000원/시간 (한국인)",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
+      }
+    ]
+  },
+  "team": {
+    "title": "강사진 소개",
+    "members": [
+      {
+        "name": "Michael Hayes",
+        "role": "원어민 수석 강사 (미국)",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+        "description": "미국 보스턴 출신, 하버드대 언어학 전공. 한국 거주 10년. TESOL 자격 보유. 회화 고급반과 비즈니스 영어 전담"
+      },
+      {
+        "name": "Sarah Thompson",
+        "role": "원어민 강사 (영국)",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+        "description": "영국 런던 출신. IELTS 공인 시험관 출신. IELTS 전문 지도와 영국식 발음 교정 특화 강사"
+      },
+      {
+        "name": "김태양",
+        "role": "토익·수능 영어 전문 강사",
+        "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+        "description": "서울대 영어교육과 졸업, TOEIC 990점 만점. 토익 전문 강사 12년 경력. '10주 토익 완성' 교재 저자"
+      },
+      {
+        "name": "이수현",
+        "role": "원장 / 비즈니스 영어 강사",
+        "image": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&q=80",
+        "description": "미국 뉴욕 금융회사 근무 5년 경력. 실무 비즈니스 영어와 해외 취업 영어 면접 준비 전문"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "학원 소개",
+    "images": [
+      {
+        "src": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80",
+        "alt": "원어민 회화 수업 진행",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800&q=80",
+        "alt": "소그룹 스터디 공간",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+        "alt": "강의실 전경",
+        "category": "강의실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+        "alt": "자습 및 스터디 공간",
+        "category": "자습실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80",
+        "alt": "토익 수업 진행",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+        "alt": "1:1 프라이빗 레슨 공간",
+        "category": "개인지도"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "수강생 후기",
+    "items": [
+      {
+        "name": "직장인 토익 수강생 박OO",
+        "content": "토익 650점에서 시작해서 3개월 만에 895점 받았어요! 김태양 선생님의 수업이 정말 체계적이에요. 단순 암기가 아니라 왜 틀리는지 패턴을 파악해주시는 방식이 너무 효과적이었습니다. 목표 점수 훨씬 초과 달성해서 취업 성공했어요.",
+        "rating": 5
+      },
+      {
+        "name": "IELTS 수강생 해외이민 준비 최OO",
+        "content": "캐나다 이민을 위해 IELTS 6.5가 필요했는데 Sarah 선생님 수업 6개월 만에 7.0 달성했어요. 전직 시험관이라 시험 전략을 너무 잘 아시고, 영국식 영어 발음도 많이 교정됐어요. 이민 비자 승인 됐습니다!",
+        "rating": 5
+      },
+      {
+        "name": "비즈니스 영어 수강생 외국계 직장인 이OO",
+        "content": "외국계 회사로 이직하면서 영어 실력이 부족해 걱정이었는데 비즈니스 영어 과정 3개월 만에 영어 이메일, 화상회의가 가능해졌어요. Michael 선생님의 실전 중심 수업 덕분에 실제 업무에서 바로 써먹을 수 있는 표현들을 많이 배웠습니다.",
+        "rating": 5
+      },
+      {
+        "name": "프리토킹반 수강생 김OO",
+        "content": "10년 전에 토익 900점 넘었지만 실제 회화는 전혀 안 됐었는데 여기 다니고 나서 외국인 앞에서 자신 있게 말할 수 있게 됐어요. 매일 다른 주제로 토론하는 수업 방식이 정말 자연스럽게 영어 사고가 되도록 도와줬어요.",
+        "rating": 4
+      },
+      {
+        "name": "학부모 정OO",
+        "content": "고등학생 아이를 TOEFL 준비 보냈는데 100점 넘게 받아서 미국 대학 지원 자격을 갖췄어요. 원어민 선생님과의 Speaking 연습이 특히 효과적이었고, Writing 지도도 꼼꼼하게 해주셔서 만족합니다.",
+        "rating": 5
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "수준에 맞는 반은 어떻게 결정되나요?",
+        "answer": "등록 전 무료 레벨 진단 테스트(약 40분)를 진행합니다. 문법, 독해, 듣기, 말하기 네 파트를 평가하여 가장 적합한 과정과 반을 배정합니다. 테스트 결과 후 담당 강사와의 1:1 상담을 통해 최적의 학습 계획을 제안해드립니다."
+      },
+      {
+        "question": "원어민 강사 수업이 부담스러운데 괜찮을까요?",
+        "answer": "초보자도 걱정하지 않으셔도 됩니다. 원어민 강사는 수강생 수준에 맞는 속도와 어휘로 진행하며, 필요한 경우 한국어로도 보충 설명이 가능한 한국어 구사 원어민 강사가 있습니다. 한국인 강사와의 병행 수업으로 자연스럽게 실력을 키울 수 있습니다."
+      },
+      {
+        "question": "수업 후 자습 공간 이용이 가능한가요?",
+        "answer": "등록 수강생은 평일 오전 6시~오후 10시 자습실을 자유롭게 이용 가능합니다. 원어민 강사가 상주하는 오픈 토킹 타임(평일 오후 12시~1시, 6시~7시)을 통해 추가 회화 연습도 무료로 가능합니다."
+      },
+      {
+        "question": "직장인인데 주말이나 저녁 수업이 있나요?",
+        "answer": "직장인을 위해 이른 아침 6시 30분 수업과 저녁 8시~10시 수업을 운영합니다. 토요일 종일 집중반도 있으며, 주 2회 수업도 선택 가능합니다. 출장이나 야근으로 결석 시 다른 시간대 수업으로 보강이 가능합니다."
+      },
+      {
+        "question": "토익 점수가 안 오르면 어떻게 되나요?",
+        "answer": "토익 집중반 수강 후 목표 점수 미달성 시 다음 달 수강료를 50% 감면해드립니다. 단, 출석률 85% 이상, 과제 완료, 실전 모의고사 3회 이상 응시 조건을 충족해야 합니다. 개인 상황에 따른 추가 지도를 진행합니다."
+      },
+      {
+        "question": "온라인 수업도 가능한가요?",
+        "answer": "네, 모든 과정에 온라인(Zoom) 수업 옵션이 있습니다. 현장 수강생과 동일한 커리큘럼으로 진행되며, 원어민 강사와의 화상 회화 수업도 온라인으로 동일하게 제공됩니다. 지방 거주자나 재택근무자도 수강 가능합니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-7890-1234",
+    "address": "서울시 종로구 종로 123, 잉글리시플러스빌딩 5층",
+    "hours": "평일 06:30~22:00 / 토요일 09:00~18:00 / 일요일 휴원",
+    "kakao": "@englishplus",
+    "coordinates": {
+      "lat": 37.5704,
+      "lng": 126.9921
+    }
+  },
+  "seo": {
+    "title": "잉글리시플러스 어학원 | 종로 영어회화·토익·IELTS 전문",
+    "description": "종로 영어 어학원. 원어민 강사 8명, 토익 평균 185점 향상, IELTS 1.5 밴드 상승. 회화·토익·IELTS·비즈니스 영어 전문 과정.",
+    "keywords": ["종로 영어학원", "토익 학원", "IELTS 학원", "영어 회화", "비즈니스 영어", "원어민 강사"]
+  },
+  "features": {
+    "schedule": {
+      "enabled": true,
+      "timetable": [
+        { "class": "회화 기초반", "days": ["월", "수", "금"], "time": "19:00~20:30", "teacher": "Sarah Thompson" },
+        { "class": "회화 고급·프리토킹", "days": ["화", "목"], "time": "19:30~21:00", "teacher": "Michael Hayes" },
+        { "class": "토익 집중반 A", "days": ["월", "화", "목", "금"], "time": "07:00~08:30", "teacher": "김태양" },
+        { "class": "토익 집중반 B", "days": ["월", "화", "목", "금"], "time": "20:00~21:30", "teacher": "김태양" },
+        { "class": "IELTS 준비반", "days": ["월", "수", "금"], "time": "18:00~19:30", "teacher": "Sarah Thompson" },
+        { "class": "비즈니스 영어", "days": ["화", "목"], "time": "07:00~08:30", "teacher": "이수현" },
+        { "class": "토요일 집중반", "days": ["토"], "time": "10:00~16:00", "teacher": "전체강사" }
+      ]
+    },
+    "reservation": {
+      "enabled": true,
+      "type": "datetime",
+      "label": "무료 레벨 진단 & 상담 예약"
+    }
+  }
+}

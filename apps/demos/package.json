@@ -1,0 +1,31 @@
+{
+  "name": "@portfolio/demos",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^15",
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/react": "^19",
+    "@types/node": "^22",
+    "tailwindcss": "^4",
+    "postcss": "^8",
+    "autoprefixer": "^10",
+    "@portfolio/config": "workspace:*",
+    "@portfolio/ui": "workspace:*",
+    "@portfolio/theme": "workspace:*",
+    "@portfolio/data": "workspace:*",
+    "@portfolio/db": "workspace:*",
+    "@portfolio/mock-backend": "workspace:*",
+    "@portfolio/industry": "workspace:*"
+  }
+}

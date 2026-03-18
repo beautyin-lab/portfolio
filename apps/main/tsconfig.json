@@ -1,0 +1,18 @@
+{
+  "extends": "../../packages/config/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./app/*"],
+      "@portfolio/ui": ["../../packages/ui/src"],
+      "@portfolio/ui/*": ["../../packages/ui/src/*"],
+      "@portfolio/theme": ["../../packages/theme/src"],
+      "@portfolio/theme/*": ["../../packages/theme/src/*"],
+      "@portfolio/data": ["../../packages/data/src"],
+      "@portfolio/data/*": ["../../packages/data/src/*"],
+      "@portfolio/db": ["../../packages/db/src"],
+      "@portfolio/db/*": ["../../packages/db/src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

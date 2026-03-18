@@ -1,0 +1,189 @@
+{
+  "slug": "iron-gym",
+  "category": "fitness",
+  "name": "아이언짐 피트니스",
+  "archetype": "AT-04",
+  "theme": "fitness-bold",
+  "hero": {
+    "title": "한계를 넘어, 새로운 나를 만나다",
+    "subtitle": "최신 장비와 전문 트레이너가 당신의 목표를 현실로 만들어 드립니다",
+    "images": [
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&h=900&fit=crop",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&h=900&fit=crop"
+    ],
+    "cta": { "text": "무료 체험 신청", "action": "/reservation" }
+  },
+  "about": {
+    "title": "아이언짐 피트니스",
+    "description": "아이언짐 피트니스는 2017년 마포구 홍대 인근에 문을 열었습니다. 660㎡(200평) 규모의 넓은 공간에 프리웨이트 존·머신 존·유산소 존·GX 스튜디오를 갖추고 있으며, 유연한 이용권 체계와 24시간 운영으로 직장인·학생 모두 시간 부담 없이 이용할 수 있습니다. 국가공인 생활스포츠지도사 자격을 보유한 전문 트레이너의 PT 서비스도 제공합니다.",
+    "highlights": [
+      { "icon": "Clock", "title": "24시간 운영", "description": "새벽·심야에도 이용 가능한 연중무휴 헬스장" },
+      { "icon": "Dumbbell", "title": "200평 대형 공간", "description": "프리웨이트·머신·유산소·GX 스튜디오 완비" },
+      { "icon": "Award", "title": "국가공인 트레이너", "description": "생활스포츠지도사 자격 보유 PT 전문 트레이너 8인" },
+      { "icon": "Users", "title": "회원 5,000명+", "description": "홍대·합정·상수 지역 대표 헬스장" }
+    ]
+  },
+  "services": {
+    "title": "이용권 및 서비스",
+    "items": [
+      {
+        "name": "일반 회원권",
+        "description": "GX 클래스 포함 헬스장 무제한 이용. 락커·수건 서비스 포함. 1개월·3개월·6개월·12개월 이용권 선택 가능.",
+        "price": "1개월 7만원 / 3개월 18만원 / 12개월 60만원",
+        "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "1:1 퍼스널 트레이닝 (PT)",
+        "description": "국가공인 트레이너와 1:1 맞춤 운동 처방. 체성분 분석 후 목표(다이어트·근력·재활)에 맞는 체계적 프로그램. 회원권 별도.",
+        "price": "10회 50만원 / 20회 90만원",
+        "image": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "GX 클래스",
+        "description": "줌바·스피닝·크로스핏·요가·바디컴뱃 등 15종 그룹 운동. 일반 회원권으로 무제한 참여 가능. 매일 8~12개 클래스 운영.",
+        "price": "회원권 포함",
+        "image": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&h=400&fit=crop"
+      },
+      {
+        "name": "체성분 분석 + 식단 상담",
+        "description": "인바디 측정으로 체성분(근육량·체지방률·기초대사량) 분석. 전문 트레이너의 1:1 식단 상담 45분.",
+        "price": "3만원 (회원 무료)",
+        "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&h=400&fit=crop"
+      }
+    ]
+  },
+  "team": {
+    "title": "트레이너 소개",
+    "members": [
+      {
+        "name": "강동혁",
+        "role": "헤드 트레이너",
+        "image": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop",
+        "description": "생활스포츠지도사 2급. 체육학 학사. 보디빌딩 대회 입상 경력. 근비대·체형 교정 전문 트레이너. PT 경력 9년."
+      },
+      {
+        "name": "이예원",
+        "role": "여성 전문 트레이너",
+        "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+        "description": "생활스포츠지도사 2급. 다이어트·바디라인 교정 전문. 여성 회원 선호 트레이너 1위. 산후 회복 운동 전문."
+      },
+      {
+        "name": "박준석",
+        "role": "재활 트레이너",
+        "image": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=400&fit=crop",
+        "description": "물리치료학 전공. 생활스포츠지도사 1급. 관절·척추 재활 운동 전문. 부상 예방 및 기능성 훈련 담당."
+      },
+      {
+        "name": "최지우",
+        "role": "GX 강사 팀장",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+        "description": "줌바 라이선스 강사. 스피닝·바디컴뱃 자격 보유. 에너지 넘치는 수업으로 회원들의 만족도가 높은 GX 팀장."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "시설 안내",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop", "alt": "프리웨이트 존", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop", "alt": "PT 전용 트레이닝 존", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop", "alt": "유산소 존 (트레드밀·사이클)", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop", "alt": "GX 스튜디오", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop", "alt": "머신 웨이트 존", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop", "alt": "락커룸 및 샤워실", "category": "시설" },
+      { "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop", "alt": "인바디 측정 코너", "category": "서비스" },
+      { "src": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop", "alt": "스트레칭 존", "category": "시설" }
+    ]
+  },
+  "testimonials": {
+    "title": "회원 후기",
+    "items": [
+      {
+        "name": "문*준",
+        "content": "강동혁 트레이너랑 6개월 PT해서 체중 12kg 감량하고 근육량 4kg 늘렸습니다. 식단 관리까지 같이 봐주셔서 정말 체계적으로 변할 수 있었어요. 인생 최고의 투자입니다.",
+        "rating": 5,
+        "service": "퍼스널 트레이닝"
+      },
+      {
+        "name": "서*영",
+        "content": "이예원 트레이너님 덕분에 산후에 뱃살 다 빼고 예전 체형 돌아왔어요. 6개월 동안 정말 꼼꼼하게 봐주셔서 감사합니다. 아기 낳고도 이렇게 될 수 있구나 싶었어요.",
+        "rating": 5,
+        "service": "여성 PT"
+      },
+      {
+        "name": "임*현",
+        "content": "24시간 운영이라 새벽 5시에도 올 수 있어서 직장인인 저한테 딱이에요. 새벽에도 청결하게 관리되고 장비도 항상 잘 작동해서 불편함이 없습니다.",
+        "rating": 5,
+        "service": "일반 회원권"
+      },
+      {
+        "name": "조*희",
+        "content": "줌바 수업이 너무 재밌어서 3개월째 매일 오고 있어요. 최지우 강사님이 에너지 넘치고 동작 설명도 잘 해주셔서 운동이 즐거워졌습니다.",
+        "rating": 5,
+        "service": "GX 클래스"
+      },
+      {
+        "name": "안*혁",
+        "content": "어깨 부상 이후 재활 목적으로 박준석 트레이너와 PT 시작했어요. 일반 헬스장 트레이너와 달리 재활 관점에서 접근해 주셔서 안전하게 운동 강도를 올릴 수 있었습니다.",
+        "rating": 5,
+        "service": "재활 트레이닝"
+      }
+    ]
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "items": [
+      {
+        "question": "24시간 운영이면 새벽에도 직원이 있나요?",
+        "answer": "오전 6시~오후 10시에는 트레이너·스태프가 상주합니다. 심야(오후 10시~오전 6시)에는 무인 운영으로 회원카드 출입 시스템을 사용하며, CCTV 모니터링과 비상 연락망이 운영됩니다."
+      },
+      {
+        "question": "GX 클래스를 들으려면 따로 예약해야 하나요?",
+        "answer": "인기 클래스(스피닝·줌바 등)는 앱 또는 카카오톡으로 하루 전 예약을 권장합니다. 당일 빈자리가 있으면 현장 참여도 가능합니다. 예약 취소는 클래스 1시간 전까지 해주세요."
+      },
+      {
+        "question": "이용권 환불이 가능한가요?",
+        "answer": "소비자보호법에 따라 미사용 기간에 해당하는 금액을 환불해 드립니다. 단, 등록 후 1개월 이후 환불 시 10% 위약금이 발생할 수 있습니다. 구체적인 사항은 방문 상담 부탁드립니다."
+      },
+      {
+        "question": "PT 트레이너를 중간에 바꿀 수 있나요?",
+        "answer": "트레이너와 스타일이 맞지 않는 경우 잔여 횟수 내에서 트레이너 변경이 가능합니다. 접수처에 문의 주시면 적합한 트레이너를 재배정해 드립니다."
+      },
+      {
+        "question": "주차가 가능한가요?",
+        "answer": "건물 지하 주차장에서 2시간 무료 주차를 제공합니다. 홍대입구역 9번 출구에서 도보 6분 거리로 대중교통 이용도 편리합니다."
+      },
+      {
+        "question": "락커와 수건은 무료로 이용 가능한가요?",
+        "answer": "일반 회원권 기준 개인 락커는 유료 임대(월 1만원)이며, 공동 락커는 무료입니다. 수건은 매 방문 시 1매 무료로 제공됩니다."
+      }
+    ]
+  },
+  "contact": {
+    "phone": "02-322-7744",
+    "address": "서울시 마포구 어울마당로 85 홍대상가 지하 1층",
+    "hours": "24시간 연중무휴 (트레이너 상주: 06:00~22:00)",
+    "kakao": "iron-gym-hongdae",
+    "coordinates": { "lat": 37.5563, "lng": 126.9236 }
+  },
+  "seo": {
+    "title": "아이언짐 피트니스 - 홍대 24시간 헬스장 | PT·GX·200평 대형 짐",
+    "description": "홍대입구역 6분, 24시간 연중무휴 200평 대형 헬스장. 국가공인 트레이너 PT·15종 GX 클래스·인바디 측정. 첫 달 할인.",
+    "keywords": ["홍대헬스장", "홍대PT", "홍대24시간헬스장", "마포헬스장", "홍대GX", "홍대퍼스널트레이닝", "홍대입구헬스장"]
+  },
+  "reservation": {
+    "type": "datetime-staff",
+    "staff": [
+      { "id": "tr-kang", "name": "강동혁 트레이너", "specialty": "근비대·체형교정" },
+      { "id": "tr-lee", "name": "이예원 트레이너", "specialty": "여성·다이어트" },
+      { "id": "tr-park", "name": "박준석 트레이너", "specialty": "재활·기능성" },
+      { "id": "tr-choi", "name": "최지우 강사", "specialty": "GX·줌바·스피닝" }
+    ],
+    "services": [
+      { "id": "trial", "name": "무료 체험 (1일)", "duration": 60 },
+      { "id": "pt-session", "name": "PT 1회", "duration": 50 },
+      { "id": "inbody", "name": "인바디+식단 상담", "duration": 45 },
+      { "id": "gx-class", "name": "GX 클래스 예약", "duration": 50 }
+    ]
+  }
+}
