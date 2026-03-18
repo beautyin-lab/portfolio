@@ -331,5 +331,14 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "hamburger-only",
+    "colorMode": "dark",
+    "headingFont": "serif",
+    "headingSize": "dramatic",
+    "headingWeight": "light",
+    "footerStyle": "dark",
+    "heroVariant": "fullscreen"
   }
 }

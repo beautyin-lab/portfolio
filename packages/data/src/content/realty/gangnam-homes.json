@@ -373,5 +373,13 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "search-bar",
+    "colorMode": "light",
+    "headingFont": "sans",
+    "contentWidth": "wide",
+    "footerStyle": "multi-column",
+    "heroVariant": "minimal"
   }
 }

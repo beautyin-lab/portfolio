@@ -22,17 +22,18 @@ const CATEGORY_LABELS: Record<string, string> = {
   restaurant: '식당/맛집',
 };
 
-const ARCHETYPE_LABELS: Record<string, string> = {
-  'AT-01': 'Editorial Magazine',
-  'AT-02': 'Immersive Showcase',
-  'AT-03': 'Professional Trust',
-  'AT-04': 'Dynamic Energy',
-  'AT-05': 'Soft & Organic',
-  'AT-06': 'Playful Interactive',
-  'AT-07': 'Minimal Gallery',
-  'AT-08': 'Warm Storytelling',
-  'AT-09': 'Data-Driven Dashboard',
-  'AT-10': 'Bold Contrast',
+// Layout style labels derived from layoutConfig headerStyle
+const HEADER_STYLE_LABELS: Record<string, string> = {
+  'minimal': 'Minimal Clean',
+  'split-center': 'Split Center',
+  'transparent-overlay': 'Immersive Overlay',
+  'two-tier': 'Professional Two-Tier',
+  'sticky-shrink': 'Dynamic Sticky',
+  'sidebar': 'Sidebar Navigation',
+  'bottom-tabs': 'Tab Navigation',
+  'search-bar': 'Search-Driven',
+  'hamburger-only': 'Fullscreen Menu',
+  'hidden': 'Content-First',
 };
 
 export default function DemosIndexPage() {
@@ -111,9 +112,9 @@ export default function DemosIndexPage() {
                 <span className="absolute left-3 top-3 rounded-full bg-black/70 px-3 py-1 text-xs font-medium text-white">
                   {CATEGORY_LABELS[site.category] || site.category}
                 </span>
-                {/* Archetype Badge */}
+                {/* Layout Style Badge */}
                 <span className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-700">
-                  {site.archetype}
+                  {HEADER_STYLE_LABELS[site.layoutConfig?.headerStyle ?? 'minimal'] ?? 'Custom'}
                 </span>
               </div>
 
@@ -123,7 +124,7 @@ export default function DemosIndexPage() {
                   {site.name}
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">
-                  {ARCHETYPE_LABELS[site.archetype] || site.archetype}
+                  {HEADER_STYLE_LABELS[site.layoutConfig?.headerStyle ?? 'minimal'] ?? 'Custom Layout'}
                 </p>
                 {site.hero?.subtitle && (
                   <p className="mt-2 text-sm text-gray-600 line-clamp-2">

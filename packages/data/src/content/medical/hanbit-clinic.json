@@ -316,5 +316,18 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "minimal",
+    "colorMode": "light",
+    "headingFont": "serif",
+    "headingSize": "normal",
+    "contentWidth": "narrow",
+    "sectionSpacing": "normal",
+    "effects": [
+      "scroll-progress"
+    ],
+    "footerStyle": "centered",
+    "heroVariant": "parallax"
   }
 }

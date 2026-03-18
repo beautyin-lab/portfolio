@@ -311,5 +311,15 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "split-center",
+    "colorMode": "light",
+    "headingFont": "sans",
+    "headingWeight": "light",
+    "borderRadius": "full",
+    "sectionSpacing": "dramatic",
+    "footerStyle": "centered",
+    "heroVariant": "split"
   }
 }

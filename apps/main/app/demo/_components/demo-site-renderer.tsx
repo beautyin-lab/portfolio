@@ -1,7 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import type { SiteConfig } from '@portfolio/data';
+import type { SiteConfig, LayoutConfig } from '@portfolio/data';
 import { cn } from '@portfolio/ui/lib/utils';
 import { HeroSection } from '@portfolio/ui/composites/hero-section';
 import { ServiceCards } from '@portfolio/ui/composites/service-cards';
@@ -14,68 +14,89 @@ import { ScrollReveal } from '@portfolio/ui/animations/components/scroll-reveal'
 import { StaggerContainer } from '@portfolio/ui/animations/components/stagger-container';
 
 // ---------------------------------------------------------------------------
-// Archetypes with uniformly dark background -- all sections use dark styling
+// Heading font family mapping (mirrors site-layout.tsx)
 // ---------------------------------------------------------------------------
-const DARK_ARCHETYPES = new Set(['AT-02']);
-
-// ---------------------------------------------------------------------------
-// AT-10: alternating dark/light sections (black/white).
-// Hero occupies position 0 (dark). Each subsequent rendered section
-// alternates. We compute per-section darkness at render time.
-// ---------------------------------------------------------------------------
-const AT10_ARCHETYPE = 'AT-10';
-
-// ---------------------------------------------------------------------------
-// Hero variant mapping per archetype
-// ---------------------------------------------------------------------------
-const heroVariantMap: Record<string, 'fade-slider' | 'fullscreen' | 'split' | 'minimal' | 'parallax'> = {
-  'AT-01': 'split',
-  'AT-02': 'fullscreen',
-  'AT-03': 'fade-slider',
-  'AT-04': 'fullscreen',
-  'AT-05': 'fade-slider',
-  'AT-06': 'split',
-  'AT-07': 'minimal',
-  'AT-08': 'parallax',
-  'AT-09': 'minimal',
-  'AT-10': 'fullscreen',
+const HEADING_FONT_MAP: Record<string, string> = {
+  sans: "'Pretendard Variable', Pretendard, -apple-system, sans-serif",
+  serif: "'Noto Serif KR', serif",
+  mono: "'Space Grotesk', monospace",
+  display: "'Playfair Display', serif",
 };
 
 // ---------------------------------------------------------------------------
-// Section Wrapper -- handles padding, max-width, and bg colors.
-// For dark archetypes: dark bg.
-// For AT-10: alternating black/white based on sectionPos (even=dark, odd=light).
+// Content width mapping
+// ---------------------------------------------------------------------------
+const MAX_WIDTH_MAP: Record<string, string> = {
+  narrow: 'max-w-3xl',
+  standard: 'max-w-7xl',
+  wide: 'max-w-[1600px]',
+  full: 'max-w-none',
+};
+
+// ---------------------------------------------------------------------------
+// Section spacing mapping
+// ---------------------------------------------------------------------------
+const SPACING_MAP: Record<string, string> = {
+  tight: 'px-4 py-12 sm:px-6',
+  normal: 'px-4 py-16 sm:px-6 md:py-24 lg:px-8',
+  dramatic: 'px-4 py-24 sm:px-6 md:py-32 lg:px-8',
+};
+
+// ---------------------------------------------------------------------------
+// Heading size mapping
+// ---------------------------------------------------------------------------
+const HEADING_SIZE_MAP: Record<string, string> = {
+  normal: 'text-3xl sm:text-4xl',
+  large: 'text-4xl sm:text-5xl',
+  dramatic: 'text-5xl sm:text-6xl lg:text-7xl',
+};
+
+// ---------------------------------------------------------------------------
+// Helper: resolve layout config with defaults
+// ---------------------------------------------------------------------------
+function getLayout(config: SiteConfig): LayoutConfig {
+  return config.layoutConfig ?? {
+    headerStyle: 'minimal',
+    colorMode: 'light',
+    headingFont: 'sans',
+  };
+}
+
+// ---------------------------------------------------------------------------
+// Section Wrapper
 // ---------------------------------------------------------------------------
 function SectionWrapper({
   children,
   className,
   fullBleed = false,
   id,
-  dark = false,
+  layout,
   variant = 'primary',
-  at10Pos,
+  sectionIdx = 0,
 }: {
   children: ReactNode;
   className?: string;
   fullBleed?: boolean;
   id?: string;
-  dark?: boolean;
+  layout: LayoutConfig;
   variant?: 'primary' | 'secondary';
-  at10Pos?: number; // defined only for AT-10 sections; even=dark, odd=light
+  sectionIdx?: number;
 }) {
+  const colorMode = layout.colorMode ?? 'light';
+  const isMixed = colorMode === 'mixed';
+  const isDark = colorMode === 'dark' || (isMixed && sectionIdx % 2 === 0);
+
   let bgClass: string;
-  if (at10Pos !== undefined) {
-    // AT-10 alternating: even positions = black, odd = white
-    bgClass = at10Pos % 2 === 0 ? 'bg-black text-white' : 'bg-white text-gray-900';
-  } else if (dark) {
+  if (isMixed) {
+    bgClass = sectionIdx % 2 === 0 ? 'bg-gray-950 text-white' : 'bg-white text-gray-900';
+  } else if (isDark) {
     bgClass = variant === 'primary' ? 'bg-gray-950 text-white' : 'bg-gray-900 text-white';
   } else {
     bgClass = variant === 'primary' ? 'bg-white' : 'bg-gray-50';
   }
 
-  const paddingClass = at10Pos !== undefined
-    ? 'px-6 py-24 md:px-12 md:py-40'
-    : 'px-4 py-16 sm:px-6 md:py-24 lg:px-8';
+  const spacing = SPACING_MAP[layout.sectionSpacing ?? 'normal'];
+  const maxWidth = MAX_WIDTH_MAP[layout.contentWidth ?? 'standard'];
 
   if (fullBleed) {
     return (
@@ -85,21 +106,46 @@ function SectionWrapper({
     );
   }
   return (
-    <section id={id} className={cn(paddingClass, bgClass, className)}>
-      <div className="mx-auto max-w-7xl">{children}</div>
+    <section id={id} className={cn(spacing, bgClass, className)}>
+      <div className={cn('mx-auto', maxWidth)}>{children}</div>
     </section>
   );
 }
 
 // ---------------------------------------------------------------------------
-// Section Title wrapper -- adapts text color for dark backgrounds
+// Section Title
 // ---------------------------------------------------------------------------
-function SectionTitle({ children, dark = false }: { children: ReactNode; dark?: boolean }) {
+function SectionTitle({
+  children,
+  layout,
+  sectionIdx = 0,
+}: {
+  children: ReactNode;
+  layout: LayoutConfig;
+  sectionIdx?: number;
+}) {
+  const colorMode = layout.colorMode ?? 'light';
+  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const headingFont = HEADING_FONT_MAP[layout.headingFont] ?? HEADING_FONT_MAP.sans;
+  const headingSize = HEADING_SIZE_MAP[layout.headingSize ?? 'normal'];
+  const headingWeight = layout.headingWeight ?? 'bold';
+
+  const weightClass =
+    headingWeight === 'light' ? 'font-light' :
+    headingWeight === 'normal' ? 'font-normal' :
+    headingWeight === 'black' ? 'font-black' :
+    'font-bold';
+
   return (
-    <h2 className={cn(
-      'mb-8 text-center text-3xl font-bold sm:text-4xl',
-      dark ? 'text-white' : 'text-gray-900',
-    )}>
+    <h2
+      className={cn(
+        'mb-8 text-center',
+        headingSize,
+        weightClass,
+        isDark ? 'text-white' : 'text-gray-900',
+      )}
+      style={{ fontFamily: headingFont }}
+    >
       {children}
     </h2>
   );
@@ -110,7 +156,8 @@ function SectionTitle({ children, dark = false }: { children: ReactNode; dark?: 
 // ---------------------------------------------------------------------------
 
 function renderHero(config: SiteConfig) {
-  const variant = heroVariantMap[config.archetype] ?? 'fade-slider';
+  const layout = getLayout(config);
+  const variant = layout.heroVariant ?? 'fade-slider';
   const slides = config.hero.images.map((img, i) => ({
     image: img,
     title: config.hero.title,
@@ -134,20 +181,20 @@ function renderHero(config: SiteConfig) {
   );
 }
 
-function renderAbout(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderAbout(config: SiteConfig, sectionIdx: number) {
   if (!config.about) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
+  const colorMode = layout.colorMode ?? 'light';
+  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const headingFont = HEADING_FONT_MAP[layout.headingFont] ?? HEADING_FONT_MAP.sans;
 
   return (
-    <SectionWrapper key="about" id="about" dark={dark} variant="primary" at10Pos={at10Pos}>
+    <SectionWrapper key="about" id="about" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className={cn(
-            'text-3xl font-bold sm:text-4xl whitespace-pre-line',
-            isDark ? 'text-white' : 'text-gray-900',
-          )}>
+          <SectionTitle layout={layout} sectionIdx={sectionIdx}>
             {config.about.title}
-          </h2>
+          </SectionTitle>
           <p className={cn(
             'mt-6 text-lg leading-relaxed whitespace-pre-line',
             isDark ? 'text-gray-300' : 'text-gray-600',
@@ -162,14 +209,18 @@ function renderAbout(config: SiteConfig, dark: boolean, at10Pos?: number) {
             <div
               key={i}
               className={cn(
-                'rounded-xl border p-6 text-center shadow-sm',
+                'border p-6 text-center shadow-sm',
+                layout.borderRadius === 'none' ? 'rounded-none' :
+                layout.borderRadius === 'full' ? 'rounded-2xl' :
+                layout.borderRadius === 'large' ? 'rounded-2xl' :
+                layout.borderRadius === 'small' ? 'rounded' : 'rounded-xl',
                 isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white',
               )}
             >
               <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-primary,#3b82f6)]/10 text-[var(--color-primary,#3b82f6)]">
                 <span className="text-lg font-bold">{h.icon.charAt(0)}</span>
               </div>
-              <h3 className={cn('text-sm font-bold', isDark ? 'text-white' : 'text-gray-900')}>
+              <h3 className={cn('text-sm font-bold', isDark ? 'text-white' : 'text-gray-900')} style={{ fontFamily: headingFont }}>
                 {h.title}
               </h3>
               <p className={cn('mt-2 text-xs leading-relaxed', isDark ? 'text-gray-400' : 'text-gray-500')}>
@@ -183,14 +234,14 @@ function renderAbout(config: SiteConfig, dark: boolean, at10Pos?: number) {
   );
 }
 
-function renderServices(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderServices(config: SiteConfig, sectionIdx: number) {
   if (!config.services?.items?.length) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
 
   return (
-    <SectionWrapper key="services" id="services" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="services" id="services" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>{config.services.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.services.title}</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <ServiceCards
@@ -206,14 +257,14 @@ function renderServices(config: SiteConfig, dark: boolean, at10Pos?: number) {
   );
 }
 
-function renderTeam(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderTeam(config: SiteConfig, sectionIdx: number) {
   if (!config.team?.members?.length) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
 
   return (
-    <SectionWrapper key="team" id="team" dark={dark} variant="primary" at10Pos={at10Pos}>
+    <SectionWrapper key="team" id="team" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>{config.team.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.team.title}</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <TeamSection
@@ -230,18 +281,18 @@ function renderTeam(config: SiteConfig, dark: boolean, at10Pos?: number) {
   );
 }
 
-function renderGallery(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderGallery(config: SiteConfig, sectionIdx: number) {
   if (!config.gallery?.images?.length) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
 
   const categories = Array.from(
     new Set(config.gallery.images.map((img) => img.category).filter(Boolean) as string[]),
   );
 
   return (
-    <SectionWrapper key="gallery" id="gallery" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="gallery" id="gallery" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>{config.gallery.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.gallery.title}</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="scale-in">
         <GalleryGrid
@@ -258,14 +309,14 @@ function renderGallery(config: SiteConfig, dark: boolean, at10Pos?: number) {
   );
 }
 
-function renderTestimonials(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderTestimonials(config: SiteConfig, sectionIdx: number) {
   if (!config.testimonials?.items?.length) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
 
   return (
-    <SectionWrapper key="testimonials" id="testimonials" dark={dark} variant="primary" at10Pos={at10Pos}>
+    <SectionWrapper key="testimonials" id="testimonials" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>{config.testimonials.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.testimonials.title}</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-left">
         <TestimonialSlider
@@ -281,14 +332,14 @@ function renderTestimonials(config: SiteConfig, dark: boolean, at10Pos?: number)
   );
 }
 
-function renderFAQ(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderFAQ(config: SiteConfig, sectionIdx: number) {
   if (!config.faq?.items?.length) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
 
   return (
-    <SectionWrapper key="faq" id="faq" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="faq" id="faq" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>{config.faq.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.faq.title}</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <div className="mx-auto max-w-3xl">
@@ -304,14 +355,14 @@ function renderFAQ(config: SiteConfig, dark: boolean, at10Pos?: number) {
   );
 }
 
-function renderContact(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderContact(config: SiteConfig, sectionIdx: number) {
   if (!config.contact) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
 
   return (
-    <SectionWrapper key="contact" id="contact" dark={dark} variant="primary" at10Pos={at10Pos}>
+    <SectionWrapper key="contact" id="contact" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>오시는 길</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>오시는 길</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <ContactSection
@@ -331,14 +382,16 @@ function renderContact(config: SiteConfig, dark: boolean, at10Pos?: number) {
 // Industry-specific section renderers
 // ---------------------------------------------------------------------------
 
-function renderReservation(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderReservation(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.reservation?.enabled) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
+  const colorMode = layout.colorMode ?? 'light';
+  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
 
   return (
-    <SectionWrapper key="reservation" id="reservation" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="reservation" id="reservation" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>예약 안내</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>예약 안내</SectionTitle>
         <div className="mx-auto max-w-2xl text-center">
           <p className={cn('text-lg', isDark ? 'text-gray-300' : 'text-gray-600')}>
             온라인으로 간편하게 예약하세요
@@ -352,15 +405,17 @@ function renderReservation(config: SiteConfig, dark: boolean, at10Pos?: number) 
   );
 }
 
-function renderMenuBoard(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderMenuBoard(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.menuBoard?.enabled) return null;
   if (!config.services?.items?.length) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
+  const colorMode = layout.colorMode ?? 'light';
+  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
 
   return (
-    <SectionWrapper key="menuBoard" id="menu-board" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="menuBoard" id="menu-board" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>메뉴</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>메뉴</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <div className="mx-auto max-w-4xl">
@@ -397,14 +452,16 @@ function renderMenuBoard(config: SiteConfig, dark: boolean, at10Pos?: number) {
   );
 }
 
-function renderPropertySearch(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderPropertySearch(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.propertySearch?.enabled) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
+  const colorMode = layout.colorMode ?? 'light';
+  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
 
   return (
-    <SectionWrapper key="propertySearch" id="property-search" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="propertySearch" id="property-search" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>매물 검색</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>매물 검색</SectionTitle>
         <div className="mx-auto max-w-3xl text-center">
           <p className={cn('text-lg', isDark ? 'text-gray-300' : 'text-gray-600')}>
             원하시는 조건의 매물을 검색해 보세요
@@ -426,15 +483,17 @@ function renderPropertySearch(config: SiteConfig, dark: boolean, at10Pos?: numbe
   );
 }
 
-function renderSeatStatus(config: SiteConfig, dark: boolean, at10Pos?: number) {
+function renderSeatStatus(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.seatStatus?.enabled) return null;
-  const isDark = dark || (at10Pos !== undefined && at10Pos % 2 === 0);
+  const layout = getLayout(config);
+  const colorMode = layout.colorMode ?? 'light';
+  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
   const totalSeats = config.features.seatStatus.totalSeats ?? 100;
 
   return (
-    <SectionWrapper key="seatStatus" id="seat-status" dark={dark} variant="secondary" at10Pos={at10Pos}>
+    <SectionWrapper key="seatStatus" id="seat-status" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle dark={isDark}>좌석 현황</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>좌석 현황</SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="scale-in">
         <div className="mx-auto max-w-md text-center">
@@ -466,16 +525,10 @@ interface DemoSiteRendererProps {
   config: SiteConfig;
 }
 
-// ---------------------------------------------------------------------------
-// Default section order (fallback when sectionOrder is not specified)
-// ---------------------------------------------------------------------------
 const DEFAULT_SECTION_ORDER = [
   'hero', 'about', 'services', 'team', 'gallery', 'testimonials', 'faq', 'contact',
 ] as const;
 
-// ---------------------------------------------------------------------------
-// Section availability check
-// ---------------------------------------------------------------------------
 function isSectionAvailable(section: string, config: SiteConfig): boolean {
   switch (section) {
     case 'hero':         return true;
@@ -495,42 +548,30 @@ function isSectionAvailable(section: string, config: SiteConfig): boolean {
 }
 
 export function DemoSiteRenderer({ config }: DemoSiteRendererProps) {
-  const dark = DARK_ARCHETYPES.has(config.archetype);
-  const isAT10 = config.archetype === AT10_ARCHETYPE;
-
   const sectionOrder = config.sectionOrder ?? [...DEFAULT_SECTION_ORDER];
-
-  // Filter to only sections that have data
   const activeSections = sectionOrder.filter((s) => isSectionAvailable(s, config));
 
-  // For AT-10: compute section positions for alternating dark/light.
-  // Hero = position 0 (dark). Non-hero sections start at position 1.
-  let pos = 1;
-  const posMap = new Map<number, number>();
-  activeSections.forEach((s, idx) => {
-    if (s !== 'hero') {
-      posMap.set(idx, pos++);
-    }
-  });
-  const at10 = (idx: number) => (isAT10 ? posMap.get(idx) : undefined);
+  // Track position index for alternating mixed color mode
+  let pos = 0;
 
   return (
     <>
-      {activeSections.map((section, idx) => {
+      {activeSections.map((section) => {
+        if (section === 'hero') return renderHero(config);
+        const currentPos = pos++;
         switch (section) {
-          case 'hero':         return renderHero(config);
-          case 'about':        return renderAbout(config, dark, at10(idx));
-          case 'services':     return renderServices(config, dark, at10(idx));
-          case 'team':         return renderTeam(config, dark, at10(idx));
-          case 'gallery':      return renderGallery(config, dark, at10(idx));
-          case 'testimonials': return renderTestimonials(config, dark, at10(idx));
-          case 'faq':          return renderFAQ(config, dark, at10(idx));
-          case 'contact':      return renderContact(config, dark, at10(idx));
-          case 'reservation':  return renderReservation(config, dark, at10(idx));
-          case 'menuBoard':    return renderMenuBoard(config, dark, at10(idx));
-          case 'propertySearch': return renderPropertySearch(config, dark, at10(idx));
-          case 'seatStatus':   return renderSeatStatus(config, dark, at10(idx));
-          default:             return null;
+          case 'about':          return renderAbout(config, currentPos);
+          case 'services':       return renderServices(config, currentPos);
+          case 'team':           return renderTeam(config, currentPos);
+          case 'gallery':        return renderGallery(config, currentPos);
+          case 'testimonials':   return renderTestimonials(config, currentPos);
+          case 'faq':            return renderFAQ(config, currentPos);
+          case 'contact':        return renderContact(config, currentPos);
+          case 'reservation':    return renderReservation(config, currentPos);
+          case 'menuBoard':      return renderMenuBoard(config, currentPos);
+          case 'propertySearch': return renderPropertySearch(config, currentPos);
+          case 'seatStatus':     return renderSeatStatus(config, currentPos);
+          default:               return null;
         }
       })}
     </>

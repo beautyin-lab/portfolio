@@ -24,17 +24,17 @@ const CATEGORY_LABELS: Record<string, string> = {
   restaurant: '식당/맛집',
 };
 
-const ARCHETYPE_LABELS: Record<string, string> = {
-  'AT-01': 'Editorial Magazine',
-  'AT-02': 'Immersive Showcase',
-  'AT-03': 'Professional Trust',
-  'AT-04': 'Dynamic Energy',
-  'AT-05': 'Soft & Organic',
-  'AT-06': 'Playful Interactive',
-  'AT-07': 'Minimal Gallery',
-  'AT-08': 'Warm Storytelling',
-  'AT-09': 'Data-Driven Dashboard',
-  'AT-10': 'Bold Contrast',
+const HEADER_STYLE_LABELS: Record<string, string> = {
+  'minimal': 'Minimal Clean',
+  'split-center': 'Split Center',
+  'transparent-overlay': 'Immersive Overlay',
+  'two-tier': 'Professional Two-Tier',
+  'sticky-shrink': 'Dynamic Sticky',
+  'sidebar': 'Sidebar Navigation',
+  'bottom-tabs': 'Tab Navigation',
+  'search-bar': 'Search-Driven',
+  'hamburger-only': 'Fullscreen Menu',
+  'hidden': 'Content-First',
 };
 
 interface PortfolioDetailProps {
@@ -49,8 +49,8 @@ export function PortfolioDetail({
   nextSite,
 }: PortfolioDetailProps) {
   const categoryLabel = CATEGORY_LABELS[site.category] ?? site.category;
-  const archetypeLabel =
-    ARCHETYPE_LABELS[site.archetype] ?? site.archetype;
+  const layoutStyleLabel =
+    HEADER_STYLE_LABELS[site.layoutConfig?.headerStyle ?? 'minimal'] ?? 'Custom Layout';
   const demoUrl = `/demo/${site.category}/${site.slug}`;
 
   return (
@@ -163,7 +163,7 @@ export function PortfolioDetail({
                     <div className="flex justify-between border-b border-gray-200 pb-3">
                       <dt className="text-sm text-gray-500">디자인 컨셉</dt>
                       <dd className="text-sm font-medium text-gray-900">
-                        {site.archetype} {archetypeLabel}
+                        {layoutStyleLabel}
                       </dd>
                     </div>
                   </dl>

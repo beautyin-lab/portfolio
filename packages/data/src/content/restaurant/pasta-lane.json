@@ -290,5 +290,16 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "transparent-overlay",
+    "colorMode": "light",
+    "headingFont": "serif",
+    "contentWidth": "narrow",
+    "effects": [
+      "scroll-progress"
+    ],
+    "footerStyle": "centered",
+    "heroVariant": "parallax"
   }
 }

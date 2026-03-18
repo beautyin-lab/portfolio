@@ -287,5 +287,15 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "hamburger-only",
+    "colorMode": "light",
+    "headingFont": "sans",
+    "headingWeight": "light",
+    "headingSize": "dramatic",
+    "sectionSpacing": "dramatic",
+    "footerStyle": "minimal",
+    "heroVariant": "split"
   }
 }

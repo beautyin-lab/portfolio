@@ -337,5 +337,13 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "split-center",
+    "colorMode": "light",
+    "headingFont": "display",
+    "borderRadius": "large",
+    "footerStyle": "centered",
+    "heroVariant": "fade-slider"
   }
 }

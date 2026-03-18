@@ -293,5 +293,14 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "minimal",
+    "colorMode": "light",
+    "headingFont": "display",
+    "headingWeight": "light",
+    "contentWidth": "narrow",
+    "footerStyle": "centered",
+    "heroVariant": "split"
   }
 }

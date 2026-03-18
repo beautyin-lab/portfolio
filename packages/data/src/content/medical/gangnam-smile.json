@@ -339,5 +339,15 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "two-tier",
+    "colorMode": "light",
+    "headingFont": "sans",
+    "headingSize": "normal",
+    "contentWidth": "standard",
+    "sectionSpacing": "normal",
+    "footerStyle": "multi-column",
+    "heroVariant": "fade-slider"
   }
 }

@@ -318,5 +318,17 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "transparent-overlay",
+    "colorMode": "dark",
+    "headingFont": "serif",
+    "headingSize": "dramatic",
+    "contentWidth": "full",
+    "effects": [
+      "parallax-hero"
+    ],
+    "footerStyle": "dark",
+    "heroVariant": "fullscreen"
   }
 }

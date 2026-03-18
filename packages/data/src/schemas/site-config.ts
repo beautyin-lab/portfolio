@@ -38,6 +38,49 @@ export const ARCHETYPES = [
 export type Archetype = (typeof ARCHETYPES)[number];
 
 // ---------------------------------------------------------------------------
+// Layout Config — per-site unique layout configuration (replaces archetypes)
+// ---------------------------------------------------------------------------
+
+export type HeaderStyle =
+  | 'minimal'
+  | 'split-center'
+  | 'transparent-overlay'
+  | 'two-tier'
+  | 'sticky-shrink'
+  | 'sidebar'
+  | 'bottom-tabs'
+  | 'search-bar'
+  | 'hamburger-only'
+  | 'hidden';
+
+export type ColorMode = 'light' | 'dark' | 'mixed';
+export type HeadingFont = 'sans' | 'serif' | 'mono' | 'display';
+export type BodyFont = 'sans' | 'serif';
+export type HeadingWeight = 'light' | 'normal' | 'bold' | 'black';
+export type HeadingSize = 'normal' | 'large' | 'dramatic';
+export type ContentWidth = 'narrow' | 'standard' | 'wide' | 'full';
+export type SectionSpacing = 'tight' | 'normal' | 'dramatic';
+export type BorderRadiusSize = 'none' | 'small' | 'medium' | 'large' | 'full';
+export type FooterStyle = 'minimal' | 'multi-column' | 'dark' | 'centered' | 'hidden';
+export type HeroVariant = 'fade-slider' | 'fullscreen' | 'split' | 'minimal' | 'parallax';
+
+export interface LayoutConfig {
+  headerStyle: HeaderStyle;
+  colorMode: ColorMode;
+  backgroundColor?: string;
+  headingFont: HeadingFont;
+  bodyFont?: BodyFont;
+  headingWeight?: HeadingWeight;
+  headingSize?: HeadingSize;
+  contentWidth?: ContentWidth;
+  sectionSpacing?: SectionSpacing;
+  borderRadius?: BorderRadiusSize;
+  effects?: string[];
+  footerStyle?: FooterStyle;
+  heroVariant?: HeroVariant;
+}
+
+// ---------------------------------------------------------------------------
 // Section types
 // ---------------------------------------------------------------------------
 
@@ -265,6 +308,7 @@ export interface SiteConfig {
   name: string;
   archetype: Archetype;
   theme: string;
+  layoutConfig?: LayoutConfig;
   sectionOrder?: SectionType[];
   hero: HeroSection;
   about: AboutSection;

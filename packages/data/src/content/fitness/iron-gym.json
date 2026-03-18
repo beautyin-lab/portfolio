@@ -300,5 +300,17 @@
       "Tailwind CSS",
       "Framer Motion"
     ]
+  },
+  "layoutConfig": {
+    "headerStyle": "sticky-shrink",
+    "colorMode": "dark",
+    "headingFont": "sans",
+    "headingWeight": "black",
+    "headingSize": "dramatic",
+    "effects": [
+      "diagonal-sections"
+    ],
+    "footerStyle": "dark",
+    "heroVariant": "fullscreen"
   }
 }
