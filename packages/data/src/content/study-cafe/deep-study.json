@@ -4,6 +4,15 @@
   "name": "딥스터디 스터디카페",
   "archetype": "AT-04",
   "theme": "professional-blue",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "services",
+    "gallery",
+    "testimonials",
+    "faq",
+    "contact"
+  ],
   "hero": {
     "title": "깊은 집중, 딥스터디",
     "subtitle": "국내 최고 수준의 학습 환경. 스마트 좌석 관리 시스템과 맞춤형 학습 코칭으로 목표 달성을 도와드립니다.",
@@ -213,33 +222,106 @@
   "seo": {
     "title": "딥스터디 스터디카페 | 강남 스마트 학습 공간",
     "description": "강남 테헤란로 스마트 스터디카페. 학습 통계 분석, 전문 코칭, 스터디 그룹 매칭 서비스. 수험생·직장인을 위한 데이터 기반 학습 환경.",
-    "keywords": ["강남 스터디카페", "스마트 독서실", "학습 코칭", "테헤란로 스터디룸", "강남 자기계발", "공무원 시험 준비"]
+    "keywords": [
+      "강남 스터디카페",
+      "스마트 독서실",
+      "학습 코칭",
+      "테헤란로 스터디룸",
+      "강남 자기계발",
+      "공무원 시험 준비"
+    ]
   },
   "features": {
     "seatStatus": {
       "enabled": true,
       "totalSeats": 56,
       "zones": [
-        { "id": "A", "name": "기본 집중부스 A존", "seats": 24, "pricePerHour": 1800 },
-        { "id": "B", "name": "프리미엄석 B존", "seats": 20, "pricePerHour": 2500 },
-        { "id": "C", "name": "그룹 스터디룸", "seats": 8, "pricePerHour": 8000 },
-        { "id": "D", "name": "1인 독립실", "seats": 4, "pricePerHour": 4000 }
+        {
+          "id": "A",
+          "name": "기본 집중부스 A존",
+          "seats": 24,
+          "pricePerHour": 1800
+        },
+        {
+          "id": "B",
+          "name": "프리미엄석 B존",
+          "seats": 20,
+          "pricePerHour": 2500
+        },
+        {
+          "id": "C",
+          "name": "그룹 스터디룸",
+          "seats": 8,
+          "pricePerHour": 8000
+        },
+        {
+          "id": "D",
+          "name": "1인 독립실",
+          "seats": 4,
+          "pricePerHour": 4000
+        }
       ]
     },
     "membershipPlans": {
       "enabled": true,
       "plans": [
-        { "id": "hourly-basic", "name": "기본석 시간제", "duration": 60, "price": 1800, "type": "time" },
-        { "id": "hourly-premium", "name": "프리미엄석 시간제", "duration": 60, "price": 2500, "type": "time" },
-        { "id": "pass-10", "name": "10일 패스", "duration": 14400, "price": 80000, "type": "period" },
-        { "id": "monthly-standard", "name": "월정액 스탠다드", "duration": 43200, "price": 130000, "type": "period", "includes": ["지정석", "사물함", "프린트 50매", "코칭 1회"] },
-        { "id": "monthly-premium", "name": "월정액 프리미엄", "duration": 43200, "price": 180000, "type": "period", "includes": ["프리미엄석", "독립실 8시간", "코칭 2회", "프린트 100매"] }
+        {
+          "id": "hourly-basic",
+          "name": "기본석 시간제",
+          "duration": 60,
+          "price": 1800,
+          "type": "time"
+        },
+        {
+          "id": "hourly-premium",
+          "name": "프리미엄석 시간제",
+          "duration": 60,
+          "price": 2500,
+          "type": "time"
+        },
+        {
+          "id": "pass-10",
+          "name": "10일 패스",
+          "duration": 14400,
+          "price": 80000,
+          "type": "period"
+        },
+        {
+          "id": "monthly-standard",
+          "name": "월정액 스탠다드",
+          "duration": 43200,
+          "price": 130000,
+          "type": "period",
+          "includes": [
+            "지정석",
+            "사물함",
+            "프린트 50매",
+            "코칭 1회"
+          ]
+        },
+        {
+          "id": "monthly-premium",
+          "name": "월정액 프리미엄",
+          "duration": 43200,
+          "price": 180000,
+          "type": "period",
+          "includes": [
+            "프리미엄석",
+            "독립실 8시간",
+            "코칭 2회",
+            "프린트 100매"
+          ]
+        }
       ]
     },
     "schedule": {
       "enabled": true,
       "openHours": "평일 06:00-24:00 / 주말 07:00-22:00",
-      "peakHours": ["08:00-11:00", "13:00-17:00", "19:00-22:00"]
+      "peakHours": [
+        "08:00-11:00",
+        "13:00-17:00",
+        "19:00-22:00"
+      ]
     },
     "reservation": {
       "enabled": true,

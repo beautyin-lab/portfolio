@@ -4,6 +4,14 @@
   "name": "블룸 플로리스트",
   "archetype": "AT-05",
   "theme": "romantic-floral",
+  "sectionOrder": [
+    "hero",
+    "services",
+    "gallery",
+    "about",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "꽃으로 전하는 진심",
     "subtitle": "매일 새벽 경매에서 직접 공수한 신선한 꽃으로 당신의 마음을 전달합니다. 당일 배달, 전국 배송 가능.",
@@ -224,22 +232,56 @@
   "seo": {
     "title": "블룸 플로리스트 | 서초 꽃집 당일배달 웨딩플라워",
     "description": "서초구 프리미엄 플라워 스튜디오. 매일 새벽 직접 공수한 신선한 꽃. 꽃다발, 웨딩 부케, 화환, 정기 구독. 서울 전 지역 당일 배달.",
-    "keywords": ["서초 꽃집", "당일배달 꽃다발", "웨딩 부케", "꽃 정기구독", "개업화환", "서울 꽃배달"]
+    "keywords": [
+      "서초 꽃집",
+      "당일배달 꽃다발",
+      "웨딩 부케",
+      "꽃 정기구독",
+      "개업화환",
+      "서울 꽃배달"
+    ]
   },
   "features": {
     "productGrid": {
       "enabled": true,
-      "categories": ["꽃다발", "플라워박스", "화환", "웨딩", "구독", "식물"],
-      "sortOptions": ["인기순", "가격낮은순", "가격높은순", "신상품순"]
+      "categories": [
+        "꽃다발",
+        "플라워박스",
+        "화환",
+        "웨딩",
+        "구독",
+        "식물"
+      ],
+      "sortOptions": [
+        "인기순",
+        "가격낮은순",
+        "가격높은순",
+        "신상품순"
+      ]
     },
     "order": {
       "enabled": true,
-      "deliveryOptions": ["당일배달", "날짜지정배달", "매장픽업", "전국택배"],
-      "deliveryFee": { "seoul": 5000, "gyeonggi": 8000, "nationwide": 4500 }
+      "deliveryOptions": [
+        "당일배달",
+        "날짜지정배달",
+        "매장픽업",
+        "전국택배"
+      ],
+      "deliveryFee": {
+        "seoul": 5000,
+        "gyeonggi": 8000,
+        "nationwide": 4500
+      }
     },
     "gallery": {
       "enabled": true,
-      "categories": ["꽃다발", "플라워박스", "화환", "웨딩", "구독"]
+      "categories": [
+        "꽃다발",
+        "플라워박스",
+        "화환",
+        "웨딩",
+        "구독"
+      ]
     },
     "reservation": {
       "enabled": true,

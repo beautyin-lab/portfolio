@@ -4,6 +4,15 @@
   "name": "강남홈즈 부동산",
   "archetype": "AT-09",
   "theme": "professional-trust",
+  "sectionOrder": [
+    "hero",
+    "propertySearch",
+    "services",
+    "team",
+    "testimonials",
+    "faq",
+    "contact"
+  ],
   "hero": {
     "title": "강남의 프리미엄 부동산,\n믿을 수 있는 파트너",
     "subtitle": "강남홈즈 부동산은 20년 강남 전문 공인중개사가 직접 운영하는 프리미엄 부동산입니다. 매매, 전세, 월세부터 상업용 부동산까지 최적의 물건을 찾아드립니다.",
@@ -197,7 +206,14 @@
   "seo": {
     "title": "강남홈즈 부동산 | 강남 전문 공인중개사 | 아파트 매매·전세 중개",
     "description": "강남 20년 전문 공인중개사 강남홈즈. 강남구·서초구·송파구 아파트 매매·전세·월세 중개. 전세 사기 예방 법적 검토 포함. 첫 상담 무료.",
-    "keywords": ["강남부동산", "강남공인중개사", "강남아파트매매", "강남전세", "서초구부동산", "강남홈즈"]
+    "keywords": [
+      "강남부동산",
+      "강남공인중개사",
+      "강남아파트매매",
+      "강남전세",
+      "서초구부동산",
+      "강남홈즈"
+    ]
   },
   "features": {
     "reservation": {
@@ -221,7 +237,11 @@
           "maintenanceFee": "35만원",
           "description": "강남권 역세권 대단지 아파트, 강남구청역 도보 5분, 남향",
           "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
-          "tags": ["역세권", "남향", "대단지"],
+          "tags": [
+            "역세권",
+            "남향",
+            "대단지"
+          ],
           "availableDate": "즉시 입주 가능"
         },
         {
@@ -236,7 +256,11 @@
           "maintenanceFee": "28만원",
           "description": "개포동 신축 랜드마크 아파트, 지하철 3호선 개포동역 도보 7분",
           "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
-          "tags": ["신축", "랜드마크", "역세권"],
+          "tags": [
+            "신축",
+            "랜드마크",
+            "역세권"
+          ],
           "availableDate": "2026년 5월 입주"
         },
         {
@@ -251,7 +275,11 @@
           "maintenanceFee": "42만원",
           "description": "방배동 조용한 주거지역, 4호선 총신대입구역 도보 8분, 초등학교 인접",
           "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80",
-          "tags": ["학군", "조용한환경", "넓은평형"],
+          "tags": [
+            "학군",
+            "조용한환경",
+            "넓은평형"
+          ],
           "availableDate": "협의 가능"
         },
         {
@@ -266,7 +294,11 @@
           "maintenanceFee": "15만원",
           "description": "삼성동 코엑스 인근, 2호선 삼성역 도보 3분, 전면 통창 한강 조망",
           "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80",
-          "tags": ["역세권", "한강조망", "코엑스인근"],
+          "tags": [
+            "역세권",
+            "한강조망",
+            "코엑스인근"
+          ],
           "availableDate": "즉시 입주 가능"
         },
         {
@@ -281,7 +313,11 @@
           "maintenanceFee": "별도",
           "description": "강남대로 유동인구 최고 입지, 2호선 역삼역 도보 2분, 음식점 가능",
           "image": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80",
-          "tags": ["1층", "대로변", "유동인구"],
+          "tags": [
+            "1층",
+            "대로변",
+            "유동인구"
+          ],
           "availableDate": "즉시 가능"
         },
         {
@@ -296,7 +332,11 @@
           "maintenanceFee": "32만원",
           "description": "잠실역 초역세권 대단지, 롯데월드 인근, 풍부한 상업 인프라",
           "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
-          "tags": ["초역세권", "대단지", "송파구"],
+          "tags": [
+            "초역세권",
+            "대단지",
+            "송파구"
+          ],
           "availableDate": "2026년 6월"
         },
         {
@@ -311,7 +351,11 @@
           "maintenanceFee": "포함",
           "description": "2024년 신축, 역삼역 도보 10분, 풀옵션 (에어컨, 냉장고, 세탁기)",
           "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
-          "tags": ["신축", "풀옵션", "역삼동"],
+          "tags": [
+            "신축",
+            "풀옵션",
+            "역삼동"
+          ],
           "availableDate": "즉시 입주 가능"
         }
       ]

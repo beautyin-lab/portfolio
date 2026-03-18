@@ -4,6 +4,16 @@
   "name": "한상 한식당",
   "archetype": "AT-10",
   "theme": "korean-traditional",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "menuBoard",
+    "services",
+    "team",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "정성이 담긴 한 상",
     "subtitle": "제철 식재료와 어머니의 손맛으로 차려낸 정갈한 한식. 매일 직접 담근 장류와 국산 식재료만을 사용합니다.",
@@ -224,12 +234,25 @@
   "seo": {
     "title": "한상 한식당 | 인사동 전통 한식 맛집 예약",
     "description": "인사동 3대 전통 한식당. 순천 직접 담근 장류, 국산 식재료 100%. 한상 정식·갈비탕·코스 요리. 블루리본 3년 연속 선정. 예약 권장.",
-    "keywords": ["인사동 한식당", "전통 한식 맛집", "한상 정식", "갈비탕 맛집", "서울 한식", "블루리본 맛집"]
+    "keywords": [
+      "인사동 한식당",
+      "전통 한식 맛집",
+      "한상 정식",
+      "갈비탕 맛집",
+      "서울 한식",
+      "블루리본 맛집"
+    ]
   },
   "features": {
     "menuBoard": {
       "enabled": true,
-      "categories": ["정식", "찌개·국", "구이", "밥·면", "코스"],
+      "categories": [
+        "정식",
+        "찌개·국",
+        "구이",
+        "밥·면",
+        "코스"
+      ],
       "showAllergens": true,
       "dailySpecial": true
     },
@@ -242,7 +265,16 @@
     },
     "gallery": {
       "enabled": true,
-      "categories": ["정식", "찌개", "탕", "구이", "밥", "코스", "분위기", "공간"]
+      "categories": [
+        "정식",
+        "찌개",
+        "탕",
+        "구이",
+        "밥",
+        "코스",
+        "분위기",
+        "공간"
+      ]
     }
   }
 }

@@ -235,12 +235,31 @@ export interface SiteFeatures {
 // SiteConfig — the main type
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Section order types
+// ---------------------------------------------------------------------------
+
+export type SectionType =
+  | 'hero'
+  | 'about'
+  | 'services'
+  | 'team'
+  | 'gallery'
+  | 'testimonials'
+  | 'faq'
+  | 'contact'
+  | 'reservation'
+  | 'menuBoard'
+  | 'propertySearch'
+  | 'seatStatus';
+
 export interface SiteConfig {
   slug: string;
   category: Category;
   name: string;
   archetype: Archetype;
   theme: string;
+  sectionOrder?: SectionType[];
   hero: HeroSection;
   about: AboutSection;
   services: ServicesSection;

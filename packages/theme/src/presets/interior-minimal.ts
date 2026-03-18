@@ -4,9 +4,9 @@ const interiorMinimal: ThemePreset = {
   id: 'interior-minimal',
   name: 'Interior Minimal',
   colors: {
-    primary: 'hsl(30, 8%, 22%)',
-    secondary: 'hsl(30, 12%, 52%)',
-    accent: 'hsl(24, 30%, 42%)',
+    primary: 'hsl(30, 6%, 25%)',
+    secondary: 'hsl(36, 48%, 69%)',
+    accent: 'hsl(25, 5%, 45%)',
     background: 'hsl(30, 10%, 96%)',
     surface: 'hsl(0, 0%, 100%)',
     text: 'hsl(30, 6%, 10%)',

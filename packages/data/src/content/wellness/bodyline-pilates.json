@@ -4,6 +4,16 @@
   "name": "바디라인 필라테스",
   "archetype": "AT-07",
   "theme": "wellness-clean",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "services",
+    "team",
+    "gallery",
+    "testimonials",
+    "faq",
+    "contact"
+  ],
   "hero": {
     "title": "내 몸의 중심을 바로 세우다",
     "subtitle": "1:1 맞춤 필라테스로 체형을 교정하고 진정한 코어 힘을 길러드립니다",
@@ -12,16 +22,35 @@
       "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "무료 체험 예약", "action": "/reservation" }
+    "cta": {
+      "text": "무료 체험 예약",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "바디라인 필라테스",
     "description": "바디라인 필라테스는 2015년 강남구 역삼동에 개원한 필라테스 전문 스튜디오입니다. 모든 수업은 1:1 또는 최대 3인 소그룹으로 진행되어, 개개인의 체형과 목표에 맞춘 맞춤형 커리큘럼을 제공합니다. 척추 측만증·골반 불균형·산후 체형 교정 등 재활성 필라테스를 전문으로 하며, 운동을 통한 실질적인 체형 변화를 이끌어 드립니다.",
     "highlights": [
-      { "icon": "Target", "title": "1:1 퍼스널 필라테스", "description": "원장이 직접 담당하는 개인 맞춤 수업" },
-      { "icon": "Activity", "title": "재활성 필라테스", "description": "척추 측만·골반 불균형·산후 체형 교정" },
-      { "icon": "Award", "title": "BASI·POLESTAR 공인 강사", "description": "국제 공인 필라테스 자격증 보유 강사진" },
-      { "icon": "Dumbbell", "title": "리포머·캐딜락·체어 완비", "description": "필라테스 기기 전 라인업 보유 스튜디오" }
+      {
+        "icon": "Target",
+        "title": "1:1 퍼스널 필라테스",
+        "description": "원장이 직접 담당하는 개인 맞춤 수업"
+      },
+      {
+        "icon": "Activity",
+        "title": "재활성 필라테스",
+        "description": "척추 측만·골반 불균형·산후 체형 교정"
+      },
+      {
+        "icon": "Award",
+        "title": "BASI·POLESTAR 공인 강사",
+        "description": "국제 공인 필라테스 자격증 보유 강사진"
+      },
+      {
+        "icon": "Dumbbell",
+        "title": "리포머·캐딜락·체어 완비",
+        "description": "필라테스 기기 전 라인업 보유 스튜디오"
+      }
     ]
   },
   "services": {
@@ -97,14 +126,46 @@
   "gallery": {
     "title": "스튜디오 시설",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop", "alt": "메인 스튜디오 전경", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop", "alt": "리포머 룸", "category": "기기" },
-      { "src": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&h=600&fit=crop", "alt": "캐딜락 & 체어 룸", "category": "기기" },
-      { "src": "https://images.unsplash.com/photo-1626197031507-c17099753214?w=800&h=600&fit=crop", "alt": "1:1 수업 공간", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1483721310020-03333cf66ab6?w=800&h=600&fit=crop", "alt": "산후 필라테스 수업", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop", "alt": "락커룸 및 샤워실", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop", "alt": "지도자 과정 수업", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&h=600&fit=crop", "alt": "스트레칭 공간", "category": "시설" }
+      {
+        "src": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop",
+        "alt": "메인 스튜디오 전경",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+        "alt": "리포머 룸",
+        "category": "기기"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&h=600&fit=crop",
+        "alt": "캐딜락 & 체어 룸",
+        "category": "기기"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1626197031507-c17099753214?w=800&h=600&fit=crop",
+        "alt": "1:1 수업 공간",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1483721310020-03333cf66ab6?w=800&h=600&fit=crop",
+        "alt": "산후 필라테스 수업",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop",
+        "alt": "락커룸 및 샤워실",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop",
+        "alt": "지도자 과정 수업",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&h=600&fit=crop",
+        "alt": "스트레칭 공간",
+        "category": "시설"
+      }
     ]
   },
   "testimonials": {
@@ -180,28 +241,79 @@
     "address": "서울시 강남구 역삼로 213 강남프라자 4층",
     "hours": "평일 07:00~21:00, 토 09:00~17:00, 일 휴무",
     "kakao": "bodyline-pilates",
-    "coordinates": { "lat": 37.4992, "lng": 127.0342 }
+    "coordinates": {
+      "lat": 37.4992,
+      "lng": 127.0342
+    }
   },
   "seo": {
     "title": "바디라인 필라테스 - 역삼 1:1 맞춤 필라테스 | 재활·산후·체형교정",
     "description": "역삼역 4분, BASI·POLESTAR 공인 강사. 1:1 퍼스널·재활·산후 필라테스. 척추 측만·골반 불균형 전문. 무료 체험 가능.",
-    "keywords": ["역삼필라테스", "강남필라테스", "재활필라테스", "산후필라테스", "체형교정필라테스", "1대1필라테스", "역삼역필라테스"]
+    "keywords": [
+      "역삼필라테스",
+      "강남필라테스",
+      "재활필라테스",
+      "산후필라테스",
+      "체형교정필라테스",
+      "1대1필라테스",
+      "역삼역필라테스"
+    ]
   },
   "reservation": {
     "type": "datetime-staff",
     "staff": [
-      { "id": "inst-kim", "name": "김지수 원장", "specialty": "재활·산후 필라테스" },
-      { "id": "inst-lee", "name": "이소현 강사", "specialty": "체형교정·척추측만" },
-      { "id": "inst-park", "name": "박민재 강사", "specialty": "남성·스포츠 필라테스" },
-      { "id": "inst-han", "name": "한수빈 강사", "specialty": "재활·노인 필라테스" }
+      {
+        "id": "inst-kim",
+        "name": "김지수 원장",
+        "specialty": "재활·산후 필라테스"
+      },
+      {
+        "id": "inst-lee",
+        "name": "이소현 강사",
+        "specialty": "체형교정·척추측만"
+      },
+      {
+        "id": "inst-park",
+        "name": "박민재 강사",
+        "specialty": "남성·스포츠 필라테스"
+      },
+      {
+        "id": "inst-han",
+        "name": "한수빈 강사",
+        "specialty": "재활·노인 필라테스"
+      }
     ],
     "services": [
-      { "id": "trial", "name": "무료 체험 (60분)", "duration": 60 },
-      { "id": "personal", "name": "1:1 퍼스널", "duration": 50 },
-      { "id": "duet", "name": "듀엣 (2인)", "duration": 50 },
-      { "id": "trio", "name": "소그룹 (3인)", "duration": 50 },
-      { "id": "postnatal", "name": "산후 필라테스", "duration": 50 },
-      { "id": "rehab", "name": "재활 필라테스", "duration": 50 }
+      {
+        "id": "trial",
+        "name": "무료 체험 (60분)",
+        "duration": 60
+      },
+      {
+        "id": "personal",
+        "name": "1:1 퍼스널",
+        "duration": 50
+      },
+      {
+        "id": "duet",
+        "name": "듀엣 (2인)",
+        "duration": 50
+      },
+      {
+        "id": "trio",
+        "name": "소그룹 (3인)",
+        "duration": 50
+      },
+      {
+        "id": "postnatal",
+        "name": "산후 필라테스",
+        "duration": 50
+      },
+      {
+        "id": "rehab",
+        "name": "재활 필라테스",
+        "duration": 50
+      }
     ]
   }
 }

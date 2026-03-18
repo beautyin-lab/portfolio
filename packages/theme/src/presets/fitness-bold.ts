@@ -4,9 +4,9 @@ const fitnessBold: ThemePreset = {
   id: 'fitness-bold',
   name: 'Fitness Bold',
   colors: {
-    primary: 'hsl(0, 84%, 50%)',
-    secondary: 'hsl(30, 90%, 52%)',
-    accent: 'hsl(48, 96%, 50%)',
+    primary: 'hsl(0, 72%, 51%)',
+    secondary: 'hsl(240, 6%, 10%)',
+    accent: 'hsl(46, 97%, 65%)',
     background: 'hsl(0, 0%, 98%)',
     surface: 'hsl(0, 0%, 100%)',
     text: 'hsl(0, 0%, 8%)',

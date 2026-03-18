@@ -4,6 +4,14 @@
   "name": "포커스존 스터디카페",
   "archetype": "AT-09",
   "theme": "modern-dark",
+  "sectionOrder": [
+    "hero",
+    "seatStatus",
+    "services",
+    "gallery",
+    "faq",
+    "contact"
+  ],
   "hero": {
     "title": "집중의 공간, 포커스존",
     "subtitle": "소음 없는 프리미엄 스터디 환경에서 당신의 목표를 이루세요. 24시간 운영, 개인 좌석 보장.",
@@ -208,36 +216,116 @@
   "seo": {
     "title": "포커스존 스터디카페 | 노원 24시간 프리미엄 독서실",
     "description": "노원구 24시간 운영 프리미엄 스터디카페. 완벽한 방음, 기가 와이파이, 무제한 음료 제공. 수험생·직장인을 위한 최적의 집중 공간.",
-    "keywords": ["노원 스터디카페", "24시간 독서실", "수험생 공부방", "프리미엄 스터디룸", "노원 공부카페", "직장인 자기계발"]
+    "keywords": [
+      "노원 스터디카페",
+      "24시간 독서실",
+      "수험생 공부방",
+      "프리미엄 스터디룸",
+      "노원 공부카페",
+      "직장인 자기계발"
+    ]
   },
   "features": {
     "seatStatus": {
       "enabled": true,
       "totalSeats": 48,
       "zones": [
-        { "id": "A", "name": "일반석 A존", "seats": 20, "pricePerHour": 2000 },
-        { "id": "B", "name": "프리미엄석 B존", "seats": 16, "pricePerHour": 2500 },
-        { "id": "C", "name": "창가석 C존", "seats": 8, "pricePerHour": 2500 },
-        { "id": "D", "name": "독립실", "seats": 4, "pricePerHour": 4000 }
+        {
+          "id": "A",
+          "name": "일반석 A존",
+          "seats": 20,
+          "pricePerHour": 2000
+        },
+        {
+          "id": "B",
+          "name": "프리미엄석 B존",
+          "seats": 16,
+          "pricePerHour": 2500
+        },
+        {
+          "id": "C",
+          "name": "창가석 C존",
+          "seats": 8,
+          "pricePerHour": 2500
+        },
+        {
+          "id": "D",
+          "name": "독립실",
+          "seats": 4,
+          "pricePerHour": 4000
+        }
       ]
     },
     "membershipPlans": {
       "enabled": true,
       "plans": [
-        { "id": "hourly-1", "name": "1시간권", "duration": 60, "price": 2000, "type": "time" },
-        { "id": "hourly-3", "name": "3시간권", "duration": 180, "price": 5000, "type": "time" },
-        { "id": "hourly-5", "name": "5시간권", "duration": 300, "price": 8000, "type": "time" },
-        { "id": "daily", "name": "종일권", "duration": 720, "price": 12000, "type": "time" },
-        { "id": "monthly-30", "name": "30일 정기권", "duration": 43200, "price": 150000, "type": "period", "includes": ["지정석", "사물함 1개", "프린트 50매/월"] },
-        { "id": "monthly-60", "name": "30일 무제한", "duration": 43200, "price": 200000, "type": "period", "includes": ["지정석", "사물함 1개", "프린트 100매/월", "독립실 4시간/월"] }
+        {
+          "id": "hourly-1",
+          "name": "1시간권",
+          "duration": 60,
+          "price": 2000,
+          "type": "time"
+        },
+        {
+          "id": "hourly-3",
+          "name": "3시간권",
+          "duration": 180,
+          "price": 5000,
+          "type": "time"
+        },
+        {
+          "id": "hourly-5",
+          "name": "5시간권",
+          "duration": 300,
+          "price": 8000,
+          "type": "time"
+        },
+        {
+          "id": "daily",
+          "name": "종일권",
+          "duration": 720,
+          "price": 12000,
+          "type": "time"
+        },
+        {
+          "id": "monthly-30",
+          "name": "30일 정기권",
+          "duration": 43200,
+          "price": 150000,
+          "type": "period",
+          "includes": [
+            "지정석",
+            "사물함 1개",
+            "프린트 50매/월"
+          ]
+        },
+        {
+          "id": "monthly-60",
+          "name": "30일 무제한",
+          "duration": 43200,
+          "price": 200000,
+          "type": "period",
+          "includes": [
+            "지정석",
+            "사물함 1개",
+            "프린트 100매/월",
+            "독립실 4시간/월"
+          ]
+        }
       ]
     },
     "schedule": {
       "enabled": true,
       "openHours": "00:00-24:00",
-      "peakHours": ["09:00-12:00", "14:00-18:00"],
+      "peakHours": [
+        "09:00-12:00",
+        "14:00-18:00"
+      ],
       "events": [
-        { "day": "매월 첫째 월요일", "event": "소독 및 시설 점검 (09:00-10:00 일부 구역 제한)" }
+        {
+          "day": "매월 첫째 월요일",
+          "event": "소독 및 시설 점검 (09:00-10:00 일부 구역 제한)"
+        }
       ]
     },
     "reservation": {

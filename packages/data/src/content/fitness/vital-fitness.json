@@ -4,6 +4,15 @@
   "name": "바이탈 피트니스",
   "archetype": "AT-10",
   "theme": "fitness-premium",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "services",
+    "team",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "프리미엄 피트니스, 당신의 일상이 되다",
     "subtitle": "과학적 운동 처방과 영양 관리로 체계적인 변화를 경험하세요",
@@ -12,16 +21,35 @@
       "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "상담 예약하기", "action": "/reservation" }
+    "cta": {
+      "text": "상담 예약하기",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "바이탈 피트니스 소개",
     "description": "바이탈 피트니스는 2013년 서울 강서구 마곡에 설립된 프리미엄 피트니스 센터입니다. 단순 헬스장이 아닌 과학적 운동 처방, 영양 컨설팅, 체형 분석을 결합한 토탈 바디케어 센터로, 회원 1인당 평균 15개월의 장기 이용률을 자랑합니다. 전문 트레이너 10인이 소규모 회원제로 운영하여 개인화된 피트니스 경험을 제공합니다.",
     "highlights": [
-      { "icon": "Activity", "title": "과학적 운동 처방", "description": "체성분·근기능 검사 기반 맞춤 운동 프로그램" },
-      { "icon": "Apple", "title": "영양사 협업 식단 관리", "description": "등록 영양사와 연계한 식이 처방 서비스" },
-      { "icon": "TrendingUp", "title": "월별 성과 리포트", "description": "매월 체성분 변화·운동 지표 리포트 제공" },
-      { "icon": "Users", "title": "소규모 회원제 운영", "description": "한 번에 최대 50명 회원만 모집하는 프리미엄 운영" }
+      {
+        "icon": "Activity",
+        "title": "과학적 운동 처방",
+        "description": "체성분·근기능 검사 기반 맞춤 운동 프로그램"
+      },
+      {
+        "icon": "Apple",
+        "title": "영양사 협업 식단 관리",
+        "description": "등록 영양사와 연계한 식이 처방 서비스"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "월별 성과 리포트",
+        "description": "매월 체성분 변화·운동 지표 리포트 제공"
+      },
+      {
+        "icon": "Users",
+        "title": "소규모 회원제 운영",
+        "description": "한 번에 최대 50명 회원만 모집하는 프리미엄 운영"
+      }
     ]
   },
   "services": {
@@ -103,15 +131,51 @@
   "gallery": {
     "title": "센터 시설",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop", "alt": "메인 운동 공간", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop", "alt": "프리웨이트 & 바벨 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&h=600&fit=crop", "alt": "소그룹 트레이닝 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop", "alt": "1:1 PT 전용 공간", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop", "alt": "유산소 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&h=600&fit=crop", "alt": "스포츠 퍼포먼스 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop", "alt": "영양 상담실", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop", "alt": "락커룸 및 샤워실", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop", "alt": "체성분 측정 코너", "category": "서비스" }
+      {
+        "src": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop",
+        "alt": "메인 운동 공간",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop",
+        "alt": "프리웨이트 & 바벨 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=800&h=600&fit=crop",
+        "alt": "소그룹 트레이닝 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop",
+        "alt": "1:1 PT 전용 공간",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
+        "alt": "유산소 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&h=600&fit=crop",
+        "alt": "스포츠 퍼포먼스 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop",
+        "alt": "영양 상담실",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop",
+        "alt": "락커룸 및 샤워실",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
+        "alt": "체성분 측정 코너",
+        "category": "서비스"
+      }
     ]
   },
   "testimonials": {
@@ -187,28 +251,79 @@
     "address": "서울시 강서구 마곡중앙로 161 마곡바이오메디컬센터 2층",
     "hours": "평일 06:00~23:00, 주말 08:00~20:00",
     "kakao": "vital-fitness-magok",
-    "coordinates": { "lat": 37.5604, "lng": 126.8313 }
+    "coordinates": {
+      "lat": 37.5604,
+      "lng": 126.8313
+    }
   },
   "seo": {
     "title": "바이탈 피트니스 - 마곡 프리미엄 헬스장 | 과학적 운동처방·영양관리",
     "description": "마곡나루역 3분, NSCA·ACSM 공인 트레이너. 운동처방+영양관리 통합 프리미엄 피트니스. 소규모 회원제. 바디 트랜스포메이션 전문.",
-    "keywords": ["마곡헬스장", "마곡PT", "마곡나루역헬스장", "강서구헬스장", "바디트랜스포메이션", "프리미엄피트니스", "마곡퍼스널트레이닝"]
+    "keywords": [
+      "마곡헬스장",
+      "마곡PT",
+      "마곡나루역헬스장",
+      "강서구헬스장",
+      "바디트랜스포메이션",
+      "프리미엄피트니스",
+      "마곡퍼스널트레이닝"
+    ]
   },
   "reservation": {
     "type": "datetime-staff",
     "staff": [
-      { "id": "tr-song", "name": "송재원 센터장", "specialty": "스포츠 퍼포먼스·재활" },
-      { "id": "tr-kim", "name": "김다연 트레이너", "specialty": "다이어트·바디 트랜스포메이션" },
-      { "id": "tr-lee", "name": "이도현 트레이너", "specialty": "근비대·파워리프팅" },
-      { "id": "tr-jung", "name": "정수아 트레이너", "specialty": "시니어·기능성 운동" },
-      { "id": "nt-park", "name": "박태훈 영양사", "specialty": "영양 컨설팅·식이 처방" }
+      {
+        "id": "tr-song",
+        "name": "송재원 센터장",
+        "specialty": "스포츠 퍼포먼스·재활"
+      },
+      {
+        "id": "tr-kim",
+        "name": "김다연 트레이너",
+        "specialty": "다이어트·바디 트랜스포메이션"
+      },
+      {
+        "id": "tr-lee",
+        "name": "이도현 트레이너",
+        "specialty": "근비대·파워리프팅"
+      },
+      {
+        "id": "tr-jung",
+        "name": "정수아 트레이너",
+        "specialty": "시니어·기능성 운동"
+      },
+      {
+        "id": "nt-park",
+        "name": "박태훈 영양사",
+        "specialty": "영양 컨설팅·식이 처방"
+      }
     ],
     "services": [
-      { "id": "consult", "name": "무료 상담 (체성분+FMS)", "duration": 60 },
-      { "id": "pt-session", "name": "1:1 PT", "duration": 50 },
-      { "id": "group-training", "name": "소그룹 트레이닝 (4인)", "duration": 50 },
-      { "id": "nutrition", "name": "영양 상담", "duration": 45 },
-      { "id": "transformation", "name": "바디 트랜스포메이션 상담", "duration": 60 }
+      {
+        "id": "consult",
+        "name": "무료 상담 (체성분+FMS)",
+        "duration": 60
+      },
+      {
+        "id": "pt-session",
+        "name": "1:1 PT",
+        "duration": 50
+      },
+      {
+        "id": "group-training",
+        "name": "소그룹 트레이닝 (4인)",
+        "duration": 50
+      },
+      {
+        "id": "nutrition",
+        "name": "영양 상담",
+        "duration": 45
+      },
+      {
+        "id": "transformation",
+        "name": "바디 트랜스포메이션 상담",
+        "duration": 60
+      }
     ]
   }
 }

@@ -4,6 +4,14 @@
   "name": "스페이스 디자인 인테리어",
   "archetype": "AT-01",
   "theme": "luxury-minimal",
+  "sectionOrder": [
+    "hero",
+    "gallery",
+    "services",
+    "about",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "공간이 삶을 바꿉니다",
     "subtitle": "15년의 설계 경험과 감각적인 디자인으로 당신만의 완벽한 공간을 만들어드립니다. 아파트부터 상업공간까지 전문 시공.",
@@ -224,18 +232,41 @@
   "seo": {
     "title": "스페이스 디자인 인테리어 | 서울 아파트·상업공간 전문 시공",
     "description": "15년 경력 인테리어 전문 기업. 아파트 리모델링, 상업공간, 신혼집 패키지. 3D 렌더링 무료 제공, 2년 A/S 보장. 서울·수도권 전지역 시공.",
-    "keywords": ["서울 인테리어", "아파트 리모델링", "주방 인테리어", "신혼집 인테리어", "상업공간 시공", "인테리어 견적"]
+    "keywords": [
+      "서울 인테리어",
+      "아파트 리모델링",
+      "주방 인테리어",
+      "신혼집 인테리어",
+      "상업공간 시공",
+      "인테리어 견적"
+    ]
   },
   "features": {
     "gallery": {
       "enabled": true,
-      "portfolioCategories": ["아파트", "주방", "욕실", "거실", "침실", "상업공간", "사무실", "신혼집"],
+      "portfolioCategories": [
+        "아파트",
+        "주방",
+        "욕실",
+        "거실",
+        "침실",
+        "상업공간",
+        "사무실",
+        "신혼집"
+      ],
       "showBefore": true,
       "showAfter": true
     },
     "estimate": {
       "enabled": true,
-      "fields": ["평수", "시공범위", "희망스타일", "예산", "희망시공시기", "연락처"],
+      "fields": [
+        "평수",
+        "시공범위",
+        "희망스타일",
+        "예산",
+        "희망시공시기",
+        "연락처"
+      ],
       "responseTime": "24시간 이내"
     },
     "reservation": {

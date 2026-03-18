@@ -4,6 +4,15 @@
   "name": "잉글리시플러스 어학원",
   "archetype": "AT-03",
   "theme": "global-blue",
+  "sectionOrder": [
+    "hero",
+    "services",
+    "about",
+    "team",
+    "testimonials",
+    "faq",
+    "contact"
+  ],
   "hero": {
     "title": "영어, 이제는 자신 있게",
     "subtitle": "원어민 강사와 한국인 전문 강사의 협력 수업. 회화부터 토익·토플·비즈니스 영어까지 당신의 영어를 완성합니다.",
@@ -220,19 +229,87 @@
   "seo": {
     "title": "잉글리시플러스 어학원 | 종로 영어회화·토익·IELTS 전문",
     "description": "종로 영어 어학원. 원어민 강사 8명, 토익 평균 185점 향상, IELTS 1.5 밴드 상승. 회화·토익·IELTS·비즈니스 영어 전문 과정.",
-    "keywords": ["종로 영어학원", "토익 학원", "IELTS 학원", "영어 회화", "비즈니스 영어", "원어민 강사"]
+    "keywords": [
+      "종로 영어학원",
+      "토익 학원",
+      "IELTS 학원",
+      "영어 회화",
+      "비즈니스 영어",
+      "원어민 강사"
+    ]
   },
   "features": {
     "schedule": {
       "enabled": true,
       "timetable": [
-        { "class": "회화 기초반", "days": ["월", "수", "금"], "time": "19:00~20:30", "teacher": "Sarah Thompson" },
-        { "class": "회화 고급·프리토킹", "days": ["화", "목"], "time": "19:30~21:00", "teacher": "Michael Hayes" },
-        { "class": "토익 집중반 A", "days": ["월", "화", "목", "금"], "time": "07:00~08:30", "teacher": "김태양" },
-        { "class": "토익 집중반 B", "days": ["월", "화", "목", "금"], "time": "20:00~21:30", "teacher": "김태양" },
-        { "class": "IELTS 준비반", "days": ["월", "수", "금"], "time": "18:00~19:30", "teacher": "Sarah Thompson" },
-        { "class": "비즈니스 영어", "days": ["화", "목"], "time": "07:00~08:30", "teacher": "이수현" },
-        { "class": "토요일 집중반", "days": ["토"], "time": "10:00~16:00", "teacher": "전체강사" }
+        {
+          "class": "회화 기초반",
+          "days": [
+            "월",
+            "수",
+            "금"
+          ],
+          "time": "19:00~20:30",
+          "teacher": "Sarah Thompson"
+        },
+        {
+          "class": "회화 고급·프리토킹",
+          "days": [
+            "화",
+            "목"
+          ],
+          "time": "19:30~21:00",
+          "teacher": "Michael Hayes"
+        },
+        {
+          "class": "토익 집중반 A",
+          "days": [
+            "월",
+            "화",
+            "목",
+            "금"
+          ],
+          "time": "07:00~08:30",
+          "teacher": "김태양"
+        },
+        {
+          "class": "토익 집중반 B",
+          "days": [
+            "월",
+            "화",
+            "목",
+            "금"
+          ],
+          "time": "20:00~21:30",
+          "teacher": "김태양"
+        },
+        {
+          "class": "IELTS 준비반",
+          "days": [
+            "월",
+            "수",
+            "금"
+          ],
+          "time": "18:00~19:30",
+          "teacher": "Sarah Thompson"
+        },
+        {
+          "class": "비즈니스 영어",
+          "days": [
+            "화",
+            "목"
+          ],
+          "time": "07:00~08:30",
+          "teacher": "이수현"
+        },
+        {
+          "class": "토요일 집중반",
+          "days": [
+            "토"
+          ],
+          "time": "10:00~16:00",
+          "teacher": "전체강사"
+        }
       ]
     },
     "reservation": {

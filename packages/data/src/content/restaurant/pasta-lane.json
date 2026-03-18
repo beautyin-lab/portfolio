@@ -4,6 +4,15 @@
   "name": "파스타레인 이탈리안",
   "archetype": "AT-08",
   "theme": "italian-warm",
+  "sectionOrder": [
+    "hero",
+    "menuBoard",
+    "about",
+    "services",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "이탈리아의 골목, 서울에서",
     "subtitle": "나폴리 출신 셰프가 직접 반죽하는 생면 파스타와 화덕 피자. 이탈리아 현지의 맛을 성수동에서 만나세요.",
@@ -224,12 +233,26 @@
   "seo": {
     "title": "파스타레인 이탈리안 | 성수동 생면 파스타 화덕 피자",
     "description": "성수동 정통 이탈리안 레스토랑. 나폴리 출신 셰프, 매일 손반죽 생면 파스타, 450°C 화덕 피자. 코스 다이닝, 이탈리아 와인 40종. 예약 필수.",
-    "keywords": ["성수동 이탈리안", "생면 파스타", "화덕 피자", "성수 맛집", "이탈리안 레스토랑", "성수 데이트"]
+    "keywords": [
+      "성수동 이탈리안",
+      "생면 파스타",
+      "화덕 피자",
+      "성수 맛집",
+      "이탈리안 레스토랑",
+      "성수 데이트"
+    ]
   },
   "features": {
     "menuBoard": {
       "enabled": true,
-      "categories": ["파스타", "피자", "메인", "안티파스토", "디저트", "음료·와인"],
+      "categories": [
+        "파스타",
+        "피자",
+        "메인",
+        "안티파스토",
+        "디저트",
+        "음료·와인"
+      ],
       "showAllergens": true,
       "dailySpecial": true,
       "weekendSpecial": true
@@ -243,7 +266,15 @@
     },
     "gallery": {
       "enabled": true,
-      "categories": ["파스타", "피자", "메인", "코스", "분위기", "주방", "와인"]
+      "categories": [
+        "파스타",
+        "피자",
+        "메인",
+        "코스",
+        "분위기",
+        "주방",
+        "와인"
+      ]
     }
   }
 }

@@ -4,6 +4,14 @@
   "name": "쁘띠 플라워",
   "archetype": "AT-01",
   "theme": "soft-pastel",
+  "sectionOrder": [
+    "hero",
+    "services",
+    "about",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "작은 꽃, 큰 감동",
     "subtitle": "프랑스 감성의 쁘띠 플라워. 소박하지만 섬세한 꽃 하나로 일상에 특별함을 더합니다. 플라워 클래스도 운영 중.",
@@ -219,22 +227,53 @@
   "seo": {
     "title": "쁘띠 플라워 | 연남동 꽃집 플라워 클래스",
     "description": "연남동 프렌치 감성 꽃집. 꽃다발 주문 제작, 원데이 플라워 클래스, 정규 과정 운영. 드라이플라워, 리스, 웨딩 부케. 온라인 주문 가능.",
-    "keywords": ["연남동 꽃집", "플라워 클래스", "프렌치 플로리스트", "꽃다발 주문", "원데이 클래스", "마포 꽃집"]
+    "keywords": [
+      "연남동 꽃집",
+      "플라워 클래스",
+      "프렌치 플로리스트",
+      "꽃다발 주문",
+      "원데이 클래스",
+      "마포 꽃집"
+    ]
   },
   "features": {
     "productGrid": {
       "enabled": true,
-      "categories": ["꽃다발", "단품", "리스", "드라이플라워", "시즌한정", "클래스"],
-      "sortOptions": ["인기순", "가격낮은순", "신상품순"]
+      "categories": [
+        "꽃다발",
+        "단품",
+        "리스",
+        "드라이플라워",
+        "시즌한정",
+        "클래스"
+      ],
+      "sortOptions": [
+        "인기순",
+        "가격낮은순",
+        "신상품순"
+      ]
     },
     "order": {
       "enabled": true,
-      "deliveryOptions": ["매장픽업", "당일배달", "날짜지정배달"],
-      "deliveryFee": { "seoul": 5000, "nearby": 3000 }
+      "deliveryOptions": [
+        "매장픽업",
+        "당일배달",
+        "날짜지정배달"
+      ],
+      "deliveryFee": {
+        "seoul": 5000,
+        "nearby": 3000
+      }
     },
     "gallery": {
       "enabled": true,
-      "categories": ["꽃다발", "클래스", "시즌", "매장", "리스"]
+      "categories": [
+        "꽃다발",
+        "클래스",
+        "시즌",
+        "매장",
+        "리스"
+      ]
     },
     "reservation": {
       "enabled": true,

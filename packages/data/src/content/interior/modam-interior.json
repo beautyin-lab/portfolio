@@ -4,6 +4,15 @@
   "name": "모담 인테리어",
   "archetype": "AT-07",
   "theme": "warm-natural",
+  "sectionOrder": [
+    "hero",
+    "gallery",
+    "services",
+    "about",
+    "faq",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "따뜻한 감성, 모담의 공간",
     "subtitle": "내추럴 소재와 따뜻한 색감으로 마음이 편안해지는 집을 만듭니다. 소가족부터 대가족까지, 모두를 위한 실용적인 인테리어.",
@@ -213,18 +222,41 @@
   "seo": {
     "title": "모담 인테리어 | 서울 친환경 아파트 인테리어 전문",
     "description": "자연 소재와 따뜻한 디자인의 모담 인테리어. 친환경 자재, 아파트·주방·욕실 리모델링 전문. 서울 전 지역 시공, 매일 현장 사진 공유.",
-    "keywords": ["서울 인테리어", "친환경 인테리어", "아파트 리모델링", "내추럴 인테리어", "마포 인테리어", "주방 욕실 리모델링"]
+    "keywords": [
+      "서울 인테리어",
+      "친환경 인테리어",
+      "아파트 리모델링",
+      "내추럴 인테리어",
+      "마포 인테리어",
+      "주방 욕실 리모델링"
+    ]
   },
   "features": {
     "gallery": {
       "enabled": true,
-      "portfolioCategories": ["아파트", "주방", "욕실", "거실", "침실", "바닥", "수납", "신혼집"],
+      "portfolioCategories": [
+        "아파트",
+        "주방",
+        "욕실",
+        "거실",
+        "침실",
+        "바닥",
+        "수납",
+        "신혼집"
+      ],
       "showBefore": true,
       "showAfter": true
     },
     "estimate": {
       "enabled": true,
-      "fields": ["시공종류", "평수", "희망스타일", "예산범위", "희망시공시기", "연락처"],
+      "fields": [
+        "시공종류",
+        "평수",
+        "희망스타일",
+        "예산범위",
+        "희망시공시기",
+        "연락처"
+      ],
       "responseTime": "당일 또는 익일"
     },
     "reservation": {

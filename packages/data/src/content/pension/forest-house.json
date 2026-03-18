@@ -4,6 +4,14 @@
   "name": "포레스트하우스 펜션",
   "archetype": "AT-02",
   "theme": "pension-nature",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "services",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "숲속의 고요한 쉼터",
     "subtitle": "자연이 만들어준 완벽한 휴식, 포레스트하우스에서 일상을 잊으세요",
@@ -12,16 +20,35 @@
       "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "객실 예약하기", "action": "/reservation" }
+    "cta": {
+      "text": "객실 예약하기",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "포레스트하우스 펜션",
     "description": "경기도 가평 북한강변의 울창한 잣나무 숲 속에 자리한 포레스트하우스 펜션입니다. 2016년 오픈 이래 서울에서 1시간 30분 거리의 접근성과 압도적인 자연 환경으로 많은 분들의 사랑을 받아왔습니다. 전 객실 독립 구조로 프라이빗한 휴식을 보장하며, 계절마다 다른 모습의 숲 풍경을 즐기실 수 있습니다.",
     "highlights": [
-      { "icon": "Home", "title": "전 객실 독립 구조", "description": "다른 손님과 겹치지 않는 완벽한 프라이빗 공간" },
-      { "icon": "Droplets", "title": "개별 야외 스파 욕조", "description": "모든 객실에 성인 2인용 야외 온수 스파 욕조 구비" },
-      { "icon": "Flame", "title": "벽난로·바비큐 구비", "description": "야외 바비큐 그릴과 계절별 실내 벽난로 운영" },
-      { "icon": "TreePine", "title": "500년 잣나무 숲", "description": "천연 피톤치드 가득한 숲 산책로 2km 운영" }
+      {
+        "icon": "Home",
+        "title": "전 객실 독립 구조",
+        "description": "다른 손님과 겹치지 않는 완벽한 프라이빗 공간"
+      },
+      {
+        "icon": "Droplets",
+        "title": "개별 야외 스파 욕조",
+        "description": "모든 객실에 성인 2인용 야외 온수 스파 욕조 구비"
+      },
+      {
+        "icon": "Flame",
+        "title": "벽난로·바비큐 구비",
+        "description": "야외 바비큐 그릴과 계절별 실내 벽난로 운영"
+      },
+      {
+        "icon": "TreePine",
+        "title": "500년 잣나무 숲",
+        "description": "천연 피톤치드 가득한 숲 산책로 2km 운영"
+      }
     ]
   },
   "services": {
@@ -79,18 +106,66 @@
   "gallery": {
     "title": "포레스트하우스 갤러리",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&h=600&fit=crop", "alt": "전경 및 숲", "category": "전경" },
-      { "src": "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop", "alt": "야외 스파", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop", "alt": "포레스트 스위트 내부", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop", "alt": "패밀리 하우스", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop", "alt": "글램핑 돔 야경", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop", "alt": "숲 산책로", "category": "자연" },
-      { "src": "https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?w=800&h=600&fit=crop", "alt": "바비큐 테라스", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&h=600&fit=crop", "alt": "북한강 전망", "category": "자연" },
-      { "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop", "alt": "가을 단풍 전경", "category": "자연" },
-      { "src": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop", "alt": "실내 벽난로", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop", "alt": "프리미엄 로그 캐빈", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1525113990976-399835c43838?w=800&h=600&fit=crop", "alt": "수영장", "category": "시설" }
+      {
+        "src": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800&h=600&fit=crop",
+        "alt": "전경 및 숲",
+        "category": "전경"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1542718610-a1d656d1884c?w=800&h=600&fit=crop",
+        "alt": "야외 스파",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
+        "alt": "포레스트 스위트 내부",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+        "alt": "패밀리 하우스",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop",
+        "alt": "글램핑 돔 야경",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
+        "alt": "숲 산책로",
+        "category": "자연"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?w=800&h=600&fit=crop",
+        "alt": "바비큐 테라스",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&h=600&fit=crop",
+        "alt": "북한강 전망",
+        "category": "자연"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop",
+        "alt": "가을 단풍 전경",
+        "category": "자연"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800&h=600&fit=crop",
+        "alt": "실내 벽난로",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop",
+        "alt": "프리미엄 로그 캐빈",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1525113990976-399835c43838?w=800&h=600&fit=crop",
+        "alt": "수영장",
+        "category": "시설"
+      }
     ]
   },
   "testimonials": {
@@ -172,20 +247,63 @@
     "address": "경기도 가평군 북면 이화리 산 47-3",
     "hours": "체크인 15:00 / 체크아웃 11:00 (연중무휴)",
     "kakao": "foresthouse-pension",
-    "coordinates": { "lat": 37.8234, "lng": 127.5012 }
+    "coordinates": {
+      "lat": 37.8234,
+      "lng": 127.5012
+    }
   },
   "seo": {
     "title": "포레스트하우스 펜션 - 가평 숲속 독채 펜션 | 야외 스파·글램핑",
     "description": "경기도 가평 북한강변 잣나무 숲속 독채 펜션. 야외 스파 욕조·벽난로·바비큐·글램핑 돔. 서울에서 1시간 30분.",
-    "keywords": ["가평펜션", "가평독채펜션", "가평글램핑", "가평스파펜션", "북한강펜션", "가평숲속펜션", "경기도펜션"]
+    "keywords": [
+      "가평펜션",
+      "가평독채펜션",
+      "가평글램핑",
+      "가평스파펜션",
+      "북한강펜션",
+      "가평숲속펜션",
+      "경기도펜션"
+    ]
   },
   "reservation": {
     "type": "datetime-room",
     "rooms": [
-      { "id": "forest-suite", "name": "포레스트 스위트", "capacity": 2, "price": { "weekday": 180000, "weekend": 270000 } },
-      { "id": "family-house", "name": "패밀리 하우스", "capacity": 4, "price": { "weekday": 280000, "weekend": 420000 } },
-      { "id": "glamping-dome", "name": "글램핑 돔", "capacity": 2, "price": { "weekday": 150000, "weekend": 220000 } },
-      { "id": "log-cabin", "name": "프리미엄 로그 캐빈", "capacity": 6, "price": { "weekday": 480000, "weekend": 720000 } }
+      {
+        "id": "forest-suite",
+        "name": "포레스트 스위트",
+        "capacity": 2,
+        "price": {
+          "weekday": 180000,
+          "weekend": 270000
+        }
+      },
+      {
+        "id": "family-house",
+        "name": "패밀리 하우스",
+        "capacity": 4,
+        "price": {
+          "weekday": 280000,
+          "weekend": 420000
+        }
+      },
+      {
+        "id": "glamping-dome",
+        "name": "글램핑 돔",
+        "capacity": 2,
+        "price": {
+          "weekday": 150000,
+          "weekend": 220000
+        }
+      },
+      {
+        "id": "log-cabin",
+        "name": "프리미엄 로그 캐빈",
+        "capacity": 6,
+        "price": {
+          "weekday": 480000,
+          "weekend": 720000
+        }
+      }
     ]
   }
 }

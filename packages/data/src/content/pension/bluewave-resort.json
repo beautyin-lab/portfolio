@@ -4,6 +4,14 @@
   "name": "블루웨이브 리조트",
   "archetype": "AT-05",
   "theme": "pension-ocean",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "gallery",
+    "services",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "파도 소리와 함께하는 특별한 하루",
     "subtitle": "동해 바다를 품은 오션뷰 리조트에서 바다의 낭만을 만끽하세요",
@@ -12,16 +20,35 @@
       "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "객실 예약", "action": "/reservation" }
+    "cta": {
+      "text": "객실 예약",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "블루웨이브 리조트 소개",
     "description": "강원도 속초 해수욕장에서 도보 2분 거리에 자리한 블루웨이브 리조트입니다. 2019년 신축 오픈으로 전 객실 오션뷰를 자랑하며, 루프탑 인피니티풀과 해변 바비큐 다이닝이 특별한 경험을 선사합니다. 속초 중심부와 가까워 관광과 휴양을 동시에 즐기기에 최적의 위치입니다.",
     "highlights": [
-      { "icon": "Waves", "title": "전 객실 오션뷰", "description": "동해 바다가 한눈에 펼쳐지는 탁 트인 뷰" },
-      { "icon": "Droplets", "title": "루프탑 인피니티풀", "description": "바다와 하나되는 느낌의 옥상 수영장" },
-      { "icon": "Star", "title": "2019년 신축", "description": "최신 시설과 모던 인테리어" },
-      { "icon": "MapPin", "title": "속초 해수욕장 도보 2분", "description": "아바이마을·속초 중앙시장 근접" }
+      {
+        "icon": "Waves",
+        "title": "전 객실 오션뷰",
+        "description": "동해 바다가 한눈에 펼쳐지는 탁 트인 뷰"
+      },
+      {
+        "icon": "Droplets",
+        "title": "루프탑 인피니티풀",
+        "description": "바다와 하나되는 느낌의 옥상 수영장"
+      },
+      {
+        "icon": "Star",
+        "title": "2019년 신축",
+        "description": "최신 시설과 모던 인테리어"
+      },
+      {
+        "icon": "MapPin",
+        "title": "속초 해수욕장 도보 2분",
+        "description": "아바이마을·속초 중앙시장 근접"
+      }
     ]
   },
   "services": {
@@ -91,16 +118,56 @@
   "gallery": {
     "title": "블루웨이브 갤러리",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop", "alt": "리조트 전경 및 해변", "category": "전경" },
-      { "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&h=600&fit=crop", "alt": "루프탑 인피니티풀", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop", "alt": "오션뷰 디럭스 객실", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop", "alt": "스위트룸 내부", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop", "alt": "오션뷰 발코니", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop", "alt": "조식 레스토랑", "category": "식음" },
-      { "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop", "alt": "패밀리 스위트", "category": "객실" },
-      { "src": "https://images.unsplash.com/photo-1541795795328-f073b763494e?w=800&h=600&fit=crop", "alt": "해변 바비큐 다이닝", "category": "식음" },
-      { "src": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&h=600&fit=crop", "alt": "동해 일출 전망", "category": "전경" },
-      { "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop", "alt": "속초 해수욕장", "category": "주변" }
+      {
+        "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
+        "alt": "리조트 전경 및 해변",
+        "category": "전경"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&h=600&fit=crop",
+        "alt": "루프탑 인피니티풀",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&h=600&fit=crop",
+        "alt": "오션뷰 디럭스 객실",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",
+        "alt": "스위트룸 내부",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
+        "alt": "오션뷰 발코니",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
+        "alt": "조식 레스토랑",
+        "category": "식음"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop",
+        "alt": "패밀리 스위트",
+        "category": "객실"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1541795795328-f073b763494e?w=800&h=600&fit=crop",
+        "alt": "해변 바비큐 다이닝",
+        "category": "식음"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=800&h=600&fit=crop",
+        "alt": "동해 일출 전망",
+        "category": "전경"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&h=600&fit=crop",
+        "alt": "속초 해수욕장",
+        "category": "주변"
+      }
     ]
   },
   "testimonials": {
@@ -172,20 +239,63 @@
     "address": "강원도 속초시 해오름로 78 블루웨이브 리조트",
     "hours": "체크인 15:00 / 체크아웃 11:00 (연중무휴)",
     "kakao": "bluewave-resort",
-    "coordinates": { "lat": 38.2070, "lng": 128.5918 }
+    "coordinates": {
+      "lat": 38.207,
+      "lng": 128.5918
+    }
   },
   "seo": {
     "title": "블루웨이브 리조트 - 속초 오션뷰 펜션 | 루프탑 인피니티풀",
     "description": "속초 해수욕장 도보 2분, 2019년 신축 오션뷰 리조트. 루프탑 인피니티풀·해변 BBQ·조식 뷔페. 전 객실 동해 전망.",
-    "keywords": ["속초펜션", "속초오션뷰", "속초리조트", "속초해수욕장숙박", "동해오션뷰", "속초인피니티풀", "속초독채"]
+    "keywords": [
+      "속초펜션",
+      "속초오션뷰",
+      "속초리조트",
+      "속초해수욕장숙박",
+      "동해오션뷰",
+      "속초인피니티풀",
+      "속초독채"
+    ]
   },
   "reservation": {
     "type": "datetime-room",
     "rooms": [
-      { "id": "ocean-deluxe", "name": "오션뷰 디럭스", "capacity": 2, "price": { "weekday": 180000, "weekend": 280000 } },
-      { "id": "ocean-suite", "name": "오션뷰 스위트", "capacity": 2, "price": { "weekday": 280000, "weekend": 450000 } },
-      { "id": "family-suite", "name": "패밀리 스위트", "capacity": 4, "price": { "weekday": 350000, "weekend": 550000 } },
-      { "id": "penthouse", "name": "펜트하우스", "capacity": 6, "price": { "weekday": 700000, "weekend": 1100000 } }
+      {
+        "id": "ocean-deluxe",
+        "name": "오션뷰 디럭스",
+        "capacity": 2,
+        "price": {
+          "weekday": 180000,
+          "weekend": 280000
+        }
+      },
+      {
+        "id": "ocean-suite",
+        "name": "오션뷰 스위트",
+        "capacity": 2,
+        "price": {
+          "weekday": 280000,
+          "weekend": 450000
+        }
+      },
+      {
+        "id": "family-suite",
+        "name": "패밀리 스위트",
+        "capacity": 4,
+        "price": {
+          "weekday": 350000,
+          "weekend": 550000
+        }
+      },
+      {
+        "id": "penthouse",
+        "name": "펜트하우스",
+        "capacity": 6,
+        "price": {
+          "weekday": 700000,
+          "weekend": 1100000
+        }
+      }
     ]
   }
 }

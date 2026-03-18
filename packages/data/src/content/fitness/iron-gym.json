@@ -4,6 +4,14 @@
   "name": "아이언짐 피트니스",
   "archetype": "AT-04",
   "theme": "fitness-bold",
+  "sectionOrder": [
+    "hero",
+    "services",
+    "team",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "한계를 넘어, 새로운 나를 만나다",
     "subtitle": "최신 장비와 전문 트레이너가 당신의 목표를 현실로 만들어 드립니다",
@@ -12,16 +20,35 @@
       "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "무료 체험 신청", "action": "/reservation" }
+    "cta": {
+      "text": "무료 체험 신청",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "아이언짐 피트니스",
     "description": "아이언짐 피트니스는 2017년 마포구 홍대 인근에 문을 열었습니다. 660㎡(200평) 규모의 넓은 공간에 프리웨이트 존·머신 존·유산소 존·GX 스튜디오를 갖추고 있으며, 유연한 이용권 체계와 24시간 운영으로 직장인·학생 모두 시간 부담 없이 이용할 수 있습니다. 국가공인 생활스포츠지도사 자격을 보유한 전문 트레이너의 PT 서비스도 제공합니다.",
     "highlights": [
-      { "icon": "Clock", "title": "24시간 운영", "description": "새벽·심야에도 이용 가능한 연중무휴 헬스장" },
-      { "icon": "Dumbbell", "title": "200평 대형 공간", "description": "프리웨이트·머신·유산소·GX 스튜디오 완비" },
-      { "icon": "Award", "title": "국가공인 트레이너", "description": "생활스포츠지도사 자격 보유 PT 전문 트레이너 8인" },
-      { "icon": "Users", "title": "회원 5,000명+", "description": "홍대·합정·상수 지역 대표 헬스장" }
+      {
+        "icon": "Clock",
+        "title": "24시간 운영",
+        "description": "새벽·심야에도 이용 가능한 연중무휴 헬스장"
+      },
+      {
+        "icon": "Dumbbell",
+        "title": "200평 대형 공간",
+        "description": "프리웨이트·머신·유산소·GX 스튜디오 완비"
+      },
+      {
+        "icon": "Award",
+        "title": "국가공인 트레이너",
+        "description": "생활스포츠지도사 자격 보유 PT 전문 트레이너 8인"
+      },
+      {
+        "icon": "Users",
+        "title": "회원 5,000명+",
+        "description": "홍대·합정·상수 지역 대표 헬스장"
+      }
     ]
   },
   "services": {
@@ -85,14 +112,46 @@
   "gallery": {
     "title": "시설 안내",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop", "alt": "프리웨이트 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop", "alt": "PT 전용 트레이닝 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop", "alt": "유산소 존 (트레드밀·사이클)", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop", "alt": "GX 스튜디오", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop", "alt": "머신 웨이트 존", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop", "alt": "락커룸 및 샤워실", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop", "alt": "인바디 측정 코너", "category": "서비스" },
-      { "src": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop", "alt": "스트레칭 존", "category": "시설" }
+      {
+        "src": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
+        "alt": "프리웨이트 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=600&fit=crop",
+        "alt": "PT 전용 트레이닝 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
+        "alt": "유산소 존 (트레드밀·사이클)",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=800&h=600&fit=crop",
+        "alt": "GX 스튜디오",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop",
+        "alt": "머신 웨이트 존",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop",
+        "alt": "락커룸 및 샤워실",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=600&fit=crop",
+        "alt": "인바디 측정 코너",
+        "category": "서비스"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=800&h=600&fit=crop",
+        "alt": "스트레칭 존",
+        "category": "시설"
+      }
     ]
   },
   "testimonials": {
@@ -164,26 +223,69 @@
     "address": "서울시 마포구 어울마당로 85 홍대상가 지하 1층",
     "hours": "24시간 연중무휴 (트레이너 상주: 06:00~22:00)",
     "kakao": "iron-gym-hongdae",
-    "coordinates": { "lat": 37.5563, "lng": 126.9236 }
+    "coordinates": {
+      "lat": 37.5563,
+      "lng": 126.9236
+    }
   },
   "seo": {
     "title": "아이언짐 피트니스 - 홍대 24시간 헬스장 | PT·GX·200평 대형 짐",
     "description": "홍대입구역 6분, 24시간 연중무휴 200평 대형 헬스장. 국가공인 트레이너 PT·15종 GX 클래스·인바디 측정. 첫 달 할인.",
-    "keywords": ["홍대헬스장", "홍대PT", "홍대24시간헬스장", "마포헬스장", "홍대GX", "홍대퍼스널트레이닝", "홍대입구헬스장"]
+    "keywords": [
+      "홍대헬스장",
+      "홍대PT",
+      "홍대24시간헬스장",
+      "마포헬스장",
+      "홍대GX",
+      "홍대퍼스널트레이닝",
+      "홍대입구헬스장"
+    ]
   },
   "reservation": {
     "type": "datetime-staff",
     "staff": [
-      { "id": "tr-kang", "name": "강동혁 트레이너", "specialty": "근비대·체형교정" },
-      { "id": "tr-lee", "name": "이예원 트레이너", "specialty": "여성·다이어트" },
-      { "id": "tr-park", "name": "박준석 트레이너", "specialty": "재활·기능성" },
-      { "id": "tr-choi", "name": "최지우 강사", "specialty": "GX·줌바·스피닝" }
+      {
+        "id": "tr-kang",
+        "name": "강동혁 트레이너",
+        "specialty": "근비대·체형교정"
+      },
+      {
+        "id": "tr-lee",
+        "name": "이예원 트레이너",
+        "specialty": "여성·다이어트"
+      },
+      {
+        "id": "tr-park",
+        "name": "박준석 트레이너",
+        "specialty": "재활·기능성"
+      },
+      {
+        "id": "tr-choi",
+        "name": "최지우 강사",
+        "specialty": "GX·줌바·스피닝"
+      }
     ],
     "services": [
-      { "id": "trial", "name": "무료 체험 (1일)", "duration": 60 },
-      { "id": "pt-session", "name": "PT 1회", "duration": 50 },
-      { "id": "inbody", "name": "인바디+식단 상담", "duration": 45 },
-      { "id": "gx-class", "name": "GX 클래스 예약", "duration": 50 }
+      {
+        "id": "trial",
+        "name": "무료 체험 (1일)",
+        "duration": 60
+      },
+      {
+        "id": "pt-session",
+        "name": "PT 1회",
+        "duration": 50
+      },
+      {
+        "id": "inbody",
+        "name": "인바디+식단 상담",
+        "duration": 45
+      },
+      {
+        "id": "gx-class",
+        "name": "GX 클래스 예약",
+        "duration": 50
+      }
     ]
   }
 }

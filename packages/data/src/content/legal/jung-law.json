@@ -4,6 +4,15 @@
   "name": "정앤파트너스 법률사무소",
   "archetype": "AT-03",
   "theme": "legal-professional",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "services",
+    "team",
+    "testimonials",
+    "faq",
+    "contact"
+  ],
   "hero": {
     "title": "당신의 권리를 지키는 법률 파트너",
     "subtitle": "15년 이상 경력의 전문 변호사가 의뢰인 중심으로 사건을 해결합니다",
@@ -12,16 +21,35 @@
       "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "무료 법률 상담", "action": "/reservation" }
+    "cta": {
+      "text": "무료 법률 상담",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "정앤파트너스 법률사무소",
     "description": "정앤파트너스 법률사무소는 2009년 개소 이래 민사·형사·가사·부동산 분야에서 풍부한 소송 경험을 쌓아온 전문 법률사무소입니다. 의뢰인의 입장에서 최선의 법률 서비스를 제공하며, 복잡한 법률 문제를 명쾌하게 해결합니다. 서울중앙지방법원 5분 거리에 위치하여 접근성이 뛰어납니다.",
     "highlights": [
-      { "icon": "Award", "title": "15년+ 소송 경험", "description": "민사·형사·가사 분야 1,200건 이상 처리" },
-      { "icon": "Shield", "title": "전문 변호사 5인 체계", "description": "분야별 전문 변호사의 팀 접근 방식" },
-      { "icon": "Clock", "title": "신속한 사건 처리", "description": "첫 상담 후 72시간 내 사건 방향 제시" },
-      { "icon": "MessageSquare", "title": "의뢰인 소통 우선", "description": "진행 상황 실시간 공유, 카카오톡 상담 가능" }
+      {
+        "icon": "Award",
+        "title": "15년+ 소송 경험",
+        "description": "민사·형사·가사 분야 1,200건 이상 처리"
+      },
+      {
+        "icon": "Shield",
+        "title": "전문 변호사 5인 체계",
+        "description": "분야별 전문 변호사의 팀 접근 방식"
+      },
+      {
+        "icon": "Clock",
+        "title": "신속한 사건 처리",
+        "description": "첫 상담 후 72시간 내 사건 방향 제시"
+      },
+      {
+        "icon": "MessageSquare",
+        "title": "의뢰인 소통 우선",
+        "description": "진행 상황 실시간 공유, 카카오톡 상담 가능"
+      }
     ]
   },
   "services": {
@@ -103,12 +131,36 @@
   "gallery": {
     "title": "사무소 안내",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop", "alt": "사무소 외관", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop", "alt": "도서실 및 자료실", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop", "alt": "상담실 A", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop", "alt": "회의실", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop", "alt": "상담실 B", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=600&fit=crop", "alt": "대기 공간", "category": "시설" }
+      {
+        "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
+        "alt": "사무소 외관",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop",
+        "alt": "도서실 및 자료실",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+        "alt": "상담실 A",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop",
+        "alt": "회의실",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
+        "alt": "상담실 B",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=600&fit=crop",
+        "alt": "대기 공간",
+        "category": "시설"
+      }
     ]
   },
   "testimonials": {
@@ -184,27 +236,74 @@
     "address": "서울시 서초구 서초대로 301 서초빌딩 11층",
     "hours": "평일 09:00~18:00 (긴급 형사 상담 24시간)",
     "kakao": "jung-law",
-    "coordinates": { "lat": 37.4936, "lng": 127.0143 }
+    "coordinates": {
+      "lat": 37.4936,
+      "lng": 127.0143
+    }
   },
   "seo": {
     "title": "정앤파트너스 법률사무소 - 민사·형사·이혼·부동산 전문 변호사 | 서초",
     "description": "서울중앙지법 5분, 검사 출신 대표 변호사. 민사·형사·이혼·전세 사기·상속. 첫 상담 무료. 24시간 형사 긴급 대응.",
-    "keywords": ["서초변호사", "강남변호사", "이혼변호사", "형사변호사", "전세사기변호사", "서초법률사무소", "무료법률상담"]
+    "keywords": [
+      "서초변호사",
+      "강남변호사",
+      "이혼변호사",
+      "형사변호사",
+      "전세사기변호사",
+      "서초법률사무소",
+      "무료법률상담"
+    ]
   },
   "reservation": {
     "type": "datetime-staff",
     "staff": [
-      { "id": "atty-jung", "name": "정태양 대표 변호사", "specialty": "형사·민사" },
-      { "id": "atty-kim", "name": "김소영 파트너 변호사", "specialty": "가사·상속" },
-      { "id": "atty-park", "name": "박준혁 파트너 변호사", "specialty": "부동산·기업" },
-      { "id": "atty-lee", "name": "이지혜 변호사", "specialty": "민사·노동" },
-      { "id": "atty-choi", "name": "최동우 변호사", "specialty": "형사" }
+      {
+        "id": "atty-jung",
+        "name": "정태양 대표 변호사",
+        "specialty": "형사·민사"
+      },
+      {
+        "id": "atty-kim",
+        "name": "김소영 파트너 변호사",
+        "specialty": "가사·상속"
+      },
+      {
+        "id": "atty-park",
+        "name": "박준혁 파트너 변호사",
+        "specialty": "부동산·기업"
+      },
+      {
+        "id": "atty-lee",
+        "name": "이지혜 변호사",
+        "specialty": "민사·노동"
+      },
+      {
+        "id": "atty-choi",
+        "name": "최동우 변호사",
+        "specialty": "형사"
+      }
     ],
     "services": [
-      { "id": "phone-consult", "name": "전화 무료 상담 (30분)", "duration": 30 },
-      { "id": "visit-consult", "name": "방문 상담 (1시간)", "duration": 60 },
-      { "id": "contract-review", "name": "계약서 검토 상담", "duration": 60 },
-      { "id": "emergency", "name": "긴급 형사 상담", "duration": 60 }
+      {
+        "id": "phone-consult",
+        "name": "전화 무료 상담 (30분)",
+        "duration": 30
+      },
+      {
+        "id": "visit-consult",
+        "name": "방문 상담 (1시간)",
+        "duration": 60
+      },
+      {
+        "id": "contract-review",
+        "name": "계약서 검토 상담",
+        "duration": 60
+      },
+      {
+        "id": "emergency",
+        "name": "긴급 형사 상담",
+        "duration": 60
+      }
     ]
   }
 }

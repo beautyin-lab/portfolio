@@ -4,6 +4,15 @@
   "name": "플로우 요가 스튜디오",
   "archetype": "AT-05",
   "theme": "wellness-minimal",
+  "sectionOrder": [
+    "hero",
+    "about",
+    "services",
+    "team",
+    "gallery",
+    "testimonials",
+    "contact"
+  ],
   "hero": {
     "title": "흐르듯 움직이는 나만의 시간",
     "subtitle": "일상의 긴장을 내려놓고, 호흡과 움직임으로 진정한 나를 만나세요",
@@ -12,16 +21,35 @@
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1600&h=900&fit=crop",
       "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1600&h=900&fit=crop"
     ],
-    "cta": { "text": "체험 수업 예약", "action": "/reservation" }
+    "cta": {
+      "text": "체험 수업 예약",
+      "action": "/reservation"
+    }
   },
   "about": {
     "title": "플로우 요가 스튜디오",
     "description": "플로우 요가 스튜디오는 2018년 성수동에 문을 열었습니다. 단순한 운동이 아닌 몸과 마음을 연결하는 수련의 공간으로, 초보자부터 지도자 과정까지 체계적인 커리큘럼을 운영합니다. 소수 정원 수업으로 강사의 세밀한 피드백이 가능하며, 넓고 쾌적한 원목 바닥 스튜디오에서 집중도 높은 수련을 경험할 수 있습니다.",
     "highlights": [
-      { "icon": "Sun", "title": "소수 정원 (최대 10인)", "description": "강사 1인이 수강생 개개인 맞춤 지도" },
-      { "icon": "Leaf", "title": "RYT-500 공인 강사", "description": "국제 요가 얼라이언스 공인 강사 4인 운영" },
-      { "icon": "Heart", "title": "임산부·시니어 특별 반", "description": "연령·신체 상태에 맞는 세분화된 클래스" },
-      { "icon": "Star", "title": "요가 지도자 양성 과정", "description": "RYT-200 국제 공인 지도자 양성 과정 운영" }
+      {
+        "icon": "Sun",
+        "title": "소수 정원 (최대 10인)",
+        "description": "강사 1인이 수강생 개개인 맞춤 지도"
+      },
+      {
+        "icon": "Leaf",
+        "title": "RYT-500 공인 강사",
+        "description": "국제 요가 얼라이언스 공인 강사 4인 운영"
+      },
+      {
+        "icon": "Heart",
+        "title": "임산부·시니어 특별 반",
+        "description": "연령·신체 상태에 맞는 세분화된 클래스"
+      },
+      {
+        "icon": "Star",
+        "title": "요가 지도자 양성 과정",
+        "description": "RYT-200 국제 공인 지도자 양성 과정 운영"
+      }
     ]
   },
   "services": {
@@ -97,14 +125,46 @@
   "gallery": {
     "title": "스튜디오 갤러리",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&h=600&fit=crop", "alt": "메인 스튜디오", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop", "alt": "빈야사 수업 전경", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop", "alt": "음 요가 수업", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop", "alt": "임산부 요가 수업", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&h=600&fit=crop", "alt": "아쉬탕가 수련", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop", "alt": "지도자 과정 수업", "category": "수업" },
-      { "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop", "alt": "탈의실 및 샤워시설", "category": "시설" },
-      { "src": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&h=600&fit=crop", "alt": "명상 공간", "category": "시설" }
+      {
+        "src": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&h=600&fit=crop",
+        "alt": "메인 스튜디오",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=600&fit=crop",
+        "alt": "빈야사 수업 전경",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800&h=600&fit=crop",
+        "alt": "음 요가 수업",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop",
+        "alt": "임산부 요가 수업",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=800&h=600&fit=crop",
+        "alt": "아쉬탕가 수련",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop",
+        "alt": "지도자 과정 수업",
+        "category": "수업"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1593810451137-5dc55105dace?w=800&h=600&fit=crop",
+        "alt": "탈의실 및 샤워시설",
+        "category": "시설"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&h=600&fit=crop",
+        "alt": "명상 공간",
+        "category": "시설"
+      }
     ]
   },
   "testimonials": {
@@ -180,22 +240,63 @@
     "address": "서울시 성동구 성수이로 127 성수타워 3층",
     "hours": "평일 07:00~22:00, 주말 09:00~18:00",
     "kakao": "flow-yoga-studio",
-    "coordinates": { "lat": 37.5447, "lng": 127.0563 }
+    "coordinates": {
+      "lat": 37.5447,
+      "lng": 127.0563
+    }
   },
   "seo": {
     "title": "플로우 요가 스튜디오 - 성수 소수정원 요가 | 빈야사·음 요가·임산부 요가",
     "description": "성수역 5분, RYT-500 공인 강사의 소수 정원 요가. 하타·빈야사·음 요가·임산부 요가·지도자 양성 과정. 첫 체험 5만원.",
-    "keywords": ["성수요가", "성수동요가스튜디오", "빈야사요가", "음요가", "임산부요가", "요가지도자과정", "RYT200"]
+    "keywords": [
+      "성수요가",
+      "성수동요가스튜디오",
+      "빈야사요가",
+      "음요가",
+      "임산부요가",
+      "요가지도자과정",
+      "RYT200"
+    ]
   },
   "reservation": {
     "type": "datetime-class",
     "classes": [
-      { "id": "hatha-basic", "name": "하타 요가 (기초)", "duration": 60, "capacity": 10 },
-      { "id": "vinyasa-flow", "name": "빈야사 플로우", "duration": 75, "capacity": 10 },
-      { "id": "yin-yoga", "name": "음 요가", "duration": 75, "capacity": 10 },
-      { "id": "prenatal", "name": "임산부 요가", "duration": 60, "capacity": 8 },
-      { "id": "ashtanga", "name": "아쉬탕가 마이소르", "duration": 90, "capacity": 8 },
-      { "id": "trial", "name": "체험 수업 (1회)", "duration": 60, "capacity": 10 }
+      {
+        "id": "hatha-basic",
+        "name": "하타 요가 (기초)",
+        "duration": 60,
+        "capacity": 10
+      },
+      {
+        "id": "vinyasa-flow",
+        "name": "빈야사 플로우",
+        "duration": 75,
+        "capacity": 10
+      },
+      {
+        "id": "yin-yoga",
+        "name": "음 요가",
+        "duration": 75,
+        "capacity": 10
+      },
+      {
+        "id": "prenatal",
+        "name": "임산부 요가",
+        "duration": 60,
+        "capacity": 8
+      },
+      {
+        "id": "ashtanga",
+        "name": "아쉬탕가 마이소르",
+        "duration": 90,
+        "capacity": 8
+      },
+      {
+        "id": "trial",
+        "name": "체험 수업 (1회)",
+        "duration": 60,
+        "capacity": 10
+      }
     ]
   }
 }

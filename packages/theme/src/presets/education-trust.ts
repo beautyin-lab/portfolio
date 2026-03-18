@@ -4,9 +4,9 @@ const educationTrust: ThemePreset = {
   id: 'education-trust',
   name: 'Education Trust',
   colors: {
-    primary: 'hsl(214, 64%, 44%)',
-    secondary: 'hsl(46, 76%, 52%)',
-    accent: 'hsl(160, 44%, 42%)',
+    primary: 'hsl(214, 52%, 25%)',
+    secondary: 'hsl(214, 95%, 93%)',
+    accent: 'hsl(0, 72%, 51%)',
     background: 'hsl(214, 18%, 96%)',
     surface: 'hsl(0, 0%, 100%)',
     text: 'hsl(214, 22%, 14%)',
