@@ -4,14 +4,18 @@ import type { ReactNode } from 'react';
 import type { SiteConfig, LayoutConfig } from '@portfolio/data';
 import { cn } from '@portfolio/ui/lib/utils';
 import { HeroSection } from '@portfolio/ui/composites/hero-section';
-import { ServiceCards } from '@portfolio/ui/composites/service-cards';
-import { TeamSection } from '@portfolio/ui/composites/team-section';
 import { GalleryGrid } from '@portfolio/ui/composites/gallery-grid';
 import { TestimonialSlider } from '@portfolio/ui/composites/testimonial-slider';
 import { FAQSection } from '@portfolio/ui/composites/faq-section';
 import { ContactSection } from '@portfolio/ui/composites/contact-section';
-import { ScrollReveal } from '@portfolio/ui/animations/components/scroll-reveal';
-import { StaggerContainer } from '@portfolio/ui/animations/components/stagger-container';
+// ScrollReveal/StaggerContainer cause webpack module resolution errors in dev
+// Using simple div wrappers until resolved
+function ScrollReveal({ children, preset, className, ...props }: { children: ReactNode; preset?: string; className?: string; [key: string]: unknown }) {
+  return <div className={className}>{children}</div>;
+}
+function StaggerContainer({ children, className, ...props }: { children: ReactNode; className?: string; [key: string]: unknown }) {
+  return <div className={className}>{children}</div>;
+}
 
 // ---------------------------------------------------------------------------
 // Heading font family mapping (mirrors site-layout.tsx)
@@ -37,9 +41,9 @@ const MAX_WIDTH_MAP: Record<string, string> = {
 // Section spacing mapping
 // ---------------------------------------------------------------------------
 const SPACING_MAP: Record<string, string> = {
-  tight: 'px-4 py-12 sm:px-6',
-  normal: 'px-4 py-16 sm:px-6 md:py-24 lg:px-8',
-  dramatic: 'px-4 py-24 sm:px-6 md:py-32 lg:px-8',
+  tight: 'px-4 py-10 sm:px-6',
+  normal: 'px-4 py-12 sm:px-6 md:py-20 lg:px-8',
+  dramatic: 'px-4 py-20 sm:px-6 md:py-28 lg:px-8',
 };
 
 // ---------------------------------------------------------------------------
@@ -60,6 +64,27 @@ function getLayout(config: SiteConfig): LayoutConfig {
     colorMode: 'light',
     headingFont: 'sans',
   };
+}
+
+// ---------------------------------------------------------------------------
+// Helper: resolve border radius class
+// ---------------------------------------------------------------------------
+function getBorderRadiusClass(layout: LayoutConfig): string {
+  switch (layout.borderRadius) {
+    case 'none': return 'rounded-none';
+    case 'small': return 'rounded';
+    case 'full': return 'rounded-2xl';
+    case 'large': return 'rounded-2xl';
+    default: return 'rounded-xl';
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Helper: check dark mode for a section
+// ---------------------------------------------------------------------------
+function isSectionDark(layout: LayoutConfig, sectionIdx: number): boolean {
+  const colorMode = layout.colorMode ?? 'light';
+  return colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
 }
 
 // ---------------------------------------------------------------------------
@@ -84,7 +109,7 @@ function SectionWrapper({
 }) {
   const colorMode = layout.colorMode ?? 'light';
   const isMixed = colorMode === 'mixed';
-  const isDark = colorMode === 'dark' || (isMixed && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
 
   let bgClass: string;
   if (isMixed) {
@@ -100,7 +125,7 @@ function SectionWrapper({
 
   if (fullBleed) {
     return (
-      <section id={id} className={cn('py-16 md:py-24', bgClass, className)}>
+      <section id={id} className={cn('py-12 md:py-20', bgClass, className)}>
         {children}
       </section>
     );
@@ -117,15 +142,16 @@ function SectionWrapper({
 // ---------------------------------------------------------------------------
 function SectionTitle({
   children,
+  subtitle,
   layout,
   sectionIdx = 0,
 }: {
   children: ReactNode;
+  subtitle?: string;
   layout: LayoutConfig;
   sectionIdx?: number;
 }) {
-  const colorMode = layout.colorMode ?? 'light';
-  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
   const headingFont = HEADING_FONT_MAP[layout.headingFont] ?? HEADING_FONT_MAP.sans;
   const headingSize = HEADING_SIZE_MAP[layout.headingSize ?? 'normal'];
   const headingWeight = layout.headingWeight ?? 'bold';
@@ -137,17 +163,26 @@ function SectionTitle({
     'font-bold';
 
   return (
-    <h2
-      className={cn(
-        'mb-8 text-center',
-        headingSize,
-        weightClass,
-        isDark ? 'text-white' : 'text-gray-900',
+    <div className="mb-10 text-center">
+      <h2
+        className={cn(
+          headingSize,
+          weightClass,
+          isDark ? 'text-white' : 'text-gray-900',
+        )}
+        style={{ fontFamily: headingFont }}
+      >
+        {children}
+      </h2>
+      {subtitle && (
+        <p className={cn(
+          'mt-3 text-base sm:text-lg',
+          isDark ? 'text-gray-400' : 'text-gray-500',
+        )}>
+          {subtitle}
+        </p>
       )}
-      style={{ fontFamily: headingFont }}
-    >
-      {children}
-    </h2>
+    </div>
   );
 }
 
@@ -184,52 +219,78 @@ function renderHero(config: SiteConfig) {
 function renderAbout(config: SiteConfig, sectionIdx: number) {
   if (!config.about) return null;
   const layout = getLayout(config);
-  const colorMode = layout.colorMode ?? 'light';
-  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
   const headingFont = HEADING_FONT_MAP[layout.headingFont] ?? HEADING_FONT_MAP.sans;
+  const radiusClass = getBorderRadiusClass(layout);
+  const hasHighlights = config.about.highlights && config.about.highlights.length > 0;
 
   return (
     <SectionWrapper key="about" id="about" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <div className="mx-auto max-w-4xl text-center">
-          <SectionTitle layout={layout} sectionIdx={sectionIdx}>
-            {config.about.title}
-          </SectionTitle>
-          <p className={cn(
-            'mt-6 text-lg leading-relaxed whitespace-pre-line',
-            isDark ? 'text-gray-300' : 'text-gray-600',
-          )}>
-            {config.about.description}
-          </p>
-        </div>
-      </ScrollReveal>
-      {config.about.highlights && config.about.highlights.length > 0 && (
-        <StaggerContainer className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {config.about.highlights.map((h, i) => (
-            <div
-              key={i}
-              className={cn(
-                'border p-6 text-center shadow-sm',
-                layout.borderRadius === 'none' ? 'rounded-none' :
-                layout.borderRadius === 'full' ? 'rounded-2xl' :
-                layout.borderRadius === 'large' ? 'rounded-2xl' :
-                layout.borderRadius === 'small' ? 'rounded' : 'rounded-xl',
-                isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white',
-              )}
-            >
-              <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-primary,#3b82f6)]/10 text-[var(--color-primary,#3b82f6)]">
-                <span className="text-lg font-bold">{h.icon.charAt(0)}</span>
-              </div>
-              <h3 className={cn('text-sm font-bold', isDark ? 'text-white' : 'text-gray-900')} style={{ fontFamily: headingFont }}>
-                {h.title}
-              </h3>
-              <p className={cn('mt-2 text-xs leading-relaxed', isDark ? 'text-gray-400' : 'text-gray-500')}>
-                {h.description}
+        {hasHighlights ? (
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            {/* Left: title + description */}
+            <div>
+              <h2
+                className={cn(
+                  'text-3xl font-bold sm:text-4xl lg:text-5xl leading-tight',
+                  isDark ? 'text-white' : 'text-gray-900',
+                )}
+                style={{ fontFamily: headingFont }}
+              >
+                {config.about.title}
+              </h2>
+              <p className={cn(
+                'mt-6 text-base leading-relaxed whitespace-pre-line sm:text-lg',
+                isDark ? 'text-gray-300' : 'text-gray-600',
+              )}>
+                {config.about.description}
               </p>
             </div>
-          ))}
-        </StaggerContainer>
-      )}
+
+            {/* Right: highlight cards as number + label */}
+            <div className="grid grid-cols-2 gap-4">
+              {config.about.highlights!.map((h, i) => (
+                <div
+                  key={i}
+                  className={cn(
+                    'border p-6',
+                    radiusClass,
+                    isDark
+                      ? 'border-white/10 bg-gradient-to-br from-white/5 to-white/[0.02]'
+                      : 'border-gray-100 bg-gradient-to-br from-gray-50 to-white shadow-sm',
+                  )}
+                >
+                  <div className="text-2xl font-black text-[var(--color-primary,#3b82f6)] sm:text-3xl">
+                    {h.icon}
+                  </div>
+                  <h3
+                    className={cn('mt-2 text-sm font-bold sm:text-base', isDark ? 'text-white' : 'text-gray-900')}
+                    style={{ fontFamily: headingFont }}
+                  >
+                    {h.title}
+                  </h3>
+                  <p className={cn('mt-1 text-xs leading-relaxed sm:text-sm', isDark ? 'text-gray-400' : 'text-gray-500')}>
+                    {h.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="mx-auto max-w-4xl text-center">
+            <SectionTitle layout={layout} sectionIdx={sectionIdx}>
+              {config.about.title}
+            </SectionTitle>
+            <p className={cn(
+              'mt-6 text-base leading-relaxed whitespace-pre-line sm:text-lg',
+              isDark ? 'text-gray-300' : 'text-gray-600',
+            )}>
+              {config.about.description}
+            </p>
+          </div>
+        )}
+      </ScrollReveal>
     </SectionWrapper>
   );
 }
@@ -237,22 +298,66 @@ function renderAbout(config: SiteConfig, sectionIdx: number) {
 function renderServices(config: SiteConfig, sectionIdx: number) {
   if (!config.services?.items?.length) return null;
   const layout = getLayout(config);
+  const isDark = isSectionDark(layout, sectionIdx);
+  const radiusClass = getBorderRadiusClass(layout);
 
   return (
     <SectionWrapper key="services" id="services" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.services.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx} subtitle="제공하는 서비스를 확인하세요">
+          {config.services.title}
+        </SectionTitle>
       </ScrollReveal>
-      <ScrollReveal preset="fade-up">
-        <ServiceCards
-          items={config.services.items.map((item) => ({
-            title: item.name,
-            description: item.description,
-            price: item.price,
-          }))}
-          columns={config.services.items.length === 4 ? 4 : 3}
-        />
-      </ScrollReveal>
+      <StaggerContainer className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {config.services.items.map((item, i) => (
+          <div
+            key={i}
+            className={cn(
+              'group overflow-hidden border transition-shadow duration-300 hover:shadow-xl',
+              radiusClass,
+              isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white',
+            )}
+          >
+            {/* Image area */}
+            {item.image ? (
+              <div className="aspect-[3/2] overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            ) : (
+              <div className="flex aspect-[3/2] items-center justify-center bg-gradient-to-br from-[var(--color-primary,#3b82f6)]/10 to-[var(--color-primary,#3b82f6)]/5">
+                <div className="text-5xl font-black text-[var(--color-primary,#3b82f6)]/30">
+                  {item.name.charAt(0)}
+                </div>
+              </div>
+            )}
+
+            {/* Content */}
+            <div className="p-5">
+              <h3 className={cn(
+                'text-lg font-bold',
+                isDark ? 'text-white' : 'text-gray-900',
+              )}>
+                {item.name}
+              </h3>
+              <p className={cn(
+                'mt-2 text-sm leading-relaxed line-clamp-2',
+                isDark ? 'text-gray-400' : 'text-gray-500',
+              )}>
+                {item.description}
+              </p>
+              {item.price && (
+                <span className="mt-3 inline-block rounded-full bg-[var(--color-primary,#3b82f6)]/10 px-3 py-1 text-sm font-semibold text-[var(--color-primary,#3b82f6)]">
+                  {item.price}
+                </span>
+              )}
+            </div>
+          </div>
+        ))}
+      </StaggerContainer>
     </SectionWrapper>
   );
 }
@@ -260,23 +365,64 @@ function renderServices(config: SiteConfig, sectionIdx: number) {
 function renderTeam(config: SiteConfig, sectionIdx: number) {
   if (!config.team?.members?.length) return null;
   const layout = getLayout(config);
+  const isDark = isSectionDark(layout, sectionIdx);
+  const radiusClass = getBorderRadiusClass(layout);
 
   return (
     <SectionWrapper key="team" id="team" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.team.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx} subtitle="함께하는 전문가를 소개합니다">
+          {config.team.title}
+        </SectionTitle>
       </ScrollReveal>
-      <ScrollReveal preset="fade-up">
-        <TeamSection
-          members={config.team.members.map((m) => ({
-            name: m.name,
-            role: m.role,
-            avatar: m.image,
-            description: m.description,
-          }))}
-          columns={config.team.members.length <= 3 ? 3 : 4}
-        />
-      </ScrollReveal>
+      <StaggerContainer className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {config.team.members.map((m, i) => (
+          <div
+            key={i}
+            className={cn(
+              'group overflow-hidden border transition-shadow duration-300 hover:shadow-xl',
+              radiusClass,
+              isDark ? 'border-white/10 bg-white/5' : 'border-gray-100 bg-white',
+            )}
+          >
+            {/* Avatar image - large square */}
+            <div className="aspect-square overflow-hidden">
+              {m.image ? (
+                <img
+                  src={m.image}
+                  alt={m.name}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <div className={cn(
+                  'flex h-full w-full items-center justify-center text-5xl font-bold',
+                  isDark ? 'bg-white/10 text-white/40' : 'bg-gray-100 text-gray-300',
+                )}>
+                  {m.name.slice(0, 2).toUpperCase()}
+                </div>
+              )}
+            </div>
+
+            {/* Info */}
+            <div className="p-5 text-center">
+              <h3 className={cn('text-lg font-bold', isDark ? 'text-white' : 'text-gray-900')}>
+                {m.name}
+              </h3>
+              <p className="mt-1 text-sm font-medium text-[var(--color-primary,#3b82f6)]">
+                {m.role}
+              </p>
+              {m.description && (
+                <p className={cn(
+                  'mt-2 text-sm leading-relaxed line-clamp-2',
+                  isDark ? 'text-gray-400' : 'text-gray-500',
+                )}>
+                  {m.description}
+                </p>
+              )}
+            </div>
+          </div>
+        ))}
+      </StaggerContainer>
     </SectionWrapper>
   );
 }
@@ -292,7 +438,9 @@ function renderGallery(config: SiteConfig, sectionIdx: number) {
   return (
     <SectionWrapper key="gallery" id="gallery" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.gallery.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx}>
+          {config.gallery.title}
+        </SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="scale-in">
         <GalleryGrid
@@ -302,7 +450,7 @@ function renderGallery(config: SiteConfig, sectionIdx: number) {
             category: img.category,
           }))}
           categories={categories}
-          variant="grid"
+          variant="masonry"
         />
       </ScrollReveal>
     </SectionWrapper>
@@ -316,7 +464,9 @@ function renderTestimonials(config: SiteConfig, sectionIdx: number) {
   return (
     <SectionWrapper key="testimonials" id="testimonials" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.testimonials.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx} subtitle="고객님들의 소중한 후기">
+          {config.testimonials.title}
+        </SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-left">
         <TestimonialSlider
@@ -339,7 +489,9 @@ function renderFAQ(config: SiteConfig, sectionIdx: number) {
   return (
     <SectionWrapper key="faq" id="faq" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle layout={layout} sectionIdx={sectionIdx}>{config.faq.title}</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx} subtitle="자주 묻는 질문을 확인하세요">
+          {config.faq.title}
+        </SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <div className="mx-auto max-w-3xl">
@@ -362,7 +514,9 @@ function renderContact(config: SiteConfig, sectionIdx: number) {
   return (
     <SectionWrapper key="contact" id="contact" layout={layout} variant="primary" sectionIdx={sectionIdx}>
       <ScrollReveal preset="fade-up">
-        <SectionTitle layout={layout} sectionIdx={sectionIdx}>오시는 길</SectionTitle>
+        <SectionTitle layout={layout} sectionIdx={sectionIdx} subtitle="편하게 연락주세요">
+          오시는 길
+        </SectionTitle>
       </ScrollReveal>
       <ScrollReveal preset="fade-up">
         <ContactSection
@@ -385,8 +539,7 @@ function renderContact(config: SiteConfig, sectionIdx: number) {
 function renderReservation(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.reservation?.enabled) return null;
   const layout = getLayout(config);
-  const colorMode = layout.colorMode ?? 'light';
-  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
 
   return (
     <SectionWrapper key="reservation" id="reservation" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
@@ -409,8 +562,7 @@ function renderMenuBoard(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.menuBoard?.enabled) return null;
   if (!config.services?.items?.length) return null;
   const layout = getLayout(config);
-  const colorMode = layout.colorMode ?? 'light';
-  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
 
   return (
     <SectionWrapper key="menuBoard" id="menu-board" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
@@ -455,8 +607,7 @@ function renderMenuBoard(config: SiteConfig, sectionIdx: number) {
 function renderPropertySearch(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.propertySearch?.enabled) return null;
   const layout = getLayout(config);
-  const colorMode = layout.colorMode ?? 'light';
-  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
 
   return (
     <SectionWrapper key="propertySearch" id="property-search" layout={layout} variant="secondary" sectionIdx={sectionIdx}>
@@ -486,8 +637,7 @@ function renderPropertySearch(config: SiteConfig, sectionIdx: number) {
 function renderSeatStatus(config: SiteConfig, sectionIdx: number) {
   if (!config.features?.seatStatus?.enabled) return null;
   const layout = getLayout(config);
-  const colorMode = layout.colorMode ?? 'light';
-  const isDark = colorMode === 'dark' || (colorMode === 'mixed' && sectionIdx % 2 === 0);
+  const isDark = isSectionDark(layout, sectionIdx);
   const totalSeats = config.features.seatStatus.totalSeats ?? 100;
 
   return (
